@@ -71,11 +71,11 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
           </div>
         </div>
         
-        <h3 className="font-serif text-xl font-semibold mb-3 line-clamp-2 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
+        <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
           {post.title}
         </h3>
         
-        <p className="text-muted-foreground mb-4 line-clamp-3" data-testid={`text-excerpt-${post.id}`}>
+        <p className="text-muted-foreground mb-4" data-testid={`text-excerpt-${post.id}`}>
           {post.excerpt}
         </p>
         
