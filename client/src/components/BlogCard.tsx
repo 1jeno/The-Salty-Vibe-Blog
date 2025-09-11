@@ -44,15 +44,17 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
 
   return (
     <Card className="group hover-elevate border-card-border h-full" data-testid={`card-blog-${post.id}`}>
-      <div className="relative overflow-hidden z-0">
-        <img 
-          src={post.image} 
-          alt={post.title}
-          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-          data-testid={`img-blog-${post.id}`}
-        />
+      <div className="relative z-0">
+        <div className="overflow-hidden">
+          <img 
+            src={post.image} 
+            alt={post.title}
+            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+            data-testid={`img-blog-${post.id}`}
+          />
+        </div>
         <Badge 
-          className={`absolute top-3 left-3 z-10 max-w-[calc(100%-1.5rem)] truncate ${getCategoryColor(post.category)}`}
+          className={`absolute top-3 left-3 z-10 no-default-hover-elevate no-default-active-elevate ${getCategoryColor(post.category)}`}
           data-testid={`badge-category-${post.id}`}
         >
           {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
