@@ -27,10 +27,10 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'lifestyle': return 'bg-primary text-primary-foreground';
-      case 'travel': return 'bg-accent text-accent-foreground';
-      case 'food': return 'bg-secondary text-secondary-foreground';
-      default: return 'bg-muted text-muted-foreground';
+      case 'lifestyle': return 'bg-pink-400 text-white';
+      case 'travel': return 'bg-pink-500 text-white';
+      case 'food': return 'bg-pink-600 text-white';
+      default: return 'bg-pink-300 text-white';
     }
   };
 
