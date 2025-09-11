@@ -43,7 +43,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
   };
 
   return (
-    <Card className="group hover-elevate border-card-border h-full" data-testid={`card-blog-${post.id}`}>
+    <Card className="group hover-elevate border-card-border flex flex-col" data-testid={`card-blog-${post.id}`}>
       <div className="relative z-0">
         <div className="overflow-hidden">
           <img 
@@ -61,7 +61,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
         </Badge>
       </div>
       
-      <CardContent className="p-6">
+      <CardContent className="p-6 flex-1 flex flex-col">
         <div className="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground mb-3">
           <div className="flex items-center gap-1 shrink-0" data-testid={`text-date-${post.id}`}>
             <Calendar className="h-4 w-4" />
@@ -73,7 +73,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
           </div>
         </div>
         
-        <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
+        <h3 className="font-serif text-xl font-semibold leading-relaxed mb-4 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
           {post.title}
         </h3>
         
