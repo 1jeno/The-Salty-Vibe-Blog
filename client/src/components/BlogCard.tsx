@@ -53,12 +53,12 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
             data-testid={`img-blog-${post.id}`}
           />
         </div>
-        <Badge 
-          className={`absolute top-3 left-3 z-10 no-default-hover-elevate no-default-active-elevate ${getCategoryColor(post.category)}`}
+        <div 
+          className={`absolute top-3 left-3 z-10 px-3 py-2 rounded-md text-sm font-medium shadow-sm ${getCategoryColor(post.category)}`}
           data-testid={`badge-category-${post.id}`}
         >
           {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
-        </Badge>
+        </div>
       </div>
       
       <CardContent className="p-6 flex-1 flex flex-col">
