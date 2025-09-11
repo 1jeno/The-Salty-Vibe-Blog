@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/generated_images/Beach_scene_woman_bikini_de8a06d6.png';
+import heroImage from '@assets/generated_images/Light_pink_crochet_bikini_beach_03728792.png';
 
 export default function Hero() {
   const handleExplore = () => {
