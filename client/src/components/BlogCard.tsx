@@ -60,14 +60,14 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
       </div>
       
       <CardContent className="p-6">
-        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-          <div className="flex items-center gap-1" data-testid={`text-date-${post.id}`}>
+        <div className="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground mb-3">
+          <div className="flex items-center gap-1 shrink-0" data-testid={`text-date-${post.id}`}>
             <Calendar className="h-4 w-4" />
-            {formatDate(post.publishedAt)}
+            <span className="whitespace-nowrap">{formatDate(post.publishedAt)}</span>
           </div>
-          <div className="flex items-center gap-1" data-testid={`text-readtime-${post.id}`}>
+          <div className="flex items-center gap-1 shrink-0" data-testid={`text-readtime-${post.id}`}>
             <Clock className="h-4 w-4" />
-            {post.readTime} min read
+            <span className="whitespace-nowrap">{post.readTime} min read</span>
           </div>
         </div>
         
