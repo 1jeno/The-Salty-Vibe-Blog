@@ -1,0 +1,144 @@
+import { useState } from 'react';
+import { Link, useLocation } from 'wouter';
+import { Search, Menu, X, Sun, Moon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+
+interface HeaderProps {
+  onSearch?: (query: string) => void;
+}
+
+export default function Header({ onSearch }: HeaderProps) {
+  const [location] = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSearch?.(searchQuery);
+    console.log('Search triggered:', searchQuery);
+  };
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle('dark');
+    console.log('Theme toggled:', isDark ? 'light' : 'dark');
+  };
+
+  const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'Lifestyle', href: '/lifestyle' },
+    { name: 'Travel', href: '/travel' },
+    { name: 'Food', href: '/food' },
+    { name: 'About', href: '/about' },
+  ];
+
+  return (
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 gap-4">
+          {/* Logo */}
+          <Link href="/" data-testid="link-home">
+            <h1 className="font-serif text-2xl font-bold text-primary hover-elevate px-2 py-1 rounded-md">
+              The Salty Vibe
+            </h1>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                data-testid={`link-${item.name.toLowerCase()}`}
+              >
+                <span
+                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                    location === item.href ? 'text-primary' : 'text-muted-foreground'
+                  }`}
+                >
+                  {item.name}
+                </span>
+              </Link>
+            ))}
+          </nav>
+
+          {/* Search and Theme Toggle */}
+          <div className="flex items-center gap-2">
+            <form onSubmit={handleSearch} className="hidden sm:flex items-center gap-2">
+              <Input
+                type="search"
+                placeholder="Search posts..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-48"
+                data-testid="input-search"
+              />
+              <Button type="submit" size="icon" variant="outline" data-testid="button-search">
+                <Search className="h-4 w-4" />
+              </Button>
+            </form>
+            
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              data-testid="button-theme-toggle"
+            >
+              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+
+            {/* Mobile menu button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              data-testid="button-mobile-menu"
+            >
+              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden pb-4 border-t border-border mt-2">
+            <nav className="flex flex-col space-y-2 pt-4">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  data-testid={`link-mobile-${item.name.toLowerCase()}`}
+                >
+                  <span
+                    className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent ${
+                      location === item.href ? 'text-primary bg-accent' : 'text-muted-foreground'
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                </Link>
+              ))}
+              <form onSubmit={handleSearch} className="flex items-center gap-2 px-3 pt-2 sm:hidden">
+                <Input
+                  type="search"
+                  placeholder="Search posts..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="flex-1"
+                  data-testid="input-mobile-search"
+                />
+                <Button type="submit" size="icon" variant="outline" data-testid="button-mobile-search">
+                  <Search className="h-4 w-4" />
+                </Button>
+              </form>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}

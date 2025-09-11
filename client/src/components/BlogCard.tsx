@@ -1,0 +1,94 @@
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  category: 'lifestyle' | 'travel' | 'food';
+  image: string;
+  publishedAt: string;
+  readTime: number;
+  slug: string;
+}
+
+interface BlogCardProps {
+  post: BlogPost;
+  onReadMore?: (slug: string) => void;
+}
+
+export default function BlogCard({ post, onReadMore }: BlogCardProps) {
+  const handleReadMore = () => {
+    onReadMore?.(post.slug);
+    console.log('Read more clicked for:', post.title);
+  };
+
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case 'lifestyle': return 'bg-primary text-primary-foreground';
+      case 'travel': return 'bg-accent text-accent-foreground';
+      case 'food': return 'bg-secondary text-secondary-foreground';
+      default: return 'bg-muted text-muted-foreground';
+    }
+  };
+
+  const formatDate = (date: string) => {
+    return new Date(date).toLocaleDateString('en-US', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
+    });
+  };
+
+  return (
+    <Card className="group hover-elevate overflow-hidden border-card-border h-full" data-testid={`card-blog-${post.id}`}>
+      <div className="relative overflow-hidden">
+        <img 
+          src={post.image} 
+          alt={post.title}
+          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+          data-testid={`img-blog-${post.id}`}
+        />
+        <Badge 
+          className={`absolute top-3 left-3 ${getCategoryColor(post.category)}`}
+          data-testid={`badge-category-${post.id}`}
+        >
+          {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
+        </Badge>
+      </div>
+      
+      <CardContent className="p-6">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+          <div className="flex items-center gap-1" data-testid={`text-date-${post.id}`}>
+            <Calendar className="h-4 w-4" />
+            {formatDate(post.publishedAt)}
+          </div>
+          <div className="flex items-center gap-1" data-testid={`text-readtime-${post.id}`}>
+            <Clock className="h-4 w-4" />
+            {post.readTime} min read
+          </div>
+        </div>
+        
+        <h3 className="font-serif text-xl font-semibold mb-3 line-clamp-2 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
+          {post.title}
+        </h3>
+        
+        <p className="text-muted-foreground mb-4 line-clamp-3" data-testid={`text-excerpt-${post.id}`}>
+          {post.excerpt}
+        </p>
+        
+        <Button 
+          variant="ghost" 
+          className="p-0 h-auto font-medium text-primary hover:text-primary/80"
+          onClick={handleReadMore}
+          data-testid={`button-readmore-${post.id}`}
+        >
+          Read More 
+          <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </Button>
+      </CardContent>
+    </Card>
+  );
+}
