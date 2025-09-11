@@ -43,7 +43,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
   };
 
   return (
-    <Card className="group hover-elevate border-card-border flex flex-col" data-testid={`card-blog-${post.id}`}>
+    <Card className="group border-card-border flex flex-col" data-testid={`card-blog-${post.id}`}>
       <div className="relative z-0">
         <div className="overflow-hidden">
           <img 
@@ -54,7 +54,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
           />
         </div>
         <div 
-          className={`absolute top-3 left-3 whitespace-nowrap z-[10000] px-3 py-2 rounded-md text-sm font-medium shadow-sm ${getCategoryColor(post.category)}`}
+          className={`absolute top-4 left-4 whitespace-nowrap z-[10000] px-4 py-3 rounded-lg text-base font-semibold shadow-lg ${getCategoryColor(post.category)}`}
           data-testid={`badge-category-${post.id}`}
         >
           {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
