@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, MapPin } from 'lucide-react';
+import beachImage from '@assets/generated_images/Combined_beach_scene_layout_6b9bbf94.png';
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&h=600&fit=crop" 
+              src={beachImage}
               alt="About me - coastal lifestyle"
               className="w-full h-96 object-cover rounded-lg shadow-md"
               data-testid="img-about-author"
