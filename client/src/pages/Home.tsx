@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import CategoryFilter, { Category } from '@/components/CategoryFilter';
@@ -10,6 +11,7 @@ import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ri
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [, setLocation] = useLocation();
 
   // TODO: remove mock functionality - replace with real data fetching
   const mockPosts: BlogPost[] = [
@@ -96,8 +98,7 @@ export default function Home() {
   }, [activeCategory, searchQuery]);
 
   const handleReadMore = (slug: string) => {
-    console.log('Navigate to blog post:', slug);
-    // TODO: remove mock functionality - implement navigation to post
+    setLocation(`/post/${slug}`);
   };
 
   return (
