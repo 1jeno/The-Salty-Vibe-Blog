@@ -6,7 +6,7 @@ import CategoryFilter, { Category } from '@/components/CategoryFilter';
 import BlogGrid from '@/components/BlogGrid';
 import Footer from '@/components/Footer';
 import { BlogPost } from '@/components/BlogCard';
-import morningCoffeeImage from '@assets/generated_images/Original_beach_outfit_with_bag_f7075dd1.png';
+import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
