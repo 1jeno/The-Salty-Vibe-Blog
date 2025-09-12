@@ -16,7 +16,7 @@ export default function Home() {
     {
       id: '1',
       title: 'My Morning Ritual: Coffee by the Ocean',
-      excerpt: 'There\'s something magical about starting the day with a warm cup of coffee while watching the sunrise over the ocean. Here\'s how I\'ve created the perfect morning ritual that sets the tone for a beautiful day.',
+      excerpt: 'There\'s something magical about starting the day with iced coffee while watching the sunrise over the ocean. Here\'s how I\'ve created the perfect morning ritual that sets the tone for a beautiful day.',
       category: 'lifestyle',
       image: morningCoffeeImage,
       publishedAt: '2024-01-20',
