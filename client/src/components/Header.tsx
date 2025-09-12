@@ -31,6 +31,7 @@ export default function Header({ onSearch }: HeaderProps) {
     { name: 'Lifestyle', href: '/lifestyle' },
     { name: 'Travel', href: '/travel' },
     { name: 'Food', href: '/food' },
+    { name: 'Shop', href: '/shop' },
     { name: 'About', href: '/about' },
   ];
 

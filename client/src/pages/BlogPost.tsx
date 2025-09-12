@@ -1,13 +1,24 @@
 import { useRoute } from 'wouter';
+import { useQuery } from '@tanstack/react-query';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+import ProductCard from '@/components/ProductCard';
+import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import type { AffiliateProduct } from '@shared/schema';
 
 export default function BlogPost() {
   const [match, params] = useRoute('/post/:slug');
+  
+  // Fetch related affiliate products
+  const { data: affiliateProducts = [] } = useQuery<AffiliateProduct[]>({
+    queryKey: ['/api/affiliate-products', 'lifestyle'],
+    queryFn: () => fetch('/api/affiliate-products?category=lifestyle').then(res => res.json()),
+    enabled: true,
+  });
   
   // TODO: remove mock functionality - fetch real post data
   const mockPost = {
@@ -49,6 +60,9 @@ export default function BlogPost() {
       <p>What started as a simple desire for better coffee has evolved into something so much more meaningful. It's become a daily celebration of coastal living, intentional choices, and the kind of beautiful moments that make ordinary mornings feel extraordinary.</p>
       
       <p>Trust me, once you experience the magic of starting your day with this kind of intention, you'll never want to rush through another morning again.</p>
+      
+      <h2>Shop the Look</h2>
+      <p>Want to recreate this perfect morning ritual? Here are the exact products I mention in this post that help make these beautiful beach mornings possible:</p>
     `,
     category: 'lifestyle',
     image: morningCoffeeImage,
@@ -139,6 +153,28 @@ export default function BlogPost() {
             data-testid="content-post-body"
           />
           
+          {/* Affiliate Products Section */}
+          {affiliateProducts.length > 0 && (
+            <div className="mt-12 pt-8 border-t border-border">
+              <h3 className="font-serif text-2xl font-semibold mb-4 text-center">
+                Shop the Look
+              </h3>
+              <p className="text-center text-muted-foreground mb-6">
+                These are the exact products mentioned in this post:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {affiliateProducts.slice(0, 4).map((product) => (
+                  <ProductCard 
+                    key={product.id} 
+                    product={product} 
+                    compact={true}
+                  />
+                ))}
+              </div>
+              <AffiliateDisclosure variant="inline" className="text-center" />
+            </div>
+          )}
+
           <div className="mt-12 pt-8 border-t border-border">
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
