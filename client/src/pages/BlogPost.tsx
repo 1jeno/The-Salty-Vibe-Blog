@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
-import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import morningCoffeeImage from '@assets/generated_images/Beach_morning_ritual_enhanced_scene_1d63f57b.png';
 
 export default function BlogPost() {
   const [match, params] = useRoute('/post/:slug');
