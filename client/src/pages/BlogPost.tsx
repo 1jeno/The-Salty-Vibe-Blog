@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
 
 export default function BlogPost() {
   const [match, params] = useRoute('/post/:slug');
@@ -13,34 +14,44 @@ export default function BlogPost() {
     id: '1',
     title: 'My Morning Ritual: Coffee by the Ocean',
     content: `
-      <p>There's something undeniably magical about starting the day with the sound of waves and a perfectly brewed cup of coffee. For the past year, I've been perfecting my morning ritual, and I can honestly say it has transformed not just my mornings, but my entire approach to daily life.</p>
+      <p>There's something undeniably magical about starting the day with the sound of waves and a perfectly crafted iced coffee in hand. For the past year, I've been perfecting my morning ritual by the ocean, and I can honestly say it has transformed not just my mornings, but my entire approach to daily life.</p>
       
-      <h2>The Perfect Setup</h2>
-      <p>My ideal morning begins before sunrise. I slip out of bed quietly, wrap myself in my favorite oversized cardigan, and make my way to the kitchen. The ritual begins with grinding fresh coffee beans – there's something so grounding about that rich, aromatic sound filling the quiet morning air.</p>
+      <h2>The Perfect Beach Setup</h2>
+      <p>My ideal morning begins before the world awakens. I slip out of bed quietly, wrap myself in my favorite linen cover-up, and gather my morning essentials. There's something so intentional about preparing an iced coffee with care – watching the rich brew swirl with creamy foam, feeling the condensation form on the glass as the morning air meets the cool drink.</p>
       
-      <p>While the coffee brews, I prepare my favorite mug (a handmade ceramic piece I picked up at a local artisan market), and gather my essentials: a cozy blanket, my journal, and perhaps a good book if I'm feeling particularly indulgent.</p>
+      <p>I pack my woven beach bag with the essentials: my softest cream blanket (the one that photographs beautifully against the sand), my leather-bound journal with pages already filled with gratitudes and dreams, and that perfect ceramic travel mug I picked up at a coastal market in Big Sur.</p>
       
-      <h2>The Ocean View</h2>
-      <p>Living near the coast has its perks, and this morning ritual wouldn't be the same without stepping outside to greet the day. Whether it's from my balcony or a short walk to the beach, that first sip of coffee while watching the sunrise paint the sky in shades of coral and gold never gets old.</p>
+      <h2>Where Ocean Meets Intention</h2>
+      <p>There's nothing quite like settling onto the sand, beach blanket spread perfectly, iced coffee in hand, watching the sunrise paint the sky in shades of coral and gold. The ocean stretches endlessly before me, waves gently lapping at the shore, creating the most perfect soundtrack for reflection.</p>
       
-      <p>There's something about the combination of warm coffee and cool ocean breeze that feels like the perfect metaphor for life – comfort and adventure, warmth and wildness, all in one perfect moment.</p>
+      <p>This is where the magic happens – that first sip of perfectly cold coffee while the ocean breeze plays with my hair and the warmth of the rising sun kisses my skin. It's a moment of pure presence, where comfort meets adventure, and everything feels aligned.</p>
       
-      <h2>Making It Your Own</h2>
-      <p>The beauty of a morning ritual is that it's entirely personal. Maybe you don't live near the ocean (though I highly recommend it!), but you can create your own version of this peaceful start to the day. The key elements are intention, consistency, and creating a moment of beauty in your everyday routine.</p>
+      <h2>The Ritual Elements That Matter</h2>
+      <p>What makes this morning practice so transformative isn't just the stunning backdrop (though it certainly helps!). It's the intention behind each element. The careful preparation of my drink, the mindful selection of my spot on the beach, the gentle practice of gratitude as I watch the world wake up.</p>
       
-      <p>Some ideas to make it your own:</p>
+      <p>Some mornings I write, letting thoughts flow onto paper like the waves onto shore. Other mornings I simply breathe, allowing the ocean's rhythm to sync with my own. There's no right or wrong way – only what feels authentic in that moment.</p>
+      
+      <h2>Creating Your Own Coastal Morning</h2>
+      <p>You don't need to live steps from the ocean to capture this feeling (though I highly recommend it if you can!). The essence of this ritual is about creating intentional moments of beauty and peace. Here's how to bring that coastal morning energy into your own life:</p>
+      
       <ul>
-        <li>Find your perfect view – even if it's just a window with good light</li>
-        <li>Invest in a coffee or tea you truly love</li>
-        <li>Create a cozy corner with soft textures and warm lighting</li>
-        <li>Keep a journal nearby for morning thoughts and gratitudes</li>
-        <li>Play soft music or embrace the natural sounds around you</li>
+        <li>Perfect your cold brew game – invest in quality coffee and take time to craft something special</li>
+        <li>Find your sacred space – a balcony, garden, or even a cozy corner by a window</li>
+        <li>Create atmosphere with textures – soft blankets, beautiful mugs, fresh flowers</li>
+        <li>Embrace the ritual – make the preparation as mindful as the experience itself</li>
+        <li>Add journaling or meditation – let this time be about connecting with yourself</li>
+        <li>Capture the beauty – not just for social media, but to remember these precious moments</li>
       </ul>
       
-      <p>What started as a simple desire for better coffee has become the foundation of a more intentional, beautiful life. And honestly? That's worth getting up a little earlier for.</p>
+      <h2>Why It Works</h2>
+      <p>This morning ritual has become my anchor – a daily reminder that life is meant to be savored, not rushed through. It's a practice in slowing down, in finding beauty in simplicity, in honoring both the adventure and comfort that make life full.</p>
+      
+      <p>What started as a simple desire for better coffee has evolved into something so much more meaningful. It's become a daily celebration of coastal living, intentional choices, and the kind of beautiful moments that make ordinary mornings feel extraordinary.</p>
+      
+      <p>Trust me, once you experience the magic of starting your day with this kind of intention, you'll never want to rush through another morning again.</p>
     `,
     category: 'lifestyle',
-    image: 'https://images.unsplash.com/photo-1542400695-1f3c7a7a51d5?w=800&h=400&fit=crop',
+    image: morningCoffeeImage,
     publishedAt: '2024-01-20',
     readTime: 5,
     slug: 'morning-ritual-coffee-ocean'

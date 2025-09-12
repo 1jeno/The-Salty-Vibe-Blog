@@ -5,6 +5,7 @@ import CategoryFilter, { Category } from '@/components/CategoryFilter';
 import BlogGrid from '@/components/BlogGrid';
 import Footer from '@/components/Footer';
 import { BlogPost } from '@/components/BlogCard';
+import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
@@ -17,7 +18,7 @@ export default function Home() {
       title: 'My Morning Ritual: Coffee by the Ocean',
       excerpt: 'There\'s something magical about starting the day with a warm cup of coffee while watching the sunrise over the ocean. Here\'s how I\'ve created the perfect morning ritual that sets the tone for a beautiful day.',
       category: 'lifestyle',
-      image: 'https://images.unsplash.com/photo-1542400695-1f3c7a7a51d5?w=400&h=300&fit=crop',
+      image: morningCoffeeImage,
       publishedAt: '2024-01-20',
       readTime: 5,
       slug: 'morning-ritual-coffee-ocean'
