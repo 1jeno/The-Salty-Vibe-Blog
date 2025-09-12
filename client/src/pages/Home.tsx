@@ -7,6 +7,7 @@ import BlogGrid from '@/components/BlogGrid';
 import Footer from '@/components/Footer';
 import { BlogPost } from '@/components/BlogCard';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import tropicalVacationImage from '@assets/generated_images/Tropical_coconut_vacation_paradise_05e5cd58.png';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
@@ -23,10 +24,20 @@ export default function Home() {
       image: morningCoffeeImage,
       publishedAt: '2024-01-20',
       readTime: 5,
-      slug: 'morning-ritual-coffee-ocean'
+      slug: 'my-morning-ritual-coffee-by-the-ocean'
     },
     {
       id: '2',
+      title: 'Vacation in a Bottle: Tropical Scents That Transport You',
+      excerpt: 'From Sunbum sunscreen to Bond No. 9 perfumes, here\'s my carefully curated list of products that smell like paradise and will have you feeling like you\'re perpetually on island time.',
+      category: 'lifestyle',
+      image: tropicalVacationImage,
+      publishedAt: '2024-01-25',
+      readTime: 6,
+      slug: 'vacation-in-a-bottle-tropical-scents'
+    },
+    {
+      id: '3',
       title: 'Weekend in Santorini: A Complete Guide',
       excerpt: 'From the blue-domed churches to the most Instagram-worthy sunset spots, here\'s everything you need for the perfect Santorini getaway.',
       category: 'travel',
@@ -36,7 +47,7 @@ export default function Home() {
       slug: 'weekend-santorini-guide'
     },
     {
-      id: '3',
+      id: '4',
       title: 'Rose Gold Everything: Brunch Recipe',
       excerpt: 'This pink-hued smoothie bowl is as delicious as it is photogenic. Perfect for those aesthetic brunch moments you\'ll want to share.',
       category: 'food',
@@ -46,7 +57,7 @@ export default function Home() {
       slug: 'rose-gold-brunch-recipe'
     },
     {
-      id: '4',
+      id: '5',
       title: 'Sunset Beach Picnic Ideas',
       excerpt: 'Create magical moments with these dreamy beach picnic setups perfect for golden hour photography and romantic evenings by the sea.',
       category: 'lifestyle',
@@ -56,7 +67,7 @@ export default function Home() {
       slug: 'sunset-beach-picnic-ideas'
     },
     {
-      id: '5',
+      id: '6',
       title: 'Hidden Gems: Coastal Cafes Worth the Drive',
       excerpt: 'Discover the most charming seaside cafes where the coffee is perfect and the views are even better. Your next road trip destination awaits.',
       category: 'food',
@@ -66,7 +77,7 @@ export default function Home() {
       slug: 'coastal-cafes-hidden-gems'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Building Your Perfect Beach Capsule Wardrobe',
       excerpt: 'Effortless style meets comfort in this curated collection of coastal-inspired pieces that will take you from sunrise yoga to sunset dinners.',
       category: 'lifestyle',

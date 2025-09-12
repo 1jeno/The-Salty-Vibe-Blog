@@ -8,6 +8,7 @@ import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import ProductCard from '@/components/ProductCard';
 import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import tropicalVacationImage from '@assets/generated_images/Tropical_coconut_vacation_paradise_05e5cd58.png';
 import type { AffiliateProduct } from '@shared/schema';
 
 export default function BlogPost() {
@@ -21,10 +22,16 @@ export default function BlogPost() {
   });
   
   // TODO: remove mock functionality - fetch real post data
-  const mockPost = {
-    id: '1',
-    title: 'My Morning Ritual: Coffee by the Ocean',
-    content: `
+  const mockPosts = {
+    'my-morning-ritual-coffee-by-the-ocean': {
+      id: '1',
+      title: 'My Morning Ritual: Coffee by the Ocean',
+      slug: 'my-morning-ritual-coffee-by-the-ocean',
+      category: 'lifestyle',
+      image: morningCoffeeImage,
+      publishedAt: '2024-01-20',
+      readTime: 5,
+      content: `
       <p>There's something undeniably magical about starting the day with the sound of waves and a perfectly crafted iced coffee in hand. For the past year, I've been perfecting my morning ritual by the ocean, and I can honestly say it has transformed not just my mornings, but my entire approach to daily life.</p>
       
       <h2>The Perfect Beach Setup</h2>
@@ -63,13 +70,50 @@ export default function BlogPost() {
       
       <h2>Shop the Look</h2>
       <p>Want to recreate this perfect morning ritual? Here are the exact products I mention in this post that help make these beautiful beach mornings possible:</p>
-    `,
-    category: 'lifestyle',
-    image: morningCoffeeImage,
-    publishedAt: '2024-01-20',
-    readTime: 5,
-    slug: 'morning-ritual-coffee-ocean'
+    `
+    },
+    'vacation-in-a-bottle-tropical-scents': {
+      id: '2',
+      title: 'Vacation in a Bottle: Tropical Scents That Transport You',
+      slug: 'vacation-in-a-bottle-tropical-scents',
+      category: 'lifestyle',
+      image: tropicalVacationImage,
+      publishedAt: '2024-01-25',
+      readTime: 6,
+      content: `
+      <p>There's something magical about certain scents that can instantly transport you to your happy place. You know that feeling – one whiff and suddenly you're back on that perfect beach vacation, feeling the warm sand between your toes and the ocean breeze in your hair.</p>
+      
+      <p>I've been on a mission to capture that vacation feeling in everyday life, and let me tell you, I've discovered some absolute gems along the way. These aren't just any tropical scents – these are the ones that truly smell like paradise in a bottle.</p>
+      
+      <h2>The Ultimate Vacation Scent Collection</h2>
+      <p>Here's my carefully curated list of products that will have you feeling like you're perpetually on island time, even when you're stuck in Monday morning meetings:</p>
+      
+      <h3>For Beach Days (Real or Imagined)</h3>
+      <p><strong>Sunbum Sunblock</strong> – Okay, this one you already know I'm obsessed with! But seriously, even the scent of this sunscreen makes me happy. It's that perfect coconut-y, tropical fragrance that screams "beach day" the moment you open the bottle.</p>
+      
+      <h3>Aromatherapy That Transports</h3>
+      <p><strong>Beach House Collection from Carter + Jane</strong> – I'm absolutely dying to try their Beach House Roll-on Aroma and Beach House Aroma + Body products. The reviews say they're like carrying a beach vacation in your purse, and honestly, who doesn't need that kind of instant mood boost?</p>
+      
+      <h3>Clean House, Beach Vibes</h3>
+      <p><strong>The Good Home</strong> – This brand is genius! They've created all-natural cleaning products that smell like paradise instead of harsh chemicals. Their "Beach Days" and "CLEANACOLADA" scents promise to make even the most mundane household tasks feel like you're tidying up your beach house. Talk about making chores bearable!</p>
+      
+      <h3>International Treasures</h3>
+      <p><strong>NIVEA Sunshine Love Shower Gel</strong> – Here's the thing that makes this extra special (and extra frustrating) – it's only available in the UK! But from what I've heard, this shower gel is pure liquid sunshine. Sometimes the best vacation scents are the ones you have to hunt for, right?</p>
+      
+      <h3>Luxury Escape</h3>
+      <p><strong>Jones Beach from Bond No. 9</strong> – This is the holy grail, the ultimate splurge for vacation scent lovers. Bond No. 9 is known for capturing the essence of New York locations, and apparently, they've bottled the perfect Long Island beach day. It's definitely an investment piece, but sometimes you need that one signature scent that makes you feel like you're living your best coastal life.</p>
+      
+      <h2>The Power of Scent Memory</h2>
+      <p>What I love about this collection is how diverse it is – from everyday essentials like sunscreen to luxury parfums, there's a vacation scent for every moment and every budget. Whether you're getting ready in the morning, cleaning your space, or stepping out for the evening, you can carry that beach energy with you.</p>
+      
+      <p>I'll be honest – I haven't tried every single one of these yet (though they're definitely on my wishlist!). But that's the beauty of scent hunting, isn't it? The anticipation, the discovery, the moment when you find that perfect fragrance that becomes your signature vacation vibe.</p>
+      
+      <p>Have you tried any of these? I'd love to know which ones transport you most! There's something so personal about scent – what smells like paradise to me might be completely different from your idea of vacation bliss, and I think that's beautiful.</p>
+    `
+    }
   };
+  
+  const mockPost = mockPosts[(params?.slug as keyof typeof mockPosts) ?? 'my-morning-ritual-coffee-by-the-ocean'] ?? mockPosts['my-morning-ritual-coffee-by-the-ocean'];
 
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString('en-US', {
