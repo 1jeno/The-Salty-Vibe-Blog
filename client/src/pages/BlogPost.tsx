@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import ProductCard from '@/components/ProductCard';
 import AffiliateDisclosure from '@/components/AffiliateDisclosure';
+import SEOHead from '@/components/SEOHead';
+import RelatedPosts from '@/components/RelatedPosts';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 import type { AffiliateProduct } from '@shared/schema';
@@ -27,9 +29,13 @@ export default function BlogPost() {
       id: '1',
       title: 'My Morning Ritual: Coffee by the Ocean',
       slug: 'my-morning-ritual-coffee-by-the-ocean',
+      seoTitle: 'My Morning Ritual: Coffee by the Ocean - Coastal Living Tips',
+      seoDescription: 'Discover the perfect morning ritual with iced coffee by the ocean. Learn how to create intentional coastal mornings with SunBum sunscreen, beach essentials, and mindful practices for a beautiful start to your day.',
+      tags: ['morning ritual', 'coastal living', 'coffee', 'beach lifestyle', 'mindfulness', 'sunbum sunscreen', 'ocean vibes'],
       category: 'lifestyle',
       image: morningCoffeeImage,
-      publishedAt: '2024-01-20',
+      publishedAt: '2024-01-20T08:00:00-08:00',
+      modifiedAt: '2024-01-20T08:00:00-08:00',
       readTime: 5,
       content: `
       <p>There's something undeniably magical about starting the day with the sound of waves and a perfectly crafted iced coffee in hand. For the past year, I've been perfecting my morning ritual by the ocean, and I can honestly say it has transformed not just my mornings, but my entire approach to daily life.</p>
@@ -76,9 +82,13 @@ export default function BlogPost() {
       id: '2',
       title: 'Vacation in a Bottle: Tropical Scents That Transport You',
       slug: 'vacation-in-a-bottle-tropical-scents',
+      seoTitle: 'Vacation in a Bottle: 13 Tropical Scents That Transport You to Paradise',
+      seoDescription: 'Discover 13 tropical scented products that smell like vacation - from Sunbum sunscreen and Tom Ford perfumes to Kopari mists and Bath & Body Works. Find your signature beach scent and bring paradise home.',
+      tags: ['tropical scents', 'vacation perfume', 'beach fragrance', 'coconut products', 'sunbum', 'tom ford', 'bath and body works', 'kopari', 'bond no 9', 'tropical beauty'],
       category: 'lifestyle',
       image: tropicalVacationImage,
-      publishedAt: '2024-01-25',
+      publishedAt: '2024-01-25T10:00:00-08:00',
+      modifiedAt: '2024-01-25T10:00:00-08:00',
       readTime: 6,
       content: `
       <p>There's something magical about certain scents that can instantly transport you to your happy place. You know that feeling – one whiff and suddenly you're back on that perfect beach vacation, feeling the warm sand between your toes and the ocean breeze in your hair.</p>
@@ -134,6 +144,17 @@ export default function BlogPost() {
   };
   
   const mockPost = mockPosts[(params?.slug as keyof typeof mockPosts) ?? 'my-morning-ritual-coffee-by-the-ocean'] ?? mockPosts['my-morning-ritual-coffee-by-the-ocean'];
+  
+  // Related posts data for internal linking
+  const allPosts = Object.values(mockPosts).map(post => ({
+    id: post.id,
+    title: post.title,
+    slug: post.slug,
+    excerpt: post.seoDescription || `Discover ${post.title.toLowerCase()} tips and inspiration from The Salty Vibe blog.`,
+    category: post.category,
+    readTime: post.readTime,
+    image: post.image
+  }));
 
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString('en-US', {
@@ -159,6 +180,19 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={mockPost.seoTitle || mockPost.title}
+        description={mockPost.seoDescription || `Read about ${mockPost.title} - ${mockPost.category} tips and inspiration from The Salty Vibe.`}
+        url={`/post/${mockPost.slug}`}
+        image={mockPost.image}
+        type="article"
+        publishedTime={mockPost.publishedAt}
+        modifiedTime={mockPost.modifiedAt}
+        author="The Salty Vibe"
+        tags={mockPost.tags || []}
+        category={mockPost.category}
+        readTime={mockPost.readTime}
+      />
       <Header />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -238,6 +272,14 @@ export default function BlogPost() {
               <AffiliateDisclosure variant="inline" className="text-center" />
             </div>
           )}
+
+          {/* Related Posts for Internal Linking */}
+          <RelatedPosts 
+            currentPostId={mockPost.id}
+            currentCategory={mockPost.category}
+            allPosts={allPosts}
+            maxPosts={2}
+          />
 
           <div className="mt-12 pt-8 border-t border-border">
             <div className="text-center">

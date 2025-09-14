@@ -5,12 +5,23 @@ import Hero from '@/components/Hero';
 import CategoryFilter, { Category } from '@/components/CategoryFilter';
 import BlogGrid from '@/components/BlogGrid';
 import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 
 export default function Home() {
-  const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [location] = useLocation();
+  
+  // Determine category from URL path
+  const getCategoryFromPath = (path: string): Category => {
+    if (path === '/lifestyle') return 'lifestyle';
+    if (path === '/travel') return 'travel';
+    if (path === '/food') return 'food';
+    return 'all';
+  };
+  
+  const [activeCategory, setActiveCategory] = useState<Category>(getCategoryFromPath(location));
   const [searchQuery, setSearchQuery] = useState('');
   const [, setLocation] = useLocation();
 
@@ -112,8 +123,22 @@ export default function Home() {
     setLocation(`/post/${slug}`);
   };
 
+  const pageDescription = activeCategory === 'all' 
+    ? 'Discover coastal living, travel adventures, and delicious food reviews with a feminine touch. Join The Salty Vibe community for lifestyle inspiration, tropical scents, morning rituals, and beach vibes.'
+    : `Browse ${activeCategory} posts - coastal living tips, travel guides, and lifestyle inspiration from The Salty Vibe blog.`;
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={activeCategory === 'all' 
+          ? 'The Salty Vibe - Coastal Living, Travel & Lifestyle Blog'
+          : `${activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)} - The Salty Vibe Blog`
+        }
+        description={pageDescription}
+        url={activeCategory === 'all' ? '/' : `/${activeCategory}`}
+        type="website"
+        tags={['coastal living', 'lifestyle blog', 'travel', 'food', 'beach vibes', 'morning rituals', 'tropical scents', 'sunbum', 'vacation']}
+      />
       <Header onSearch={setSearchQuery} />
       <Hero />
       
