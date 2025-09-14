@@ -7,7 +7,7 @@ import BlogGrid from '@/components/BlogGrid';
 import Footer from '@/components/Footer';
 import { BlogPost } from '@/components/BlogCard';
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
-import tropicalVacationImage from '@assets/Summer Vacation 8.jpg';
+import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
