@@ -41,7 +41,7 @@ export default function Header({ onSearch }: HeaderProps) {
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <h1 className="font-serif text-2xl font-bold text-primary hover-elevate px-2 py-1 rounded-md">
+            <h1 className="font-serif text-2xl font-bold text-primary hover-elevate px-2 py-1">
               The Salty Vibe
             </h1>
           </Link>

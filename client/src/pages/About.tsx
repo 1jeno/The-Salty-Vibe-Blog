@@ -25,7 +25,7 @@ export default function About() {
             <img 
               src={beachImage}
               alt="About me - coastal lifestyle"
-              className="w-full h-96 object-cover rounded-lg shadow-md"
+              className="w-full h-96 object-cover shadow-md"
               data-testid="img-about-author"
             />
           </div>

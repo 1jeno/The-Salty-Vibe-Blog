@@ -42,7 +42,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
           />
         </div>
         <div 
-          className={`absolute top-3 left-3 whitespace-nowrap z-[10000] px-2 py-1 rounded-md text-xs font-medium shadow-sm ${getCategoryColor(post.category)}`}
+          className={`absolute top-3 left-3 whitespace-nowrap z-[10000] px-2 py-1 text-xs font-medium shadow-sm ${getCategoryColor(post.category)}`}
           data-testid={`badge-category-${post.id}`}
         >
           {post.category.charAt(0).toUpperCase() + post.category.slice(1)}

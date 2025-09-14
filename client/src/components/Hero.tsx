@@ -40,7 +40,7 @@ export default function Hero() {
             onClick={handleExplore}
             data-testid="button-explore-posts"
           >
-            Explore Latest Posts
+            Start Your Adventure
           </Button>
           <Button 
             variant="outline" 
