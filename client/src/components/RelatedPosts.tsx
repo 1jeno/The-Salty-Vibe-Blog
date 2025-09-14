@@ -1,7 +1,6 @@
 import { Link } from 'wouter';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Clock } from 'lucide-react';
 
 interface RelatedPost {
   id: string;
@@ -65,10 +64,6 @@ export default function RelatedPosts({
                   <Badge variant="secondary" className="text-xs">
                     {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
                   </Badge>
-                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                    <Clock className="h-3 w-3" />
-                    {post.readTime} min
-                  </div>
                 </div>
                 <CardTitle className="text-lg leading-tight hover:text-primary transition-colors">
                   {post.title}

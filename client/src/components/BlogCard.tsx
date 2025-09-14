@@ -1,4 +1,4 @@
-import { Clock, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -50,12 +50,6 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
       </div>
       
       <CardContent className="p-6 flex-1 flex flex-col">
-        <div className="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground mb-3">
-          <div className="flex items-center gap-1 shrink-0" data-testid={`text-readtime-${post.id}`}>
-            <Clock className="h-4 w-4" />
-            <span className="whitespace-nowrap">{post.readTime} min read</span>
-          </div>
-        </div>
         
         <h3 className="font-serif text-xl font-semibold leading-relaxed mb-4 group-hover:text-primary transition-colors" data-testid={`text-title-${post.id}`}>
           {post.title}

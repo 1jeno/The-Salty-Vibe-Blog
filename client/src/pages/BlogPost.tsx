@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Clock, ArrowLeft, Share2 } from 'lucide-react';
+import { ArrowLeft, Share2 } from 'lucide-react';
 import ProductCard from '@/components/ProductCard';
 import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 import SEOHead from '@/components/SEOHead';
@@ -205,12 +205,6 @@ export default function BlogPost() {
               <Badge className="bg-primary text-primary-foreground">
                 {mockPost.category.charAt(0).toUpperCase() + mockPost.category.slice(1)}
               </Badge>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <Clock className="h-4 w-4" />
-                  {mockPost.readTime} min read
-                </div>
-              </div>
               <Button 
                 variant="ghost" 
                 size="sm"
