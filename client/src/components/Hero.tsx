@@ -26,7 +26,7 @@ export default function Hero() {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+        <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg">
           The Salty Vibe
         </h1>
         <p className="font-display text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
