@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Source Sans Pro", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
-        display: ["Poppins", "sans-serif"],
-        mono: ["var(--font-mono)"],
+        sans: ["Courier Prime", "monospace"],
+        serif: ["Courier Prime", "monospace"],
+        display: ["Courier Prime", "monospace"],
+        mono: ["Courier Prime", "monospace"],
       },
       keyframes: {
         "accordion-down": {

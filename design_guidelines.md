@@ -21,9 +21,10 @@
 - Background: 220 15% 12% (deep charcoal)
 
 ### Typography
-- **Headers:** Google Fonts "Playfair Display" (elegant serif for titles)
-- **Subheaders:** Google Fonts "Poppins" Medium (clean sans-serif)
-- **Body:** Google Fonts "Source Sans Pro" (readable, friendly)
+- **All Text:** Google Fonts "Courier Prime" (vintage typewriter aesthetic throughout)
+- **Headers:** Bold weight for distinction
+- **Body:** Regular weight for readability
+- **Style:** Clean, monospace typewriter font inspired by classic beauty brands like Frank Body
 
 ### Layout System
 Tailwind spacing primitives: 2, 4, 6, 8, 12, 16

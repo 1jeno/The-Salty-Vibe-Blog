@@ -76,9 +76,9 @@
   --chart-4: 200 50% 70%;
   --chart-5: 300 40% 78%;
 
-  --font-sans: Open Sans, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: Menlo, monospace;
+  --font-sans: "Courier Prime", monospace;
+  --font-serif: "Courier Prime", monospace;
+  --font-mono: "Courier Prime", monospace;
   --radius: .5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.02);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.03);
