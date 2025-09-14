@@ -103,6 +103,26 @@ export default function BlogPost() {
       <h3>Luxury Escape</h3>
       <p><strong>Jones Beach from Bond No. 9</strong> – This is the holy grail, the ultimate splurge for vacation scent lovers. Bond No. 9 is known for capturing the essence of New York locations, and apparently, they've bottled the perfect Long Island beach day. It's definitely an investment piece, but sometimes you need that one signature scent that makes you feel like you're living your best coastal life.</p>
       
+      <h3>Body Care That Transports</h3>
+      <p><strong>Dr. Squatch's Coconut Castaway Body Wash</strong> – Because why should your shower routine be boring when it could smell like a tropical getaway? This body wash promises to turn your daily routine into a mini vacation ritual.</p>
+      
+      <p><strong>Maui Supreme Plumeria</strong> – Plumeria is such an underrated tropical scent! It's floral but not overwhelming, exotic but familiar. This one's on my must-try list for sure.</p>
+      
+      <p><strong>Monoi Tiki Tahiti - Tiare - Body Oil (My Fav)</strong> – Okay, this one I have actually tried and I'm completely obsessed! There's something so luxurious about body oil, and the tiare flower scent is absolutely divine. It makes my skin feel amazing and smell like I just stepped off a plane from Tahiti.</p>
+      
+      <h3>Tried and True Classics</h3>
+      <p><strong>Bath and Body Works - At the Beach collection</strong> – You know Bath & Body Works knows how to capture vacation vibes! Their At the Beach collection is consistently amazing – always reliable for that perfect balance of coconut, sun, and sea.</p>
+      
+      <p><strong>"VACATION" by Vacation® Eau de Toilette</strong> – How perfect is this brand name? They literally bottled the concept of vacation! I'm so curious about this one – it has to live up to its name, right?</p>
+      
+      <h3>Mist Must-Haves</h3>
+      <p><strong>Balinese Coconut Perfume Oil Body Mist</strong> – Coconut perfume oil sounds absolutely dreamy. There's something about mists that feels so effortless and beachy – perfect for that "I just rolled out of bed looking this good" vibe.</p>
+      
+      <p><strong>Kopari Scents of Paradise Hair & Body Mist Kit</strong> – Kopari knows coconut! A whole kit means multiple scents to layer and play with. Plus, anything that works for both hair and body is automatically a travel essential.</p>
+      
+      <h3>The Ultimate Splurge</h3>
+      <p><strong>Tom Ford Eau de Soleil Blanc Eau de Parfume</strong> – Tom Ford does luxury like no one else, and this sounds like pure sunshine in a bottle. It's definitely an investment, but sometimes you need that one show-stopping fragrance that makes you feel absolutely unstoppable.</p>
+      
       <h2>The Power of Scent Memory</h2>
       <p>What I love about this collection is how diverse it is – from everyday essentials like sunscreen to luxury parfums, there's a vacation scent for every moment and every budget. Whether you're getting ready in the morning, cleaning your space, or stepping out for the evening, you can carry that beach energy with you.</p>
       
