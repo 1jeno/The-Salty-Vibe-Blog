@@ -1,4 +1,4 @@
-import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { Clock, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -29,13 +29,6 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
     return 'bg-primary text-primary-foreground';
   };
 
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
-  };
 
   return (
     <Card className="group border-card-border flex flex-col" data-testid={`card-blog-${post.id}`}>
@@ -58,10 +51,6 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
       
       <CardContent className="p-6 flex-1 flex flex-col">
         <div className="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground mb-3">
-          <div className="flex items-center gap-1 shrink-0" data-testid={`text-date-${post.id}`}>
-            <Calendar className="h-4 w-4" />
-            <span className="whitespace-nowrap">{formatDate(post.publishedAt)}</span>
-          </div>
           <div className="flex items-center gap-1 shrink-0" data-testid={`text-readtime-${post.id}`}>
             <Clock className="h-4 w-4" />
             <span className="whitespace-nowrap">{post.readTime} min read</span>

@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+import { Clock, ArrowLeft, Share2 } from 'lucide-react';
 import ProductCard from '@/components/ProductCard';
 import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 import SEOHead from '@/components/SEOHead';
@@ -156,13 +156,6 @@ export default function BlogPost() {
     image: post.image
   }));
 
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
-  };
 
   const handleBack = () => {
     window.history.back();
@@ -213,10 +206,6 @@ export default function BlogPost() {
                 {mockPost.category.charAt(0).toUpperCase() + mockPost.category.slice(1)}
               </Badge>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
-                  {formatDate(mockPost.publishedAt)}
-                </div>
                 <div className="flex items-center gap-1">
                   <Clock className="h-4 w-4" />
                   {mockPost.readTime} min read
