@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import CategoryFilter, { Category } from '@/components/CategoryFilter';
 import BlogGrid from '@/components/BlogGrid';
+import PhotoCarousel from '@/components/PhotoCarousel';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
@@ -165,6 +166,8 @@ export default function Home() {
           />
         </section>
       </main>
+      
+      <PhotoCarousel />
       
       <Footer />
     </div>
