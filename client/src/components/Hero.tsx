@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/generated_images/Luxury_poolside_resort_scene_7b9754ac.png';
+import heroImage from '@assets/generated_images/Nostalgic_luxury_beach_scene_7b618afe.png';
 
 export default function Hero() {
   const handleExplore = () => {
