@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/Summer Vacation 8.jpg';
+import heroImage from '@assets/hero-pool-scene.png';
 
 export default function Hero() {
   const handleExplore = () => {
