@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+// No longer using carousel functionality, just displaying photos in a grid
 
 // Import carousel images
 import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
@@ -50,36 +48,6 @@ const carouselImages: CarouselImage[] = [
 ];
 
 export default function PhotoCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  // Auto-advance carousel
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-    
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === carouselImages.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying]);
-
-  const goToPrevious = () => {
-    setIsAutoPlaying(false);
-    setCurrentIndex(currentIndex === 0 ? carouselImages.length - 1 : currentIndex - 1);
-  };
-
-  const goToNext = () => {
-    setIsAutoPlaying(false);
-    setCurrentIndex(currentIndex === carouselImages.length - 1 ? 0 : currentIndex + 1);
-  };
-
-  const goToSlide = (index: number) => {
-    setIsAutoPlaying(false);
-    setCurrentIndex(index);
-  };
 
   return (
     <section className="w-full bg-background py-16">
@@ -93,83 +61,31 @@ export default function PhotoCarousel() {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          {/* Main carousel container */}
-          <div className="relative overflow-hidden bg-card border border-card-border shadow-lg">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              data-testid="carousel-container"
-            >
-              {carouselImages.map((image, index) => (
-                <div
-                  key={index}
-                  className="w-full flex-shrink-0 relative"
-                  data-testid={`carousel-slide-${index}`}
-                >
+        {/* Photo grid - displays all photos in a static grid layout */}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {carouselImages.map((image, index) => (
+              <div
+                key={index}
+                className="relative group bg-card border border-card-border shadow-lg overflow-hidden hover-elevate"
+                data-testid={`photo-grid-item-${index}`}
+              >
+                <div className="aspect-square">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-[400px] md:h-[500px] object-cover"
-                    data-testid={`carousel-image-${index}`}
+                    className="w-full h-full object-cover"
+                    data-testid={`photo-grid-image-${index}`}
                   />
-                  {/* Caption overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm text-white p-4">
-                    <p className="font-serif text-lg font-medium" data-testid={`carousel-caption-${index}`}>
-                      {image.caption}
-                    </p>
-                  </div>
                 </div>
-              ))}
-            </div>
-
-            {/* Navigation arrows */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm border-white/30 text-foreground hover:bg-white/100"
-              onClick={goToPrevious}
-              data-testid="carousel-prev"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm border-white/30 text-foreground hover:bg-white/100"
-              onClick={goToNext}
-              data-testid="carousel-next"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          </div>
-
-          {/* Dot indicators */}
-          <div className="flex justify-center space-x-2 mt-6">
-            {carouselImages.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 border transition-colors duration-200 ${
-                  index === currentIndex
-                    ? 'bg-primary border-primary'
-                    : 'bg-transparent border-muted-foreground hover:border-primary'
-                }`}
-                onClick={() => goToSlide(index)}
-                data-testid={`carousel-dot-${index}`}
-              />
+                {/* Caption overlay that appears on hover */}
+                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm text-white p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <p className="font-serif text-sm font-medium" data-testid={`photo-grid-caption-${index}`}>
+                    {image.caption}
+                  </p>
+                </div>
+              </div>
             ))}
-          </div>
-
-          {/* Auto-play toggle */}
-          <div className="text-center mt-4">
-            <button
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-              data-testid="carousel-autoplay-toggle"
-            >
-              {isAutoPlaying ? 'Pause slideshow' : 'Resume slideshow'}
-            </button>
           </div>
         </div>
       </div>
