@@ -61,9 +61,9 @@ export default function PhotoCarousel() {
           </p>
         </div>
 
-        {/* Photo grid - displays all photos in a static grid layout */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {/* Photo grid - displays all photos in a single row */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-6 gap-3">
             {carouselImages.map((image, index) => (
               <div
                 key={index}
