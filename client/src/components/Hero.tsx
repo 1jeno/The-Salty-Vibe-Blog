@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/calm-beach-scene-pink-chairs.jpg';
+import heroImage from '@assets/beach-shack-surfboards.jpg';
 
 export default function Hero() {
   const handleExplore = () => {
@@ -17,7 +17,7 @@ export default function Hero() {
     <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
