@@ -12,6 +12,7 @@ import { BlogPost } from '@/components/BlogCard';
 import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
+import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png';
 
 export default function Home() {
   const [location] = useLocation();
@@ -110,6 +111,16 @@ export default function Home() {
       publishedAt: '2024-01-08',
       readTime: 6,
       slug: 'beach-capsule-wardrobe'
+    },
+    {
+      id: '8',
+      title: 'Finding Your Perfect Swimsuit for 2026',
+      excerpt: 'From sustainable fabrics to flattering cuts, here\'s your complete guide to choosing the perfect swimsuit that makes you feel confident and beautiful this season.',
+      category: 'lifestyle',
+      image: swimsuit2026Image,
+      publishedAt: '2024-01-30',
+      readTime: 8,
+      slug: 'perfect-swimsuit-2026'
     }
   ];
 
