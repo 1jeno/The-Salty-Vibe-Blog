@@ -33,7 +33,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
   return (
     <Card className="group border-card-border flex flex-col" data-testid={`card-blog-${post.id}`}>
       <div className="relative z-0">
-        <div className="overflow-hidden">
+        <div className="overflow-hidden cursor-pointer" onClick={handleReadMore}>
           <img 
             src={post.image} 
             alt={post.title}

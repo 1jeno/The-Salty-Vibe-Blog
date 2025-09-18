@@ -11,6 +11,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
 import morningCoffeeImage from "@assets/generated_images/morning-ritual-iced-coffee.jpg";
 import tropicalVacationImage from "@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png";
+import beachWardrobeImage from "@assets/generated_images/beach-wardrobe-white-dress.jpg";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -164,6 +165,64 @@ export default function BlogPost() {
       <p>I'll be honest – I haven't tried every single one of these yet (though they're definitely on my wishlist!). But that's the beauty of scent hunting, isn't it? The anticipation, the discovery, the moment when you find that perfect fragrance that becomes your signature vacation vibe.</p>
       
       <p>Have you tried any of these? I'd love to know which ones transport you most! There's something so personal about scent – what smells like paradise to me might be completely different from your idea of vacation bliss, and I think that's beautiful.</p>
+    `,
+    },
+    "beach-capsule-wardrobe": {
+      id: "3",
+      title: "Building Your Perfect Beach Capsule Wardrobe",
+      slug: "beach-capsule-wardrobe",
+      seoTitle: "Building Your Perfect Beach Capsule Wardrobe - Coastal Style Guide",
+      seoDescription:
+        "Effortless style meets comfort in this curated collection of coastal-inspired pieces that will take you from sunrise yoga to sunset dinners. Discover the essential pieces for your perfect beach capsule wardrobe.",
+      tags: [
+        "beach style",
+        "capsule wardrobe",
+        "coastal fashion",
+        "beach outfit",
+        "summer style",
+        "vacation wardrobe",
+        "beach essentials",
+      ],
+      category: "lifestyle",
+      image: beachWardrobeImage,
+      publishedAt: "2024-01-08T09:00:00-08:00",
+      modifiedAt: "2024-01-08T09:00:00-08:00",
+      readTime: 6,
+      content: `
+      <p>There's an art to packing light while still feeling effortlessly chic, especially when your destination involves sand, saltwater, and endless golden hour photo opportunities. Over the years, I've perfected the balance between comfort and style that defines true coastal living.</p>
+      
+      <h2>The Foundation: Versatile Basics</h2>
+      <p>The secret to a successful beach capsule wardrobe lies in choosing pieces that can seamlessly transition from beach to brunch, from sunrise yoga to sunset cocktails. Think of these as your coastal building blocks – each piece should work with multiple other items in your collection.</p>
+      
+      <p>Start with a flowing white dress – it's the ultimate coastal staple. Choose one in lightweight, breathable fabric like linen or cotton that feels as good as it looks. The beauty of a white dress is its versatility: throw it over your swimsuit for lunch, cinch it with a woven belt for evening, or layer it with denim for exploring coastal towns.</p>
+      
+      <h2>Essential Pieces for Every Beach Day</h2>
+      <p>Your beach bag should always include a few key pieces that make you feel confident and comfortable. High-waisted bikini bottoms paired with different tops give you multiple looks from just a few pieces. Add a lightweight kimono or beach cover-up that doubles as a cute top when knotted at the waist.</p>
+      
+      <p>Don't forget about sun protection that looks as good as it protects. A wide-brimmed hat becomes both a practical necessity and a style statement. I'm obsessed with SunBum sunscreen – it feels luxurious, smells like vacation, and gives me the confidence to spend all day in the sun without worry.</p>
+      
+      <h2>Transition Pieces for Day to Night</h2>
+      <p>The magic happens in those in-between moments – when day melts into evening and you want to look effortlessly put-together. A denim jacket or lightweight blazer can instantly elevate any beach look. Pair it with your white dress and sandals for dinner, or throw it over your bikini and shorts for that perfect "I just threw this on" vibe.</p>
+      
+      <p>Accessories are where you can really have fun. A few key pieces like a statement necklace, woven beach bag, and versatile sandals that work from beach to restaurant will take you everywhere you need to go.</p>
+      
+      <h2>The Art of Mixing and Matching</h2>
+      <p>True capsule wardrobe success comes from pieces that love each other – everything should work together harmoniously. Stick to a cohesive color palette of whites, creams, soft blues, and natural tones that reflect the coastal environment around you.</p>
+      
+      <p>Think about creating at least 10 different outfits from just 7-8 key pieces. Your white dress can be worn alone, over swimwear, or layered with denim. Your high-waisted bottoms work with crop tops, flowy tanks, or tied shirts. The goal is maximum style with minimal packing stress.</p>
+      
+      <h2>Beach Day Essentials</h2>
+      <p>Beyond clothing, your beach capsule needs a few key accessories that make every day feel special. A quality beach towel that photographs beautifully, a water bottle that keeps drinks cold all day, and that perfect pair of sunglasses that make you feel like a coastal goddess.</p>
+      
+      <p>Don't forget the little luxuries that make beach life feel intentional – a good book, a bluetooth speaker for sunset playlist moments, and always, always a camera to capture those magical golden hour memories.</p>
+      
+      <h2>Quality Over Quantity</h2>
+      <p>Invest in pieces you truly love rather than filling your closet with fast fashion that won't last past one beach season. A well-made white dress, quality denim, and comfortable sandals will serve you for years of coastal adventures.</p>
+      
+      <p>When every piece in your wardrobe makes you feel confident and comfortable, getting dressed becomes a joy rather than a chore. That's the true magic of a perfect beach capsule wardrobe – it frees you to focus on what really matters: soaking up every moment of that salty, sun-kissed life.</p>
+      
+      <h2>Shop the Look</h2>
+      <p>Ready to build your perfect beach capsule? Here are the exact pieces I recommend for creating that effortlessly chic coastal style:</p>
     `,
     },
   };
