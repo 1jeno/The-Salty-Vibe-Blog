@@ -61,7 +61,7 @@ export default function RelatedPosts({
               </div>
               <CardHeader className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Badge variant="secondary" className="text-xs">
+                  <Badge variant="secondary" className="text-xs bg-pink-500/60 text-white backdrop-blur-sm border-transparent">
                     {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
                   </Badge>
                 </div>

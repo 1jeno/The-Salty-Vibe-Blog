@@ -360,7 +360,7 @@ export default function BlogPost() {
         <article>
           <header className="mb-8">
             <div className="flex items-center gap-2 mb-4">
-              <Badge className="bg-primary text-primary-foreground">
+              <Badge className="bg-pink-500/60 text-white backdrop-blur-sm border-transparent">
                 {mockPost.category.charAt(0).toUpperCase() +
                   mockPost.category.slice(1)}
               </Badge>

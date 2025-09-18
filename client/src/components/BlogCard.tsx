@@ -26,7 +26,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
   };
 
   const getCategoryColor = (category: string) => {
-    return 'bg-primary text-primary-foreground';
+    return 'bg-pink-500/60 text-white backdrop-blur-sm';
   };
 
 
