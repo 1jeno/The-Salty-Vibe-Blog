@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, MapPin } from 'lucide-react';
-import beachImage from '@assets/generated_images/Combined_beach_scene_layout_6b9bbf94.png';
+import beachImage from '@assets/generated_images/About Me Salty Vibe White Bikini.jpg';
 
 export default function About() {
   return (
