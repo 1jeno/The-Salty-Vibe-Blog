@@ -1,4 +1,5 @@
 import { Quote } from 'lucide-react';
+import { Link } from 'wouter';
 import { beachQuotes, BeachQuote } from '@/data/quotes';
 import { useEffect, useState } from 'react';
 
@@ -24,6 +25,13 @@ export default function QuoteRibbon() {
         <cite className="text-[#b09e99]/80 text-sm mt-2 block not-italic font-medium">
           — {currentQuote.author}
         </cite>
+        <Link 
+          href="/quotes" 
+          className="inline-block mt-3 text-xs text-[#b09e99] hover:text-[#b09e99]/70 underline transition-colors"
+          data-testid="link-quotes"
+        >
+          View More Coastal Inspirations →
+        </Link>
       </div>
     </section>
   );
