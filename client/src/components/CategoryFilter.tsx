@@ -25,9 +25,13 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
       {categories.map((category) => (
         <Button
           key={category.key}
-          variant={activeCategory === category.key ? 'default' : 'outline'}
+          variant="ghost"
           onClick={() => handleCategoryClick(category.key)}
-          className="flex items-center gap-2"
+          className={`flex items-center gap-2 text-white backdrop-blur-sm border ${
+            activeCategory === category.key 
+              ? 'bg-pink-600/70 border-pink-300/50 ring-1 ring-pink-400/40' 
+              : 'bg-pink-500/60 border-pink-300/50'
+          }`}
           data-testid={`button-category-${category.key}`}
         >
           <span>{category.emoji}</span>
