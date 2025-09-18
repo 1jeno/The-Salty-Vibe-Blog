@@ -29,8 +29,8 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
           onClick={() => handleCategoryClick(category.key)}
           className={`flex items-center gap-2 text-white backdrop-blur-sm border ${
             activeCategory === category.key 
-              ? 'bg-[#cbf3f0]/80 border-[#cbf3f0]/60 ring-1 ring-[#cbf3f0]/50' 
-              : 'bg-[#cbf3f0]/60 border-[#cbf3f0]/40'
+              ? 'bg-[#bee9e8]/80 border-[#bee9e8]/60 ring-1 ring-[#bee9e8]/50' 
+              : 'bg-[#bee9e8]/60 border-[#bee9e8]/40'
           }`}
           data-testid={`button-category-${category.key}`}
         >
