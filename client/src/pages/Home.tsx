@@ -3,6 +3,7 @@ import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import CategoryFilter, { Category } from '@/components/CategoryFilter';
+import { Button } from '@/components/ui/button';
 import BlogGrid from '@/components/BlogGrid';
 import PhotoCarousel from '@/components/PhotoCarousel';
 import Footer from '@/components/Footer';
@@ -26,6 +27,17 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>(getCategoryFromPath(location));
   const [searchQuery, setSearchQuery] = useState('');
   const [, setLocation] = useLocation();
+
+  const handleExplore = () => {
+    console.log('Explore posts clicked');
+    // Scroll to blog section
+    const blogSection = document.getElementById('blog-posts');
+    blogSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleNewsletter = () => {
+    console.log('Newsletter signup clicked');
+  };
 
   // TODO: remove mock functionality - replace with real data fetching
   const mockPosts: BlogPost[] = [
@@ -143,6 +155,35 @@ export default function Home() {
       />
       <Header onSearch={setSearchQuery} />
       <Hero />
+      
+      {/* Subtitle and CTA Section */}
+      <section className="bg-[#ffe5ec] py-12">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <p className="font-display text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Coastal living, wanderlust adventures, and delicious discoveries. 
+            Join me for a life lived with intention and a touch of saltwater magic.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              onClick={handleExplore}
+              data-testid="button-explore-posts"
+            >
+              Start Your Adventure
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-gray-400 text-gray-800 hover:bg-gray-100"
+              onClick={handleNewsletter}
+              data-testid="button-newsletter"
+            >
+              Join Newsletter
+            </Button>
+          </div>
+        </div>
+      </section>
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section id="blog-posts">
