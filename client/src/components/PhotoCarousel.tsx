@@ -1,9 +1,9 @@
 // No longer using carousel functionality, just displaying photos in a grid
 
 // Import carousel images
-import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
-import beachSceneImage from '@assets/generated_images/Beach_scene_woman_bikini_de8a06d6.png';
+import beachSceneImage from '@assets/generated_images/Refined_blonde_beach_scene_97b3bad9.png';
 import blondeBeachImage from '@assets/generated_images/Blonde_woman_beach_cowboy_hat_74b92e73.png';
 import tropicalCoconutImage from '@assets/generated_images/Tropical_coconut_vacation_paradise_05e5cd58.png';
 import combinedBeachImage from '@assets/generated_images/Combined_beach_scene_layout_6b9bbf94.png';

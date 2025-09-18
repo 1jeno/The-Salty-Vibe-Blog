@@ -8,7 +8,7 @@ import PhotoCarousel from '@/components/PhotoCarousel';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
-import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
+import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 
 export default function Home() {
