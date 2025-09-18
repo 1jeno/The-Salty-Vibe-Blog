@@ -21,8 +21,8 @@ export default function Hero() {
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
-      {/* Light overlay for subtle text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
+      {/* Enhanced overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
