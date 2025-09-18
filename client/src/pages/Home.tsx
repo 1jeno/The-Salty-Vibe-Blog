@@ -10,6 +10,7 @@ import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
 import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
+import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
 
 export default function Home() {
   const [location] = useLocation();
@@ -93,7 +94,7 @@ export default function Home() {
       title: 'Building Your Perfect Beach Capsule Wardrobe',
       excerpt: 'Effortless style meets comfort in this curated collection of coastal-inspired pieces that will take you from sunrise yoga to sunset dinners.',
       category: 'lifestyle',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop',
+      image: beachWardrobeImage,
       publishedAt: '2024-01-08',
       readTime: 6,
       slug: 'beach-capsule-wardrobe'
