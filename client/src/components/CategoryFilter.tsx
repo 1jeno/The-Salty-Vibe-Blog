@@ -34,7 +34,6 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
           }`}
           data-testid={`button-category-${category.key}`}
         >
-          <span>{category.emoji}</span>
           {category.label}
         </Button>
       ))}
