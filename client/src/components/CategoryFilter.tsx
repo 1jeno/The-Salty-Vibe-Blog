@@ -27,7 +27,7 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
           key={category.key}
           variant="ghost"
           onClick={() => handleCategoryClick(category.key)}
-          className={`flex items-center gap-2 text-white backdrop-blur-sm border ${
+          className={`flex items-center gap-2 text-[#b09e99] backdrop-blur-sm border ${
             activeCategory === category.key 
               ? 'bg-[#bee9e8]/80 border-[#bee9e8]/60 ring-1 ring-[#bee9e8]/50' 
               : 'bg-[#bee9e8]/60 border-[#bee9e8]/40'
