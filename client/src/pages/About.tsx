@@ -31,7 +31,7 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center">
             <h2 className="font-serif text-2xl font-semibold mb-4">
-              Hey there, I'm Sarah ✨
+              Hey there, I'm Jennifer
             </h2>
             <p className="text-muted-foreground mb-4">
               Welcome to my little corner of the internet! I'm a coastal living enthusiast, 
