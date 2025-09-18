@@ -1,41 +1,53 @@
-import { useRoute } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ArrowLeft, Share2 } from 'lucide-react';
-import ProductCard from '@/components/ProductCard';
-import AffiliateDisclosure from '@/components/AffiliateDisclosure';
-import SEOHead from '@/components/SEOHead';
-import RelatedPosts from '@/components/RelatedPosts';
-import morningCoffeeImage from '@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png';
-import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
-import type { AffiliateProduct } from '@shared/schema';
+import { useRoute } from "wouter";
+import { useQuery } from "@tanstack/react-query";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Share2 } from "lucide-react";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import SEOHead from "@/components/SEOHead";
+import RelatedPosts from "@/components/RelatedPosts";
+import morningCoffeeImage from "@assets/generated_images/Morning_coffee_beach_ritual_7f2b3103.png";
+import tropicalVacationImage from "@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png";
+import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
-  const [match, params] = useRoute('/post/:slug');
-  
+  const [match, params] = useRoute("/post/:slug");
+
   // Fetch related affiliate products
   const { data: affiliateProducts = [] } = useQuery<AffiliateProduct[]>({
-    queryKey: ['/api/affiliate-products', 'lifestyle'],
-    queryFn: () => fetch('/api/affiliate-products?category=lifestyle').then(res => res.json()),
+    queryKey: ["/api/affiliate-products", "lifestyle"],
+    queryFn: () =>
+      fetch("/api/affiliate-products?category=lifestyle").then((res) =>
+        res.json(),
+      ),
     enabled: true,
   });
-  
+
   // TODO: remove mock functionality - fetch real post data
   const mockPosts = {
-    'my-morning-ritual-coffee-by-the-ocean': {
-      id: '1',
-      title: 'My Morning Ritual: Coffee by the Ocean',
-      slug: 'my-morning-ritual-coffee-by-the-ocean',
-      seoTitle: 'My Morning Ritual: Coffee by the Ocean - Coastal Living Tips',
-      seoDescription: 'Discover the perfect morning ritual with iced coffee by the ocean. Learn how to create intentional coastal mornings with SunBum sunscreen, beach essentials, and mindful practices for a beautiful start to your day.',
-      tags: ['morning ritual', 'coastal living', 'coffee', 'beach lifestyle', 'mindfulness', 'sunbum sunscreen', 'ocean vibes'],
-      category: 'lifestyle',
+    "my-morning-ritual-coffee-by-the-ocean": {
+      id: "1",
+      title: "My Morning Ritual: Coffee by the Ocean",
+      slug: "my-morning-ritual-coffee-by-the-ocean",
+      seoTitle: "My Morning Ritual: Coffee by the Ocean - Coastal Living Tips",
+      seoDescription:
+        "Discover the perfect morning ritual with iced coffee by the ocean. Learn how to create intentional coastal mornings with SunBum sunscreen, beach essentials, and mindful practices for a beautiful start to your day.",
+      tags: [
+        "morning ritual",
+        "coastal living",
+        "coffee",
+        "beach lifestyle",
+        "mindfulness",
+        "sunbum sunscreen",
+        "ocean vibes",
+      ],
+      category: "lifestyle",
       image: morningCoffeeImage,
-      publishedAt: '2024-01-20T08:00:00-08:00',
-      modifiedAt: '2024-01-20T08:00:00-08:00',
+      publishedAt: "2024-01-20T08:00:00-08:00",
+      modifiedAt: "2024-01-20T08:00:00-08:00",
       readTime: 5,
       content: `
       <p>There's something undeniably magical about starting the day with the sound of waves and a perfectly crafted iced coffee in hand. For the past year, I've been perfecting my morning ritual by the ocean, and I can honestly say it has transformed not just my mornings, but my entire approach to daily life.</p>
@@ -76,19 +88,32 @@ export default function BlogPost() {
       
       <h2>Shop the Look</h2>
       <p>Want to recreate this perfect morning ritual? Here are the exact products I mention in this post that help make these beautiful beach mornings possible:</p>
-    `
+    `,
     },
-    'vacation-in-a-bottle-tropical-scents': {
-      id: '2',
-      title: 'Vacation in a Bottle: Tropical Scents That Transport You',
-      slug: 'vacation-in-a-bottle-tropical-scents',
-      seoTitle: 'Vacation in a Bottle: 13 Tropical Scents That Transport You to Paradise',
-      seoDescription: 'Discover 13 tropical scented products that smell like vacation - from Sunbum sunscreen and Tom Ford perfumes to Kopari mists and Bath & Body Works. Find your signature beach scent and bring paradise home.',
-      tags: ['tropical scents', 'vacation perfume', 'beach fragrance', 'coconut products', 'sunbum', 'tom ford', 'bath and body works', 'kopari', 'bond no 9', 'tropical beauty'],
-      category: 'lifestyle',
+    "vacation-in-a-bottle-tropical-scents": {
+      id: "2",
+      title: "Vacation in a Bottle: Tropical Scents That Transport You",
+      slug: "vacation-in-a-bottle-tropical-scents",
+      seoTitle:
+        "Vacation in a Bottle: 13 Tropical Scents That Transport You to Paradise",
+      seoDescription:
+        "Discover 13 tropical scented products that smell like vacation - from Sunbum sunscreen and Tom Ford perfumes to Kopari mists and Bath & Body Works. Find your signature beach scent and bring paradise home.",
+      tags: [
+        "tropical scents",
+        "vacation perfume",
+        "beach fragrance",
+        "coconut products",
+        "sunbum",
+        "tom ford",
+        "bath and body works",
+        "kopari",
+        "bond no 9",
+        "tropical beauty",
+      ],
+      category: "lifestyle",
       image: tropicalVacationImage,
-      publishedAt: '2024-01-25T10:00:00-08:00',
-      modifiedAt: '2024-01-25T10:00:00-08:00',
+      publishedAt: "2024-01-25T10:00:00-08:00",
+      modifiedAt: "2024-01-25T10:00:00-08:00",
       readTime: 6,
       content: `
       <p>There's something magical about certain scents that can instantly transport you to your happy place. You know that feeling – one whiff and suddenly you're back on that perfect beach vacation, feeling the warm sand between your toes and the ocean breeze in your hair.</p>
@@ -139,31 +164,36 @@ export default function BlogPost() {
       <p>I'll be honest – I haven't tried every single one of these yet (though they're definitely on my wishlist!). But that's the beauty of scent hunting, isn't it? The anticipation, the discovery, the moment when you find that perfect fragrance that becomes your signature vacation vibe.</p>
       
       <p>Have you tried any of these? I'd love to know which ones transport you most! There's something so personal about scent – what smells like paradise to me might be completely different from your idea of vacation bliss, and I think that's beautiful.</p>
-    `
-    }
+    `,
+    },
   };
-  
-  const mockPost = mockPosts[(params?.slug as keyof typeof mockPosts) ?? 'my-morning-ritual-coffee-by-the-ocean'] ?? mockPosts['my-morning-ritual-coffee-by-the-ocean'];
-  
+
+  const mockPost =
+    mockPosts[
+      (params?.slug as keyof typeof mockPosts) ??
+        "my-morning-ritual-coffee-by-the-ocean"
+    ] ?? mockPosts["my-morning-ritual-coffee-by-the-ocean"];
+
   // Related posts data for internal linking
-  const allPosts = Object.values(mockPosts).map(post => ({
+  const allPosts = Object.values(mockPosts).map((post) => ({
     id: post.id,
     title: post.title,
     slug: post.slug,
-    excerpt: post.seoDescription || `Discover ${post.title.toLowerCase()} tips and inspiration from The Salty Vibe blog.`,
+    excerpt:
+      post.seoDescription ||
+      `Discover ${post.title.toLowerCase()} tips and inspiration from The Salty Vibe blog.`,
     category: post.category,
     readTime: post.readTime,
-    image: post.image
+    image: post.image,
   }));
-
 
   const handleBack = () => {
     window.history.back();
-    console.log('Navigate back');
+    console.log("Navigate back");
   };
 
   const handleShare = () => {
-    console.log('Share post');
+    console.log("Share post");
     // TODO: remove mock functionality - implement real sharing
   };
 
@@ -175,7 +205,10 @@ export default function BlogPost() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title={mockPost.seoTitle || mockPost.title}
-        description={mockPost.seoDescription || `Read about ${mockPost.title} - ${mockPost.category} tips and inspiration from The Salty Vibe.`}
+        description={
+          mockPost.seoDescription ||
+          `Read about ${mockPost.title} - ${mockPost.category} tips and inspiration from The Salty Vibe.`
+        }
         url={`/post/${mockPost.slug}`}
         image={mockPost.image}
         type="article"
@@ -187,10 +220,10 @@ export default function BlogPost() {
         readTime={mockPost.readTime}
       />
       <Header />
-      
+
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Button 
-          variant="ghost" 
+        <Button
+          variant="ghost"
           onClick={handleBack}
           className="mb-6"
           data-testid="button-back"
@@ -203,10 +236,11 @@ export default function BlogPost() {
           <header className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Badge className="bg-primary text-primary-foreground">
-                {mockPost.category.charAt(0).toUpperCase() + mockPost.category.slice(1)}
+                {mockPost.category.charAt(0).toUpperCase() +
+                  mockPost.category.slice(1)}
               </Badge>
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 size="sm"
                 onClick={handleShare}
                 className="ml-auto"
@@ -215,12 +249,15 @@ export default function BlogPost() {
                 <Share2 className="h-4 w-4" />
               </Button>
             </div>
-            
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-testid="text-post-title">
+
+            <h1
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+              data-testid="text-post-title"
+            >
               {mockPost.title}
             </h1>
-            
-            <img 
+
+            <img
               src={mockPost.image}
               alt={mockPost.title}
               className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
@@ -228,12 +265,12 @@ export default function BlogPost() {
             />
           </header>
 
-          <div 
+          <div
             className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-semibold prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground"
             dangerouslySetInnerHTML={{ __html: mockPost.content }}
             data-testid="content-post-body"
           />
-          
+
           {/* Affiliate Products Section */}
           {affiliateProducts.length > 0 && (
             <div className="mt-12 pt-8 border-t border-border">
@@ -245,9 +282,9 @@ export default function BlogPost() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 {affiliateProducts.slice(0, 4).map((product) => (
-                  <ProductCard 
-                    key={product.id} 
-                    product={product} 
+                  <ProductCard
+                    key={product.id}
+                    product={product}
                     compact={true}
                   />
                 ))}
@@ -257,7 +294,7 @@ export default function BlogPost() {
           )}
 
           {/* Related Posts for Internal Linking */}
-          <RelatedPosts 
+          <RelatedPosts
             currentPostId={mockPost.id}
             currentCategory={mockPost.category}
             allPosts={allPosts}
@@ -267,7 +304,8 @@ export default function BlogPost() {
           <div className="mt-12 pt-8 border-t border-border">
             <div className="text-center">
               <p className="text-muted-foreground mb-4">
-                Enjoyed this post? Share it with friends who love coastal living too!
+                Enjoyed this post? Share it with friends who love coastal living
+                too!
               </p>
               <Button onClick={handleShare} data-testid="button-share-bottom">
                 <Share2 className="h-4 w-4 mr-2" />
@@ -277,7 +315,7 @@ export default function BlogPost() {
           </div>
         </article>
       </main>
-      
+
       <Footer />
     </div>
   );
