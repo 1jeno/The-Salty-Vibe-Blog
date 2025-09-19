@@ -70,35 +70,32 @@ export default function Header({ onSearch }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                data-testid={`link-${item.name.toLowerCase()}`}
+            {/* Home */}
+            <Link href="/" data-testid="link-home">
+              <span
+                className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 ${
+                  location === '/' 
+                    ? 'text-primary border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                    : 'text-muted-foreground border-pink-400/60 hover:border-pink-500/80 hover:text-primary'
+                }`}
               >
-                <span
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    location === item.href ? 'text-primary' : 'text-muted-foreground'
-                  }`}
-                >
-                  {item.name}
-                </span>
-              </Link>
-            ))}
+                Home
+              </span>
+            </Link>
             
             {/* Lifestyle Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 border-pink-400/60 hover:border-pink-500/80 hover:text-primary text-muted-foreground"
                   data-testid="button-lifestyle-dropdown"
                 >
                   Lifestyle
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border border-border" style={{ boxShadow: 'none' }}>
+              <DropdownMenuContent className="bg-background border border-border" style={{ boxShadow: 'none', backdropFilter: 'none' }}>
                 {lifestyleSubcategories.map((subcategory) => (
                   <DropdownMenuItem
                     key={subcategory.key}
@@ -111,6 +108,25 @@ export default function Header({ onSearch }: HeaderProps) {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* Other Navigation Items */}
+            {navigation.slice(1).map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                data-testid={`link-${item.name.toLowerCase()}`}
+              >
+                <span
+                  className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 ${
+                    location === item.href 
+                      ? 'text-primary border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                      : 'text-muted-foreground border-pink-400/60 hover:border-pink-500/80 hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                </span>
+              </Link>
+            ))}
           </nav>
 
           {/* Search and Theme Toggle */}
