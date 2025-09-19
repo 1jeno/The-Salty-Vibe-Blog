@@ -1,8 +1,14 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Search, Menu, X, Sun, Moon } from 'lucide-react';
+import { Search, Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 interface HeaderProps {
   onSearch?: (query: string) => void;
@@ -28,12 +34,28 @@ export default function Header({ onSearch }: HeaderProps) {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Lifestyle', href: '/lifestyle' },
     { name: 'Travel', href: '/travel' },
     { name: 'Food', href: '/food' },
     { name: 'Shop', href: '/shop' },
     { name: 'About', href: '/about' },
   ];
+
+  const lifestyleSubcategories = [
+    { key: 'beauty', label: 'Beauty' },
+    { key: 'home-decor', label: 'Home Decor' },
+    { key: 'fashion', label: 'Fashion' },
+    { key: 'wellness', label: 'Wellness' },
+  ];
+
+  const [, setLocation] = useLocation();
+
+  const handleLifestyleClick = (subcategory: string) => {
+    if (subcategory === 'wellness') {
+      setLocation('/wellness');
+    } else {
+      setLocation(`/${subcategory}`);
+    }
+  };
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -63,6 +85,32 @@ export default function Header({ onSearch }: HeaderProps) {
                 </span>
               </Link>
             ))}
+            
+            {/* Lifestyle Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+                  data-testid="button-lifestyle-dropdown"
+                >
+                  Lifestyle
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border border-border">
+                {lifestyleSubcategories.map((subcategory) => (
+                  <DropdownMenuItem
+                    key={subcategory.key}
+                    onClick={() => handleLifestyleClick(subcategory.key)}
+                    className="cursor-pointer"
+                    data-testid={`button-lifestyle-${subcategory.key}`}
+                  >
+                    {subcategory.label}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           {/* Search and Theme Toggle */}
@@ -123,6 +171,26 @@ export default function Header({ onSearch }: HeaderProps) {
                   </span>
                 </Link>
               ))}
+              
+              {/* Mobile Lifestyle Dropdown */}
+              <div className="px-3 py-2">
+                <span className="block text-sm font-medium text-muted-foreground mb-2">Lifestyle</span>
+                <div className="pl-3 space-y-1">
+                  {lifestyleSubcategories.map((subcategory) => (
+                    <button
+                      key={subcategory.key}
+                      onClick={() => {
+                        handleLifestyleClick(subcategory.key);
+                        setIsMenuOpen(false);
+                      }}
+                      className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                      data-testid={`button-mobile-lifestyle-${subcategory.key}`}
+                    >
+                      {subcategory.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <form onSubmit={handleSearch} className="flex items-center gap-2 px-3 pt-2 sm:hidden">
                 <Input
                   type="search"
