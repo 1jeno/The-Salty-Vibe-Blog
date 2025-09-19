@@ -49,31 +49,29 @@ export default function Quotes() {
               }`}
               data-testid={`card-quote-${quote.id}`}
             >
-              <div className="bg-white p-3 pb-6 rounded-md shadow-lg hover-elevate transition-all duration-300">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+              <div className="bg-white p-4 rounded-md shadow-lg hover-elevate transition-all duration-300">
+                {/* Square image */}
+                <div className="relative aspect-square overflow-hidden rounded-sm mb-4">
                   <img
                     src={quoteImages[index % quoteImages.length]}
                     alt={`Beach scene for quote by ${quote.author}`}
                     className="absolute inset-0 w-full h-full object-cover"
                     data-testid={`img-quote-background-${quote.id}`}
                   />
-                  
-                  {/* Dark overlay for text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
-                  
-                  {/* Quote text overlay */}
-                  <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
-                    <blockquote className="text-sm md:text-base font-medium mb-2 leading-relaxed bg-pink-400/50 px-3 py-1 rounded-lg inline-block">
-                      "{quote.text}"
-                    </blockquote>
-                    <cite className="text-xs opacity-90 not-italic font-semibold bg-pink-400/40 px-2 py-1 rounded mt-1 inline-block">
-                      — {quote.author}
-                    </cite>
-                  </div>
+                </div>
+                
+                {/* Quote text below image */}
+                <div className="text-center">
+                  <blockquote className="text-sm md:text-base font-medium mb-3 leading-relaxed text-gray-700">
+                    "{quote.text}"
+                  </blockquote>
+                  <cite className="text-xs not-italic font-semibold text-gray-600">
+                    — {quote.author}
+                  </cite>
                 </div>
                 
                 {/* Polaroid caption area */}
-                <div className="mt-3 text-center">
+                <div className="mt-4 text-center border-t pt-3">
                   <p className="text-base text-[#b09e99] font-medium">
                     Coastal Inspiration #{quote.id}
                   </p>
