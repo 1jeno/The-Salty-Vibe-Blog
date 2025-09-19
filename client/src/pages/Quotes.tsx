@@ -38,7 +38,7 @@ export default function Quotes() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           {beachQuotes.map((quote, index) => (
             <div 
               key={quote.id}
@@ -74,7 +74,7 @@ export default function Quotes() {
                 
                 {/* Polaroid caption area */}
                 <div className="mt-3 text-center">
-                  <p className="text-xs text-[#b09e99] font-medium">
+                  <p className="text-base text-[#b09e99] font-medium">
                     Coastal Inspiration #{quote.id}
                   </p>
                 </div>
