@@ -11,39 +11,32 @@ import lifeLens6 from '@assets/generated_images/Life through my lens 6.jpg';
 interface CarouselImage {
   src: string;
   alt: string;
-  caption: string;
 }
 
 const carouselImages: CarouselImage[] = [
   {
     src: lifeLens1,
-    alt: 'Life through my lens moment 1',
-    caption: 'Capturing coastal magic'
+    alt: 'Life through my lens moment 1'
   },
   {
     src: lifeLens2,
-    alt: 'Life through my lens moment 2',
-    caption: 'Salty adventures'
+    alt: 'Life through my lens moment 2'
   },
   {
     src: lifeLens3,
-    alt: 'Life through my lens moment 3',
-    caption: 'Beach life moments'
+    alt: 'Life through my lens moment 3'
   },
   {
     src: lifeLens4,
-    alt: 'Life through my lens moment 4',
-    caption: 'Ocean inspired living'
+    alt: 'Life through my lens moment 4'
   },
   {
     src: lifeLens5,
-    alt: 'Life through my lens moment 5',
-    caption: 'Seaside serenity'
+    alt: 'Life through my lens moment 5'
   },
   {
     src: lifeLens6,
-    alt: 'Life through my lens moment 6',
-    caption: 'Coastal wanderlust'
+    alt: 'Life through my lens moment 6'
   }
 ];
 
@@ -67,7 +60,7 @@ export default function PhotoCarousel() {
             {carouselImages.map((image, index) => (
               <div
                 key={index}
-                className="relative group bg-card border border-card-border shadow-lg overflow-hidden hover-elevate"
+                className="bg-card border border-card-border shadow-lg overflow-hidden hover-elevate"
                 data-testid={`photo-grid-item-${index}`}
               >
                 <div className="aspect-square">
@@ -77,12 +70,6 @@ export default function PhotoCarousel() {
                     className="w-full h-full object-cover"
                     data-testid={`photo-grid-image-${index}`}
                   />
-                </div>
-                {/* Caption overlay that appears on hover */}
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm text-white p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="font-serif text-sm font-medium" data-testid={`photo-grid-caption-${index}`}>
-                    {image.caption}
-                  </p>
                 </div>
               </div>
             ))}
