@@ -7,7 +7,7 @@ import beachScene2 from '@assets/generated_images/Nostalgic_luxury_beach_scene_7
 import beachScene3 from '@assets/generated_images/Refined_blonde_beach_scene_97b3bad9.png';
 import beachScene4 from '@assets/generated_images/Beach Wardorbe_Summer_White_Flowy_dress.jpg';
 import beachScene5 from '@assets/generated_images/Morning Ritual_beach_drinking_iced_coffee.jpg';
-import beachScene6 from '@assets/generated_images/woman_sitting_on_the_tailgate.png';
+import beachScene6 from '@assets/generated_images/woman_sitting_on_the_tailgate-2.png';
 import beachScene7 from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
 import beachScene8 from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 
@@ -59,7 +59,7 @@ export default function Quotes() {
                   />
                   
                   {/* Dark overlay for text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
                   
                   {/* Quote text overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
