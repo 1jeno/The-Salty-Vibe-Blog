@@ -73,10 +73,10 @@ export default function Header({ onSearch }: HeaderProps) {
             {/* Home */}
             <Link href="/" data-testid="link-home">
               <span
-                className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
+                className={`text-sm font-medium transition-all duration-200 px-3 py-1 border ${
                   location === '/' 
-                    ? 'text-primary border border-pink-500' 
-                    : 'text-muted-foreground hover:text-primary'
+                    ? 'text-primary border-pink-500' 
+                    : 'text-muted-foreground hover:text-primary border-transparent hover:border-pink-500'
                 }`}
               >
                 Home
@@ -88,14 +88,14 @@ export default function Header({ onSearch }: HeaderProps) {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 rounded text-muted-foreground hover:text-primary"
+                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 border border-transparent text-muted-foreground hover:text-primary hover:border-pink-500"
                   data-testid="button-lifestyle-dropdown"
                 >
                   Lifestyle
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border border-border" style={{ boxShadow: 'none', backdropFilter: 'none' }}>
+              <DropdownMenuContent className="bg-background border border-border rounded-none" style={{ boxShadow: 'none', backdropFilter: 'none' }}>
                 {lifestyleSubcategories.map((subcategory) => (
                   <DropdownMenuItem
                     key={subcategory.key}
@@ -117,10 +117,10 @@ export default function Header({ onSearch }: HeaderProps) {
                 data-testid={`link-${item.name.toLowerCase()}`}
               >
                 <span
-                  className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
+                  className={`text-sm font-medium transition-all duration-200 px-3 py-1 border ${
                     location === item.href 
-                      ? 'text-primary border border-pink-500' 
-                      : 'text-muted-foreground hover:text-primary'
+                      ? 'text-primary border-pink-500' 
+                      : 'text-muted-foreground hover:text-primary border-transparent hover:border-pink-500'
                   }`}
                 >
                   {item.name}
