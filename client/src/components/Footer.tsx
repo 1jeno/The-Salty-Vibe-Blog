@@ -76,7 +76,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="text-center border-t border-border pt-8">
           <p className="text-muted-foreground text-sm mb-2">
-            © 2024 The Salty Vibe. Made with{' '}
+            © 2025 The Salty Vibe. Made with{' '}
             <Heart className="inline h-4 w-4 text-primary fill-current" />{' '}
             for the coastal life.
           </p>
