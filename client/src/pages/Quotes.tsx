@@ -8,7 +8,7 @@ import beachScene3 from '@assets/generated_images/surfers_feet_walking_on_the_be
 import beachScene4 from '@assets/generated_images/Beach Wardorbe_Summer_White_Flowy_dress.jpg';
 import beachScene5 from '@assets/generated_images/Morning Ritual_beach_drinking_iced_coffee.jpg';
 import beachScene6 from '@assets/generated_images/woman_sitting_on_the_tailgate-2.png';
-import beachScene7 from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
+import beachScene7 from '@assets/generated_images/Salty Beach Days124.jpg';
 import beachScene8 from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
 
 const quoteImages = [
