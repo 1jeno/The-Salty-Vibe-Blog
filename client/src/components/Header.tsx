@@ -69,13 +69,13 @@ export default function Header({ onSearch }: HeaderProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             {/* Home */}
             <Link href="/" data-testid="link-home">
               <span
                 className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
                   location === '/' 
-                    ? 'text-primary border-2 border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                    ? 'text-primary border border-pink-500' 
                     : 'text-muted-foreground hover:text-primary'
                 }`}
               >
@@ -119,7 +119,7 @@ export default function Header({ onSearch }: HeaderProps) {
                 <span
                   className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
                     location === item.href 
-                      ? 'text-primary border-2 border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                      ? 'text-primary border border-pink-500' 
                       : 'text-muted-foreground hover:text-primary'
                   }`}
                 >
