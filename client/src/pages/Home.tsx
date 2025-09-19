@@ -22,6 +22,7 @@ export default function Home() {
     if (path === '/lifestyle') return 'lifestyle';
     if (path === '/travel') return 'travel';
     if (path === '/food') return 'food';
+    if (path === '/wellness') return 'wellness';
     return 'all';
   };
   

@@ -6,6 +6,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { ChevronDown } from 'lucide-react';
+import { useLocation } from 'wouter';
 
 export type Category = 'all' | 'lifestyle' | 'travel' | 'food' | 'beauty' | 'home-decor' | 'fashion' | 'wellness';
 
@@ -15,6 +16,8 @@ interface CategoryFilterProps {
 }
 
 export default function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
+  const [, setLocation] = useLocation();
+  
   const categories: { key: Category; label: string; emoji: string }[] = [
     { key: 'all', label: 'All Posts', emoji: '✨' },
     { key: 'travel', label: 'Travel', emoji: '🌊' },
@@ -29,7 +32,12 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
   ];
 
   const handleCategoryClick = (category: Category) => {
-    onCategoryChange(category);
+    if (category === 'wellness') {
+      // Navigate to the wellness/quotes page
+      setLocation('/wellness');
+    } else {
+      onCategoryChange(category);
+    }
     console.log('Category selected:', category);
   };
 
