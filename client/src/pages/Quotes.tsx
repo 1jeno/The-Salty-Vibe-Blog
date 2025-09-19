@@ -20,7 +20,7 @@ export default function Quotes() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Beach Quotes To Wash Your Cares Away - The Salty Vibe"
+        title="Salty Vibes & Ocean Wisdom - The Salty Vibe"
         description="Discover the healing power of the ocean through inspiring beach quotes. Let these words restore your well-being and wash your cares away with coastal wisdom."
         url="/quotes"
         type="website"
@@ -31,7 +31,7 @@ export default function Quotes() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Beach Quotes To Wash Your Cares Away
+            Salty Vibes & Ocean Wisdom
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             There is something truly magical about being near the ocean. The rhythmic sound of waves, the endless horizon, and the salty breeze work together to restore our physical, mental, and emotional well-being. Here are some inspirational beach quotes to enhance your sense of peace and inspire your soul.
