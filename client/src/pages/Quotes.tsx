@@ -9,7 +9,7 @@ import beachScene4 from '@assets/generated_images/Beach Wardorbe_Summer_White_Fl
 import beachScene5 from '@assets/generated_images/Morning Ritual_beach_drinking_iced_coffee.jpg';
 import beachScene6 from '@assets/generated_images/woman_sitting_on_the_tailgate-2.png';
 import beachScene7 from '@assets/generated_images/Salty Beach Days124.jpg';
-import beachScene8 from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
+import beachScene8 from '@assets/generated_images/salt_water_heals_everthing.png';
 
 const quoteImages = [
   beachScene1, beachScene2, beachScene3, beachScene4, 
