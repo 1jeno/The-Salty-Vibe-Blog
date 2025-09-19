@@ -133,6 +133,16 @@ export default function SEOHead({
         </script>
       )}
       
+      {/* Hero Image Preload - Critical for LCP optimization */}
+      {type === 'website' && (
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/attached_assets/beach-shack-surfboards.jpg" 
+          fetchPriority="high"
+        />
+      )}
+      
       {/* Additional SEO Meta Tags */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
