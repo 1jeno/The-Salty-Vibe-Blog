@@ -2,7 +2,7 @@ import { Quote } from 'lucide-react';
 import { Link } from 'wouter';
 import { beachQuotes, BeachQuote } from '@/data/quotes';
 import { useEffect, useState } from 'react';
-import coastalSignImage from '@assets/generated_images/Vintage_coastal_wooden_sign_2550efb9.png';
+import coastalSignImage from '@assets/generated_images/Rustic_weathered_coastal_wooden_sign_21922d09.png';
 
 export default function QuoteRibbon() {
   const [currentQuote, setCurrentQuote] = useState<BeachQuote>(beachQuotes[0]);
