@@ -2,6 +2,7 @@ import { Quote } from 'lucide-react';
 import { Link } from 'wouter';
 import { beachQuotes, BeachQuote } from '@/data/quotes';
 import { useEffect, useState } from 'react';
+import coastalSignImage from '@assets/generated_images/Vintage_coastal_wooden_sign_2550efb9.png';
 
 export default function QuoteRibbon() {
   const [currentQuote, setCurrentQuote] = useState<BeachQuote>(beachQuotes[0]);
@@ -27,10 +28,14 @@ export default function QuoteRibbon() {
         </cite>
         <Link 
           href="/quotes" 
-          className="inline-block mt-3 text-xs text-[#b09e99] hover:text-[#b09e99]/70 underline transition-colors"
+          className="inline-block mt-4 hover-elevate transition-all duration-300"
           data-testid="link-quotes"
         >
-          View More Coastal Inspirations →
+          <img 
+            src={coastalSignImage} 
+            alt="View More Coastal Inspirations"
+            className="max-w-xs mx-auto h-auto rounded-lg shadow-sm"
+          />
         </Link>
       </div>
     </section>
