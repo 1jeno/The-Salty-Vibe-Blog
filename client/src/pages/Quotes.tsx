@@ -20,21 +20,21 @@ export default function Quotes() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Beach Quotes - The Salty Vibe"
-        description="Inspiring beach and coastal quotes paired with beautiful imagery. Find motivation and peace through words that capture the essence of seaside living."
+        title="Beach Quotes To Wash Your Cares Away - The Salty Vibe"
+        description="Discover the healing power of the ocean through inspiring beach quotes. Let these words restore your well-being and wash your cares away with coastal wisdom."
         url="/quotes"
         type="website"
-        tags={['beach quotes', 'coastal inspiration', 'ocean quotes', 'lifestyle motivation']}
+        tags={['beach quotes', 'healing ocean quotes', 'coastal wellness', 'ocean therapy', 'beach inspiration']}
       />
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Coastal Inspirations
+            Beach Quotes To Wash Your Cares Away
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Words that capture the essence of seaside living and the beauty of coastal life.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            There is something truly magical about being near the ocean. The rhythmic sound of waves, the endless horizon, and the salty breeze work together to restore our physical, mental, and emotional well-being. Here are some inspirational beach quotes to enhance your sense of peace and inspire your soul.
           </p>
         </div>
 
