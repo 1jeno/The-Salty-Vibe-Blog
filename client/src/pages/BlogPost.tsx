@@ -291,6 +291,234 @@ export default function BlogPost() {
       <p>Trust me, when you find the right swimsuit, you'll know. It's not just about how it looks – it's about how it makes you feel. And that feeling? That's worth every minute of the search.</p>
     `,
     },
+    "weekend-santorini-guide": {
+      id: "5",
+      title: "Weekend in Santorini: A Complete Guide",
+      slug: "weekend-santorini-guide",
+      seoTitle: "Weekend in Santorini: A Complete Travel Guide - The Salty Vibe",
+      seoDescription:
+        "Plan the perfect weekend in Santorini with our complete guide. Discover the best sunset spots, blue-domed churches, restaurants, and Instagram-worthy locations for your Greek island getaway.",
+      tags: [
+        "santorini",
+        "greece travel",
+        "greek islands",
+        "weekend getaway",
+        "sunset spots",
+        "travel guide",
+        "mediterranean",
+        "vacation planning",
+      ],
+      category: "travel",
+      image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop",
+      publishedAt: "2024-01-18T10:00:00-08:00",
+      modifiedAt: "2024-01-18T10:00:00-08:00",
+      readTime: 12,
+      content: `
+      <p>Santorini has been on my bucket list forever, and when I finally made it to this stunning Greek island, it exceeded every expectation. From the iconic blue-domed churches to the most breathtaking sunsets I've ever witnessed, this place is pure magic.</p>
+      
+      <h2>Getting There and Around</h2>
+      <p>Flying into Santorini is the easiest option, with direct flights from Athens taking just 45 minutes. The island is small enough to explore in a weekend, but every moment feels precious. I recommend renting a car or ATV to have the freedom to chase those perfect sunset spots and hidden gems.</p>
+      
+      <h2>Where to Stay</h2>
+      <p>Oia is absolutely stunning but can be crowded and expensive. I found that staying in Fira gave me the perfect balance of beautiful views, great restaurants, and easy access to everything. The caldera views from most hotels are simply incredible – waking up to that endless blue every morning felt surreal.</p>
+      
+      <h2>Must-See Spots</h2>
+      <p><strong>The Blue Domes of Oia</strong> – Yes, they're touristy, but they're iconic for a reason. The famous three bells of Fira and the blue dome churches are even more beautiful in person than in all those Instagram photos.</p>
+      
+      <p><strong>Red Beach</strong> – This dramatic beach with its red volcanic sand and towering cliffs is unlike anywhere else I've been. Perfect for afternoon relaxation and incredible photos.</p>
+      
+      <p><strong>Akrotiri Lighthouse</strong> – For a quieter sunset experience away from the Oia crowds, this spot offers equally stunning views with a more intimate atmosphere.</p>
+      
+      <h2>The Perfect Sunset Experience</h2>
+      <p>Everyone talks about Oia sunsets, and they truly are spectacular. But here's my insider tip: arrive at least 2 hours early to secure a good spot, or better yet, book a sunset dinner at one of the cliff-side restaurants. The combination of incredible food, local wine, and that golden hour light reflecting off the white buildings is absolutely magical.</p>
+      
+      <h2>Food You Can't Miss</h2>
+      <p>Greek island cuisine is incredible, and Santorini has its own unique specialties. The local wines are fantastic – especially the Assyrtiko white wine that pairs perfectly with fresh seafood. Don't miss the famous Santorini tomatoes (they're tiny but packed with flavor) and fresh fava beans.</p>
+      
+      <p>For the most Instagram-worthy dining experience, book a table at a caldera-view restaurant in Oia or Fira. The prices are higher, but dining while watching the sunset over the Aegean Sea is an experience you'll never forget.</p>
+      
+      <h2>Photography Tips</h2>
+      <p>Golden hour in Santorini is absolutely unreal. The white buildings seem to glow, and the contrast against that brilliant blue sea is photographer's heaven. Early morning is also magical and much less crowded – perfect for capturing those dreamy, empty street shots.</p>
+      
+      <p>Don't forget to explore beyond the main tourist areas. Some of my favorite photos came from wandering the narrow streets and discovering hidden churches, charming doorways, and unexpected viewpoints.</p>
+      
+      <h2>What to Pack</h2>
+      <p>Comfortable walking shoes are essential – those cobblestone streets and cliffside paths can be tricky in sandals. A sun hat and plenty of sunscreen are must-haves (the Mediterranean sun is intense!), and don't forget a light jacket for evening – it can get breezy on those cliff terraces.</p>
+      
+      <h2>Making the Most of a Weekend</h2>
+      <p>With just two days, prioritize the experiences that made Santorini famous: watch at least one sunset in Oia, explore the charming streets of Fira, relax on a unique volcanic beach, and indulge in incredible Greek cuisine with caldera views.</p>
+      
+      <p>My biggest advice? Don't over-plan. Some of my most magical moments happened when I simply wandered, discovered hidden viewpoints, and let myself get lost in the beauty of this incredible island.</p>
+      
+      <p>Santorini truly is as dreamy as everyone says. It's the kind of place that makes you believe in magic and leaves you planning your return visit before you've even left.</p>
+    `,
+    },
+    "rose-gold-brunch-recipe": {
+      id: "6",
+      title: "Rose Gold Everything: Brunch Recipe",
+      slug: "rose-gold-brunch-recipe",
+      seoTitle: "Rose Gold Smoothie Bowl Recipe - Instagram-Worthy Brunch - The Salty Vibe",
+      seoDescription:
+        "Create the perfect pink smoothie bowl that's as delicious as it is photogenic. This rose gold brunch recipe features dragon fruit, strawberries, and coconut for the ultimate aesthetic breakfast.",
+      tags: [
+        "smoothie bowl",
+        "brunch recipe",
+        "pink smoothie",
+        "dragon fruit",
+        "healthy breakfast",
+        "instagram food",
+        "rose gold",
+        "aesthetic food",
+      ],
+      category: "food",
+      image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&h=600&fit=crop",
+      publishedAt: "2024-01-15T09:00:00-08:00",
+      modifiedAt: "2024-01-15T09:00:00-08:00",
+      readTime: 4,
+      content: `
+      <p>I've been obsessed with creating the most Instagram-worthy brunch lately, and this rose gold smoothie bowl has become my signature creation. It's that perfect combination of healthy, delicious, and absolutely gorgeous – the kind of breakfast that makes you feel like you're living your best life.</p>
+      
+      <h2>The Magic Behind the Pink</h2>
+      <p>The secret to that gorgeous rose gold color is dragon fruit (also called pitaya). This amazing fruit not only gives you that dreamy pink hue but also adds subtle sweetness and incredible nutrition. Combined with frozen strawberries and a touch of coconut, it creates the most beautiful base you've ever seen.</p>
+      
+      <h2>Rose Gold Smoothie Bowl Recipe</h2>
+      
+      <h3>For the Base:</h3>
+      <ul>
+        <li>1 cup frozen dragon fruit (pitaya)</li>
+        <li>1/2 cup frozen strawberries</li>
+        <li>1/2 frozen banana</li>
+        <li>1/3 cup coconut milk (full-fat for creaminess)</li>
+        <li>1 tbsp honey or maple syrup</li>
+        <li>1 tsp vanilla extract</li>
+      </ul>
+      
+      <h3>For the Toppings:</h3>
+      <ul>
+        <li>Fresh strawberries, sliced</li>
+        <li>Coconut flakes</li>
+        <li>Granola (I love a vanilla almond variety)</li>
+        <li>Chia seeds</li>
+        <li>Edible flowers (optional but so pretty!)</li>
+        <li>A drizzle of almond butter</li>
+      </ul>
+      
+      <h2>The Perfect Method</h2>
+      <p>The key to a perfect smoothie bowl is getting the consistency just right – thick enough to hold toppings but smooth enough to blend easily. Start with your frozen fruits in a high-speed blender, add just a splash of coconut milk, and blend until creamy. You want it thicker than a regular smoothie.</p>
+      
+      <p>If it's too thick, add coconut milk one tablespoon at a time. If it's too thin, add more frozen fruit. The perfect consistency should hold its shape when you pour it into your bowl.</p>
+      
+      <h2>Styling Your Bowl</h2>
+      <p>Here's where the magic happens! Pour your smoothie into a beautiful bowl (white bowls make the pink color pop), then arrange your toppings with intention. I like to create sections – strawberries on one side, granola on another, with coconut flakes and chia seeds scattered throughout.</p>
+      
+      <p>The key to Instagram-worthy food photography? Natural light and beautiful props. I love shooting my smoothie bowls near a window with some fresh flowers or a linen napkin in the background.</p>
+      
+      <h2>Variations to Try</h2>
+      <p><strong>Tropical Rose Gold:</strong> Add some mango and top with toasted coconut and macadamia nuts for a tropical twist.</p>
+      
+      <p><strong>Berry Bliss:</strong> Mix in some blueberries for deeper color and top with mixed berries and a drizzle of cashew butter.</p>
+      
+      <p><strong>Chocolate Rose Gold:</strong> Add a tablespoon of cacao powder and top with dark chocolate chips and hazelnuts for a more indulgent version.</p>
+      
+      <h2>Why This Recipe Works</h2>
+      <p>Beyond being absolutely gorgeous, this smoothie bowl is packed with nutrients. Dragon fruit is full of antioxidants, vitamin C, and fiber. The coconut adds healthy fats that keep you satisfied, and the toppings provide protein and additional fiber.</p>
+      
+      <p>Plus, it's naturally sweet without being overpowering – perfect for those mornings when you want something that feels indulgent but is actually nourishing your body.</p>
+      
+      <h2>Make It Your Own</h2>
+      <p>The beauty of smoothie bowls is that they're so customizable. Don't have dragon fruit? Try frozen raspberries for a similar color. Prefer oat milk? Go for it! The base recipe is just a starting point for your own creative expression.</p>
+      
+      <p>I've made this recipe probably fifty times now, and it never gets old. There's something so satisfying about starting your day with something this beautiful and nourishing. It sets the tone for an intentional, joyful day ahead.</p>
+      
+      <p>Trust me, once you master this rose gold smoothie bowl, you'll want to make it every weekend. It's become my signature brunch dish, and I love sharing it with friends who always ask for the recipe!</p>
+    `,
+    },
+    "coastal-cafes-hidden-gems": {
+      id: "7",
+      title: "Hidden Gems: Coastal Cafes Worth the Drive",
+      slug: "coastal-cafes-hidden-gems",
+      seoTitle: "Hidden Coastal Cafes Worth the Drive - Best Seaside Coffee Spots",
+      seoDescription:
+        "Discover charming hidden coastal cafes with perfect coffee and stunning ocean views. From clifftop terraces to beachside hideaways, find your next coastal coffee adventure.",
+      tags: [
+        "coastal cafes",
+        "coffee shops",
+        "ocean views",
+        "road trip",
+        "cafe hopping",
+        "seaside dining",
+        "hidden gems",
+        "coastal travel",
+      ],
+      category: "food",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
+      publishedAt: "2024-01-10T08:00:00-08:00",
+      modifiedAt: "2024-01-10T08:00:00-08:00",
+      readTime: 8,
+      content: `
+      <p>There's something magical about sipping perfectly brewed coffee while listening to waves crash against the shore. Over the years, I've discovered some incredible coastal cafes that are worth every mile of the drive – places where the coffee is exceptional and the views are even better.</p>
+      
+      <h2>What Makes a Coastal Cafe Special</h2>
+      <p>It's not just about location (though ocean views certainly don't hurt!). The best coastal cafes have that perfect combination of quality coffee, welcoming atmosphere, and that indefinable seaside charm that makes you want to linger for hours.</p>
+      
+      <p>These are the places where locals gather before dawn to watch sunrises, where the baristas know everyone's order, and where you can sit for hours with a book and feel completely at peace.</p>
+      
+      <h2>Northern California Treasures</h2>
+      
+      <h3>The Clifftop Retreat - Half Moon Bay</h3>
+      <p>Perched on the cliffs overlooking Pillar Point Harbor, this little gem serves some of the best single-origin coffee I've ever tasted. The outdoor deck is perfect for fog-watching mornings, and their homemade pastries pair beautifully with the salty sea air.</p>
+      
+      <p>What makes it special: The owner sources beans directly from small farms and roasts them on-site. Plus, you might spot whales during migration season!</p>
+      
+      <h3>Seaside Sanctuary - Carmel-by-the-Sea</h3>
+      <p>Tucked away on a quiet side street, this fairytale cottage cafe feels like stepping into a storybook. The garden patio is surrounded by cypress trees, and you can hear the ocean even though it's a block away.</p>
+      
+      <p>Their lavender honey lattes are incredible, and the locally-made scones are perfect for sharing. It's the kind of place that makes you understand why artists have always flocked to Carmel.</p>
+      
+      <h2>Southern California Gems</h2>
+      
+      <h3>Beachside Bliss - Laguna Beach</h3>
+      <p>This tiny spot is literally built into the cliff, with tables that overlook the most beautiful cove. You have to walk down a steep path to reach it, but the journey is part of the charm. The sound of waves is the only background music you need.</p>
+      
+      <p>Their cold brew is perfection on hot summer days, and the breakfast burritos are legendary among locals. Fair warning: parking is tricky, but it's worth the walk.</p>
+      
+      <h3>Sunset Point Cafe - Malibu</h3>
+      <p>While technically not hidden (everyone knows about it), this spot earns its place because of the incredible sunset views and consistently excellent coffee. The deck stretches right over the beach, and dolphins often play in the waves below.</p>
+      
+      <p>Come for afternoon coffee and stay for the sunset – it's become my favorite way to end a beach day.</p>
+      
+      <h2>Pacific Northwest Discoveries</h2>
+      
+      <h3>Lighthouse Lookout - Oregon Coast</h3>
+      <p>This converted lighthouse keeper's station serves the most incredible coffee with panoramic ocean views. On clear days, you can see whales breaching in the distance. The rustic interior feels like a warm hug, perfect for those moody coastal mornings.</p>
+      
+      <p>Their house blend is smooth and rich, and the homemade cinnamon rolls are the size of dinner plates. It's become my mandatory stop on any Oregon coast road trip.</p>
+      
+      <h2>East Coast Coastal Treasures</h2>
+      
+      <h3>Harbor View Hideaway - Cape Cod</h3>
+      <p>This weathered shingle building has been serving coffee to fishermen and tourists alike for over 30 years. The mismatched furniture and faded nautical decor create the most authentic coastal atmosphere.</p>
+      
+      <p>Their coffee cake is legendary (seriously, people drive hours for it), and watching the sunrise over the harbor while sipping their dark roast is pure perfection.</p>
+      
+      <h2>Planning Your Coastal Cafe Road Trip</h2>
+      <p>The best coastal cafes often have limited hours and can be weather-dependent, so call ahead! I've learned to build flexibility into my plans – some of my best discoveries have happened when original plans fell through.</p>
+      
+      <p>Bring a book, wear layers (coastal weather can be unpredictable), and don't rush. These places are meant for lingering, for watching the light change over the water, for having conversations with strangers who become friends.</p>
+      
+      <h2>What to Order</h2>
+      <p>I always try the house blend first – it tells you everything about a cafe's priorities. But don't miss regional specialties: maple lattes in New England, lavender drinks in California wine country, or anything with local honey.</p>
+      
+      <p>And please, always pair your coffee with something local. These cafes often feature local bakers, local honey, local everything. It's part of what makes each one special.</p>
+      
+      <h2>The Real Magic</h2>
+      <p>What I love most about coastal cafes isn't just the views (though they're incredible). It's the sense of discovery, the feeling that you've found something special. It's the way conversations flow easier when you're surrounded by the sound of waves.</p>
+      
+      <p>These places remind us to slow down, to savor both the coffee and the moment. In our rushed world, that's a pretty precious gift.</p>
+      
+      <p>So grab your car keys, fill up the gas tank, and start exploring. The perfect coastal cafe is out there waiting for you, and trust me – the drive will be worth every mile.</p>
+    `,
+    },
   };
 
   const mockPost =
