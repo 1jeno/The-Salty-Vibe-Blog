@@ -1,12 +1,12 @@
 // No longer using carousel functionality, just displaying photos in a grid
 
 // Import carousel images
-import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
-import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
-import beachSceneImage from '@assets/generated_images/Refined_blonde_beach_scene_97b3bad9.png';
-import blondeBeachImage from '@assets/generated_images/Blonde_woman_beach_cowboy_hat_74b92e73.png';
-import tropicalCoconutImage from '@assets/generated_images/Tropical_coconut_vacation_paradise_05e5cd58.png';
-import combinedBeachImage from '@assets/generated_images/Combined_beach_scene_layout_6b9bbf94.png';
+import lifeLens1 from '@assets/generated_images/Life through my lens 1.jpg';
+import lifeLens2 from '@assets/generated_images/Life through my lens 2.jpg';
+import lifeLens3 from '@assets/generated_images/Life through my lens 3.jpg';
+import lifeLens4 from '@assets/generated_images/Life through my lens 4.jpg';
+import lifeLens5 from '@assets/generated_images/Life through my lens 5.jpg';
+import lifeLens6 from '@assets/generated_images/Life through my lens 6.jpg';
 
 interface CarouselImage {
   src: string;
@@ -16,34 +16,34 @@ interface CarouselImage {
 
 const carouselImages: CarouselImage[] = [
   {
-    src: morningCoffeeImage,
-    alt: 'Morning coffee beach ritual',
-    caption: 'Morning rituals by the ocean'
+    src: lifeLens1,
+    alt: 'Life through my lens moment 1',
+    caption: 'Capturing coastal magic'
   },
   {
-    src: tropicalVacationImage,
-    alt: 'Tropical vacation scents',
-    caption: 'Vacation vibes in a bottle'
+    src: lifeLens2,
+    alt: 'Life through my lens moment 2',
+    caption: 'Salty adventures'
   },
   {
-    src: beachSceneImage,
-    alt: 'Beach lifestyle scene',
-    caption: 'Coastal living at its finest'
+    src: lifeLens3,
+    alt: 'Life through my lens moment 3',
+    caption: 'Beach life moments'
   },
   {
-    src: blondeBeachImage,
-    alt: 'Beach style with cowboy hat',
-    caption: 'Effortless beach style'
+    src: lifeLens4,
+    alt: 'Life through my lens moment 4',
+    caption: 'Ocean inspired living'
   },
   {
-    src: tropicalCoconutImage,
-    alt: 'Tropical coconut paradise',
-    caption: 'Paradise found'
+    src: lifeLens5,
+    alt: 'Life through my lens moment 5',
+    caption: 'Seaside serenity'
   },
   {
-    src: combinedBeachImage,
-    alt: 'Combined beach lifestyle',
-    caption: 'Living the salty life'
+    src: lifeLens6,
+    alt: 'Life through my lens moment 6',
+    caption: 'Coastal wanderlust'
   }
 ];
 
