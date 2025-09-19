@@ -63,10 +63,10 @@ export default function Quotes() {
                   
                   {/* Quote text overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
-                    <blockquote className="text-sm md:text-base font-medium mb-2 leading-relaxed bg-pink-400/80 px-3 py-1 rounded-lg inline-block">
+                    <blockquote className="text-sm md:text-base font-medium mb-2 leading-relaxed bg-pink-400/50 px-3 py-1 rounded-lg inline-block">
                       "{quote.text}"
                     </blockquote>
-                    <cite className="text-xs opacity-90 not-italic font-semibold bg-pink-400/70 px-2 py-1 rounded mt-1 inline-block">
+                    <cite className="text-xs opacity-90 not-italic font-semibold bg-pink-400/40 px-2 py-1 rounded mt-1 inline-block">
                       — {quote.author}
                     </cite>
                   </div>
