@@ -73,10 +73,10 @@ export default function Header({ onSearch }: HeaderProps) {
             {/* Home */}
             <Link href="/" data-testid="link-home">
               <span
-                className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 ${
+                className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
                   location === '/' 
-                    ? 'text-primary border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
-                    : 'text-muted-foreground border-pink-400/60 hover:border-pink-500/80 hover:text-primary'
+                    ? 'text-primary border-2 border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                    : 'text-muted-foreground hover:text-primary'
                 }`}
               >
                 Home
@@ -88,7 +88,7 @@ export default function Header({ onSearch }: HeaderProps) {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 border-pink-400/60 hover:border-pink-500/80 hover:text-primary text-muted-foreground"
+                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 rounded text-muted-foreground hover:text-primary"
                   data-testid="button-lifestyle-dropdown"
                 >
                   Lifestyle
@@ -117,10 +117,10 @@ export default function Header({ onSearch }: HeaderProps) {
                 data-testid={`link-${item.name.toLowerCase()}`}
               >
                 <span
-                  className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded border-2 ${
+                  className={`text-sm font-medium transition-all duration-200 px-3 py-1 rounded ${
                     location === item.href 
-                      ? 'text-primary border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
-                      : 'text-muted-foreground border-pink-400/60 hover:border-pink-500/80 hover:text-primary'
+                      ? 'text-primary border-2 border-pink-500 bg-pink-50 ring-1 ring-pink-500/30 shadow-sm' 
+                      : 'text-muted-foreground hover:text-primary'
                   }`}
                 >
                   {item.name}
