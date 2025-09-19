@@ -63,7 +63,7 @@ export default function Quotes() {
                   
                   {/* Quote text overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-4" style={{color: '#403d39'}}>
-                    <blockquote className="text-sm md:text-base font-medium mb-2 text-shadow-lg leading-relaxed">
+                    <blockquote className="text-sm md:text-base font-medium mb-2 leading-relaxed">
                       "{quote.text}"
                     </blockquote>
                     <cite className="text-xs opacity-90 not-italic font-semibold">
