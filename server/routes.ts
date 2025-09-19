@@ -52,6 +52,37 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Newsletter signup endpoint
+  app.post("/api/newsletter/signup", async (req, res) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email || typeof email !== 'string') {
+        return res.status(400).json({ error: "Valid email address is required" });
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        return res.status(400).json({ error: "Please provide a valid email address" });
+      }
+
+      // TODO: Integrate with SendGrid for email list management
+      console.log('Newsletter signup:', email);
+      
+      // For now, just log and return success
+      // In the future, this will integrate with SendGrid to add to email list
+      
+      res.json({ 
+        success: true, 
+        message: "Successfully subscribed to newsletter",
+        email: email.trim().toLowerCase()
+      });
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      res.status(500).json({ error: "Failed to process newsletter signup" });
+    }
+  });
+
   const updateAffiliateProductSchema = insertAffiliateProductSchema.partial();
 
   app.patch("/api/affiliate-products/:id", async (req, res) => {

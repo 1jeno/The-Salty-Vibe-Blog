@@ -3,15 +3,55 @@ import { SiPinterest } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Newsletter signup:', email);
-    setEmail('');
-    // TODO: remove mock functionality - integrate with real newsletter service
+    
+    if (!email.trim()) {
+      toast({
+        title: "Email required",
+        description: "Please enter your email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/newsletter/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to subscribe');
+      }
+
+      toast({
+        title: "Welcome to The Salty Vibe!",
+        description: "You've successfully subscribed to our newsletter. Get ready for coastal inspiration!",
+      });
+      
+      setEmail('');
+    } catch (error) {
+      toast({
+        title: "Subscription failed",
+        description: "There was an issue subscribing. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleSocialClick = (platform: string) => {
@@ -40,8 +80,12 @@ export default function Footer() {
               className="flex-1"
               data-testid="input-newsletter-email"
             />
-            <Button type="submit" data-testid="button-newsletter-submit">
-              Subscribe
+            <Button 
+              type="submit" 
+              disabled={isSubmitting}
+              data-testid="button-newsletter-submit"
+            >
+              {isSubmitting ? 'Subscribing...' : 'Subscribe'}
             </Button>
           </form>
         </div>
