@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-card border-t border-card-border">
+    <footer className="bg-[#ffe5ec] border-t border-card-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Newsletter Section */}
         <div className="text-center mb-12">
