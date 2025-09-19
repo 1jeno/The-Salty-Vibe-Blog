@@ -98,7 +98,7 @@ export default function Header({ onSearch }: HeaderProps) {
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border border-border shadow-none">
+              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border border-border" style={{ boxShadow: 'none' }}>
                 {lifestyleSubcategories.map((subcategory) => (
                   <DropdownMenuItem
                     key={subcategory.key}
