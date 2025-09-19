@@ -21,6 +21,9 @@ function Router() {
       <Route path="/lifestyle" component={Home} />
       <Route path="/travel" component={Home} />
       <Route path="/food" component={Home} />
+      <Route path="/beauty" component={Home} />
+      <Route path="/home-decor" component={Home} />
+      <Route path="/fashion" component={Home} />
       <Route path="/post/:slug" component={BlogPost} />
       <Route component={NotFound} />
     </Switch>

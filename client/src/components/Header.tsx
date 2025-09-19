@@ -103,7 +103,7 @@ export default function Header({ onSearch }: HeaderProps) {
                   <DropdownMenuItem
                     key={subcategory.key}
                     onClick={() => handleLifestyleClick(subcategory.key)}
-                    className="cursor-pointer"
+                    className="cursor-pointer text-muted-foreground hover:text-pink-500 focus:text-pink-500 active:text-pink-500"
                     data-testid={`button-lifestyle-${subcategory.key}`}
                   >
                     {subcategory.label}
@@ -183,7 +183,7 @@ export default function Header({ onSearch }: HeaderProps) {
                         handleLifestyleClick(subcategory.key);
                         setIsMenuOpen(false);
                       }}
-                      className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="block text-sm text-muted-foreground hover:text-pink-500 active:text-pink-500 transition-colors"
                       data-testid={`button-mobile-lifestyle-${subcategory.key}`}
                     >
                       {subcategory.label}
