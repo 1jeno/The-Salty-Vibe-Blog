@@ -1,4 +1,5 @@
-import { Heart, Instagram, BookmarkPlus, Mail } from 'lucide-react';
+import { Heart, Instagram, Mail } from 'lucide-react';
+import { SiPinterest } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
@@ -53,15 +54,15 @@ export default function Footer() {
             onClick={() => handleSocialClick('Instagram')}
             data-testid="button-social-instagram"
           >
-            <Instagram className="h-5 w-5" />
+            <Instagram className="h-5 w-5 text-primary" />
           </Button>
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => handleSocialClick('BookmarkPlus')}
+            onClick={() => handleSocialClick('Pinterest')}
             data-testid="button-social-pinterest"
           >
-            <BookmarkPlus className="h-5 w-5" />
+            <SiPinterest className="h-5 w-5 text-primary" />
           </Button>
           <Button
             variant="ghost"
@@ -69,7 +70,7 @@ export default function Footer() {
             onClick={() => handleSocialClick('Email')}
             data-testid="button-social-email"
           >
-            <Mail className="h-5 w-5" />
+            <Mail className="h-5 w-5 text-primary" />
           </Button>
         </div>
 
