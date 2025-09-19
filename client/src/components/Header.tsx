@@ -103,7 +103,7 @@ export default function Header({ onSearch }: HeaderProps) {
                   <DropdownMenuItem
                     key={subcategory.key}
                     onClick={() => handleLifestyleClick(subcategory.key)}
-                    className="cursor-pointer text-muted-foreground hover:text-pink-500 focus:text-pink-500 active:text-pink-500"
+                    className="cursor-pointer text-muted-foreground hover:text-pink-500 focus:text-pink-500 active:text-pink-500 hover:bg-transparent focus:bg-transparent active:bg-transparent"
                     data-testid={`button-lifestyle-${subcategory.key}`}
                   >
                     {subcategory.label}
