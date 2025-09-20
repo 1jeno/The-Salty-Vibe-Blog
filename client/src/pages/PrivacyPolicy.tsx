@@ -1,8 +1,20 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import { Button } from "@/components/ui/button";
 
 export default function PrivacyPolicy() {
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleOptOut = () => {
+    // For demonstration - in a real implementation, this would connect to your data management system
+    window.open('mailto:hello@thesaltyvibe.com?subject=Data%20Opt-Out%20Request&body=I%20would%20like%20to%20opt%20out%20of%20the%20sale%20or%20sharing%20of%20my%20personal%20information.%20Please%20confirm%20my%20opt-out%20status.', '_blank');
+  };
+
   return (
     <>
       <SEOHead
@@ -84,19 +96,43 @@ export default function PrivacyPolicy() {
               </section>
 
               <section className="mb-8">
-                <h2 className="font-serif text-2xl font-semibold mb-4">Your California Privacy Rights (CCPA)</h2>
+                <h2 className="font-serif text-2xl font-semibold mb-4">Your California Privacy Rights (CCPA/CPRA)</h2>
                 <p className="mb-4">
                   If you are a California resident, you have the right to:
                 </p>
                 <ul className="list-disc pl-6 mb-4">
                   <li><strong>Know:</strong> Request information about the personal information we collect, use, and disclose</li>
                   <li><strong>Delete:</strong> Request deletion of your personal information</li>
-                  <li><strong>Opt-out:</strong> Opt-out of the sale of personal information (we do not sell personal information)</li>
+                  <li><strong>Opt-out:</strong> Opt-out of the sale or sharing of personal information</li>
+                  <li><strong>Correct:</strong> Request correction of inaccurate personal information</li>
+                  <li><strong>Limit:</strong> Limit the use and disclosure of sensitive personal information</li>
                   <li><strong>Non-discrimination:</strong> Receive equal service and pricing regardless of exercising your privacy rights</li>
                 </ul>
                 <p className="mb-4">
                   To exercise these rights, please contact us at hello@thesaltyvibe.com.
                 </p>
+              </section>
+
+              <section className="mb-8">
+                <h2 className="font-serif text-2xl font-semibold mb-4">Opt-Out of Sale or Sharing</h2>
+                <p className="mb-4">
+                  While we do not currently sell or share personal information for monetary consideration, we provide this opt-out mechanism to ensure full compliance with California privacy laws.
+                </p>
+                <p className="mb-4">
+                  If you are a California resident and wish to opt-out of any potential sale or sharing of your personal information, you can submit a request using the button below:
+                </p>
+                <div className="bg-muted p-6 rounded-lg text-center">
+                  <Button 
+                    onClick={handleOptOut}
+                    className="bg-primary hover:bg-primary/90"
+                    data-testid="button-opt-out"
+                  >
+                    Opt-Out of Data Sale/Sharing
+                  </Button>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    This will open an email to submit your opt-out request
+                  </p>
+                </div>
               </section>
 
               <section className="mb-8">
