@@ -13,6 +13,7 @@ import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-cof
 import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
 import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
 import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png';
+import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic.png';
 
 export default function Home() {
   const [location] = useLocation();
@@ -88,7 +89,7 @@ export default function Home() {
       title: 'Sunset Beach Picnic Ideas',
       excerpt: 'Create magical moments with these dreamy beach picnic setups perfect for golden hour photography and romantic evenings by the sea.',
       category: 'lifestyle',
-      image: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=300&fit=crop',
+      image: beachSunsetPicnicImage,
       publishedAt: '2024-01-12',
       readTime: 7,
       slug: 'sunset-beach-picnic-ideas'

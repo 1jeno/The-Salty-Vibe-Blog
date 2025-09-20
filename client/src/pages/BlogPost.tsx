@@ -14,6 +14,7 @@ import morningCoffeeImage from "@assets/generated_images/morning-ritual-iced-cof
 import tropicalVacationImage from "@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png";
 import beachWardrobeImage from "@assets/generated_images/beach-wardrobe-white-dress.jpg";
 import swimsuit2026Image from "@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png";
+import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic.png";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -543,7 +544,7 @@ export default function BlogPost() {
         "coastal dining",
       ],
       category: "lifestyle",
-      image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&h=600&fit=crop",
+      image: beachSunsetPicnicImage,
       publishedAt: "2024-01-12T16:00:00-08:00",
       modifiedAt: "2024-01-12T16:00:00-08:00",
       readTime: 7,
