@@ -519,6 +519,94 @@ export default function BlogPost() {
       <p>So grab your car keys, fill up the gas tank, and start exploring. The perfect coastal cafe is out there waiting for you, and trust me – the drive will be worth every mile.</p>
     `,
     },
+    "sunset-beach-picnic-ideas": {
+      id: "8",
+      title: "Sunset Beach Picnic Ideas",
+      slug: "sunset-beach-picnic-ideas",
+      seoTitle: "Sunset Beach Picnic Ideas - Perfect Golden Hour Setups",
+      seoDescription:
+        "Create magical moments with these dreamy beach picnic setups perfect for golden hour photography and romantic evenings by the sea. Discover the best foods, styling tips, and essential items for your perfect sunset beach picnic.",
+      tags: [
+        "beach picnic",
+        "sunset picnic",
+        "golden hour",
+        "beach date",
+        "romantic picnic",
+        "beach food",
+        "picnic styling",
+        "coastal dining",
+      ],
+      category: "lifestyle",
+      image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&h=600&fit=crop",
+      publishedAt: "2024-01-12T16:00:00-08:00",
+      modifiedAt: "2024-01-12T16:00:00-08:00",
+      readTime: 7,
+      content: `
+      <p>There's something absolutely magical about watching the sun dip toward the horizon while enjoying a beautifully curated beach picnic. The golden light, the sound of waves, the salty breeze – it's the perfect recipe for creating those dreamy, Instagram-worthy moments that you'll treasure forever.</p>
+      
+      <h2>Timing is Everything</h2>
+      <p>The secret to the perfect sunset beach picnic is all about timing. I always arrive at least 2 hours before sunset to set up and enjoy the experience without rushing. This gives you time to find the perfect spot, arrange everything beautifully, and settle in to watch the light change over the water.</p>
+      
+      <p>Golden hour typically begins about an hour before sunset, and that's when the magic really happens. The light becomes soft and warm, creating that dreamy, romantic atmosphere that makes everything look like it belongs in a fairytale.</p>
+      
+      <h2>Essential Picnic Setup</h2>
+      <p>Your beach picnic setup is the foundation for creating those picture-perfect moments. Start with a large, beautiful blanket – I love neutral tones like cream, sand, or soft blush that photograph gorgeously against the beach backdrop.</p>
+      
+      <p>Layer different textures with throw pillows, woven baskets, and maybe a vintage-style cooler. The key is creating a cozy, lived-in feeling that looks effortlessly elegant. Think coastal grandmother meets bohemian chic!</p>
+      
+      <h2>Food That Travels Well</h2>
+      <p>Beach picnic food needs to be delicious, Instagram-worthy, and practical. Here are my go-to options that never disappoint:</p>
+      
+      <h3>Elegant Finger Foods</h3>
+      <ul>
+        <li>Charcuterie board with local cheeses, fruits, and artisanal crackers</li>
+        <li>Fresh bruschetta on sourdough (pack the toppings separately)</li>
+        <li>Gourmet sandwiches cut into triangles and wrapped in parchment</li>
+        <li>Fresh fruit like strawberries, grapes, and figs</li>
+        <li>Chocolate-covered strawberries for that romantic touch</li>
+      </ul>
+      
+      <h3>Refreshing Beverages</h3>
+      <p>Sparkling water with fresh fruit, rosé in proper glasses (check local laws about alcohol on beaches), or my favorite – iced herbal tea in beautiful mason jars with fresh mint and lemon.</p>
+      
+      <h2>Photography Magic</h2>
+      <p>The lighting during golden hour is absolutely unmatched for photography. Position your picnic so the sun is behind or to the side of your setup for that gorgeous, dreamy backlight. The key is working with the natural light rather than fighting it.</p>
+      
+      <p>Take photos throughout the experience – the setup process, candid moments of enjoying the food, and of course, that perfect sunset shot with silhouettes against the colorful sky. Don't forget to put the camera down sometimes and just enjoy the moment!</p>
+      
+      <h2>Comfort and Style</h2>
+      <p>Dressing for a sunset beach picnic is all about being comfortable while looking effortlessly chic. Flowy fabrics work beautifully in beach breezes, and layers are essential as temperatures can drop once the sun sets.</p>
+      
+      <p>A soft cardigan or light kimono, comfortable sandals that won't get ruined by sand, and maybe a cute sun hat for earlier in the day. Neutral colors and natural fabrics photograph beautifully and complement the beach setting.</p>
+      
+      <h2>Creating Ambiance</h2>
+      <p>As the sun starts to set, you can add some magical touches to extend the experience. Battery-powered string lights create the most romantic atmosphere, and pillar candles in glass lanterns are perfect for when the breeze picks up.</p>
+      
+      <p>A carefully curated playlist playing softly from a small bluetooth speaker sets the perfect mood – think acoustic covers, indie folk, and songs that make you feel like you're living in a movie.</p>
+      
+      <h2>Weather Considerations</h2>
+      <p>Always check the weather and have a backup plan! Coastal weather can change quickly, so pack a light blanket for warmth and maybe a small pop-up canopy for unexpected wind. The key is being prepared without overpacking.</p>
+      
+      <p>If it's particularly windy, secure everything with small weights or clips. Nothing ruins the magic like chasing napkins down the beach!</p>
+      
+      <h2>Leave No Trace</h2>
+      <p>Part of creating a perfect beach picnic experience is respecting the beautiful environment that makes it possible. Pack everything out, including small scraps, and leave your spot even more beautiful than you found it.</p>
+      
+      <p>I always bring an extra bag for any litter I might find nearby. It's a small way to give back to the places that give us so much joy.</p>
+      
+      <h2>Making Memories</h2>
+      <p>The most important ingredient in any sunset beach picnic isn't the perfect food or setup – it's being present in the moment. Put away the phones occasionally, savor the conversation, listen to the waves, and watch the sky change colors.</p>
+      
+      <p>These are the moments that become cherished memories. The laughter, the quiet contentment, the way the light catches someone's face just right. That's the real magic of a sunset beach picnic.</p>
+      
+      <h2>Seasonal Variations</h2>
+      <p>Each season brings its own charm to beach picnics. Summer offers warm evenings and later sunsets, perfect for leisurely dinners on the sand. Fall brings gorgeous colors and cooler, crisper air that's perfect for cozy setups with warm beverages.</p>
+      
+      <p>Even winter beach picnics can be magical – think hot chocolate in thermoses, warm blankets, and dramatic sunsets over winter waves. It's all about embracing the season and dressing appropriately.</p>
+      
+      <p>Whether it's a romantic date, time with best friends, or a solo moment of self-care, a sunset beach picnic offers the perfect opportunity to slow down and create something beautiful. Trust me, once you experience the magic of dining as the sun paints the sky in shades of coral and gold, you'll be planning your next beach picnic before you even pack up the first one.</p>
+    `,
+    },
   };
 
   const mockPost =
