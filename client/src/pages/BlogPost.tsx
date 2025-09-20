@@ -1,5 +1,6 @@
 import { useRoute } from "wouter";
 import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +18,11 @@ import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/post/:slug");
+
+  // Scroll to top when blog post loads or changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [params?.slug]);
 
   // Fetch related affiliate products
   const { data: affiliateProducts = [] } = useQuery<AffiliateProduct[]>({
