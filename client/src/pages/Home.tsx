@@ -16,6 +16,7 @@ import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection
 import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic.png';
 import pitayaBowlImage from '@assets/generated_images/pitaya bowl.png';
 import pancakesBeachsideImage from '@assets/generated_images/Pancakes Beachside.jpg';
+import perrysPorchImage from '@assets/generated_images/Perrys Porch Crispy Artichokes.jpg';
 
 export default function Home() {
   const [location] = useLocation();
@@ -125,6 +126,16 @@ export default function Home() {
       publishedAt: '2024-01-30',
       readTime: 8,
       slug: 'perfect-swimsuit-2026'
+    },
+    {
+      id: '9',
+      title: 'Perry\'s Porch: A Downtown St. Pete Gem',
+      excerpt: 'I discovered this incredible spot in downtown St. Petersburg where the crispy artichokes are life-changing and the bartenders craft magic in a glass. This hidden gem is about to become your new favorite.',
+      category: 'food',
+      image: perrysPorchImage,
+      publishedAt: '2024-02-01',
+      readTime: 6,
+      slug: 'perrys-porch-st-pete-gem'
     }
   ];
 

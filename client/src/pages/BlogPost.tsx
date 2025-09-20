@@ -17,6 +17,7 @@ import swimsuit2026Image from "@assets/generated_images/2026_swimsuit_collection
 import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic.png";
 import pitayaBowlImage from "@assets/generated_images/pitaya bowl.png";
 import pancakesBeachsideImage from "@assets/generated_images/Pancakes Beachside.jpg";
+import perrysPorchImage from "@assets/generated_images/Perrys Porch Crispy Artichokes.jpg";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -614,6 +615,61 @@ export default function BlogPost() {
       <p>Even winter beach picnics can be magical – think hot chocolate in thermoses, warm blankets, and dramatic sunsets over winter waves. It's all about embracing the season and dressing appropriately.</p>
       
       <p>Whether it's a romantic date, time with best friends, or a solo moment of self-care, a sunset beach picnic offers the perfect opportunity to slow down and create something beautiful. Trust me, once you experience the magic of dining as the sun paints the sky in shades of coral and gold, you'll be planning your next beach picnic before you even pack up the first one.</p>
+    `,
+    },
+    "perrys-porch-st-pete-gem": {
+      id: "9",
+      title: "Perry's Porch: A Downtown St. Pete Gem",
+      slug: "perrys-porch-st-pete-gem",
+      seoTitle: "Perry's Porch Restaurant Review - Downtown St. Petersburg Hidden Gem",
+      seoDescription:
+        "Discover Perry's Porch in downtown St. Petersburg - where crispy artichokes with grana padano and exceptional craft cocktails make this a must-visit dining destination.",
+      tags: [
+        "Perry's Porch",
+        "St. Petersburg restaurants",
+        "downtown St. Pete",
+        "crispy artichokes",
+        "craft cocktails",
+        "restaurant review",
+        "Florida dining",
+        "hidden gems",
+      ],
+      category: "food",
+      image: perrysPorchImage,
+      publishedAt: "2024-02-01T18:00:00-05:00",
+      modifiedAt: "2024-02-01T18:00:00-05:00",
+      readTime: 6,
+      content: `
+      <p>Sometimes you stumble upon a place that completely exceeds your expectations and leaves you wondering how you lived without knowing about it. That's exactly what happened when I discovered Perry's Porch in downtown St. Petersburg – and now I'm obsessed.</p>
+      
+      <h2>First Impressions</h2>
+      <p>Walking into Perry's Porch, you immediately feel the warm, welcoming atmosphere that makes you want to settle in for the evening. Located in the heart of downtown St. Pete, this spot has that perfect balance of sophisticated charm and laid-back coastal vibes that I absolutely love.</p>
+      
+      <p>But what really sets this place apart isn't just the ambiance – it's the incredible attention to detail in both the food and service that makes Perry's Porch feel like such a special discovery.</p>
+      
+      <h2>The Crispy Artichokes That Changed Everything</h2>
+      <p>Okay, can we talk about these crispy artichokes? I'll be completely honest – I had no idea what to expect when I ordered them. In fact, I didn't even know Florida had artichokes! But these weren't just any artichokes. These were perfectly crispy, golden-brown beauties served with the most incredible grana padano-roasted garlic and lemon aioli.</p>
+      
+      <p>The first bite was a revelation. The outside was perfectly crispy with that satisfying crunch, while the inside remained tender and flavorful. The grana padano added this beautiful nutty, salty depth, while the roasted garlic and lemon aioli provided the perfect creamy, tangy complement. It was sophisticated comfort food at its finest.</p>
+      
+      <p>I'm not exaggerating when I say these crispy artichokes have ruined me for all other appetizers. They're that good.</p>
+      
+      <h2>Cocktail Magic</h2>
+      <p>And then there was the bartender – absolute magic behind that bar. I mentioned I was feeling adventurous, and without missing a beat, he crafted this incredible custom cocktail that was perfectly balanced and unlike anything I'd had before. I wish I could remember the exact ingredients, but honestly, I was too busy being amazed by how perfectly it paired with the artichokes.</p>
+      
+      <p>What I loved most was how the bartender took the time to understand what flavors I enjoy and then created something completely unique. That level of personalized service is rare, and it made the entire experience feel special.</p>
+      
+      <h2>Why Perry's Porch is a True Gem</h2>
+      <p>In a city full of amazing dining options, Perry's Porch stands out because of those little details that show they truly care about the guest experience. From the perfectly executed food to the creative cocktails to the genuine hospitality, everything here feels intentional and thoughtful.</p>
+      
+      <p>This is the kind of place where you want to bring friends to introduce them to something special, where you feel comfortable whether you're dressed up for date night or keeping it casual after a beach day.</p>
+      
+      <h2>The Bottom Line</h2>
+      <p>Perry's Porch has officially earned a permanent spot on my St. Petersburg favorites list. Those crispy artichokes alone are worth the trip, but when you combine them with exceptional cocktails and genuine hospitality, you've got something really special.</p>
+      
+      <p>If you're in downtown St. Pete, do yourself a favor and stop by Perry's Porch. Order the crispy artichokes (trust me on this), ask the bartender to surprise you with a cocktail, and prepare to discover your new favorite spot.</p>
+      
+      <p>Sometimes the best discoveries happen when you least expect them, and Perry's Porch is proof that St. Petersburg's culinary scene continues to amaze and delight.</p>
     `,
     },
   };
