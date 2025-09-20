@@ -10,8 +10,13 @@ interface CategoryFilterProps {
 export default function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
   const categories: { key: Category; label: string }[] = [
     { key: 'all', label: 'All Posts' },
+    { key: 'lifestyle', label: 'Lifestyle' },
     { key: 'travel', label: 'Travel' },
     { key: 'food', label: 'Food' },
+    { key: 'beauty', label: 'Beauty' },
+    { key: 'home-decor', label: 'Home Decor' },
+    { key: 'fashion', label: 'Fashion' },
+    { key: 'wellness', label: 'Wellness' },
   ];
 
   const handleCategoryClick = (category: Category) => {
