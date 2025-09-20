@@ -15,6 +15,7 @@ import tropicalVacationImage from "@assets/generated_images/Vintage_perfume_bott
 import beachWardrobeImage from "@assets/generated_images/beach-wardrobe-white-dress.jpg";
 import swimsuit2026Image from "@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png";
 import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic.png";
+import pitayaBowlImage from "@assets/generated_images/pitaya bowl.png";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -378,7 +379,7 @@ export default function BlogPost() {
         "aesthetic food",
       ],
       category: "food",
-      image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&h=600&fit=crop",
+      image: pitayaBowlImage,
       publishedAt: "2024-01-15T09:00:00-08:00",
       modifiedAt: "2024-01-15T09:00:00-08:00",
       readTime: 4,

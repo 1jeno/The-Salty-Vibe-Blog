@@ -14,6 +14,7 @@ import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bott
 import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
 import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png';
 import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic.png';
+import pitayaBowlImage from '@assets/generated_images/pitaya bowl.png';
 
 export default function Home() {
   const [location] = useLocation();
@@ -79,7 +80,7 @@ export default function Home() {
       title: 'Rose Gold Everything: Brunch Recipe',
       excerpt: 'This pink-hued smoothie bowl is as delicious as it is photogenic. Perfect for those aesthetic brunch moments you\'ll want to share.',
       category: 'food',
-      image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&h=300&fit=crop',
+      image: pitayaBowlImage,
       publishedAt: '2024-01-15',
       readTime: 4,
       slug: 'rose-gold-brunch-recipe'
