@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Search, Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
+import { Search, Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -17,7 +17,6 @@ interface HeaderProps {
 export default function Header({ onSearch }: HeaderProps) {
   const [location] = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = (e: React.FormEvent) => {
@@ -26,11 +25,6 @@ export default function Header({ onSearch }: HeaderProps) {
     console.log('Search triggered:', searchQuery);
   };
 
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-    console.log('Theme toggled:', isDark ? 'light' : 'dark');
-  };
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -145,14 +139,6 @@ export default function Header({ onSearch }: HeaderProps) {
               </Button>
             </form>
             
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              data-testid="button-theme-toggle"
-            >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
 
             {/* Mobile menu button */}
             <Button
