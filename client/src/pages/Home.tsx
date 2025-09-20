@@ -15,6 +15,7 @@ import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dr
 import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png';
 import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic.png';
 import pitayaBowlImage from '@assets/generated_images/pitaya bowl.png';
+import pancakesBeachsideImage from '@assets/generated_images/Pancakes Beachside.jpg';
 
 export default function Home() {
   const [location] = useLocation();
@@ -100,7 +101,7 @@ export default function Home() {
       title: 'Hidden Gems: Coastal Cafes Worth the Drive',
       excerpt: 'Discover the most charming seaside cafes where the coffee is perfect and the views are even better. Your next road trip destination awaits.',
       category: 'food',
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
+      image: pancakesBeachsideImage,
       publishedAt: '2024-01-10',
       readTime: 8,
       slug: 'coastal-cafes-hidden-gems'

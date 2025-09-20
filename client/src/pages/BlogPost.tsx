@@ -16,6 +16,7 @@ import beachWardrobeImage from "@assets/generated_images/beach-wardrobe-white-dr
 import swimsuit2026Image from "@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png";
 import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic.png";
 import pitayaBowlImage from "@assets/generated_images/pitaya bowl.png";
+import pancakesBeachsideImage from "@assets/generated_images/Pancakes Beachside.jpg";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -459,7 +460,7 @@ export default function BlogPost() {
         "coastal travel",
       ],
       category: "food",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
+      image: pancakesBeachsideImage,
       publishedAt: "2024-01-10T08:00:00-08:00",
       modifiedAt: "2024-01-10T08:00:00-08:00",
       readTime: 8,
