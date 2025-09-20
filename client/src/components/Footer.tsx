@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { Link } from 'wouter';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -119,15 +120,29 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="text-center border-t border-border pt-8">
-          <p className="text-muted-foreground text-sm mb-2">
-            © 2025 The Salty Vibe. Made with{' '}
-            <Heart className="inline h-4 w-4 text-primary fill-current" />{' '}
-            for the coastal life.
-          </p>
-          <p className="text-muted-foreground text-xs">
-            Living the dream, one wave at a time.
-          </p>
+        <div className="border-t border-border pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            {/* Left side - Copyright */}
+            <div className="text-center sm:text-left">
+              <p className="text-muted-foreground text-sm mb-2">
+                © 2025 The Salty Vibe. Made with{' '}
+                <Heart className="inline h-4 w-4 text-primary fill-current" />{' '}
+                for the coastal life.
+              </p>
+              <p className="text-muted-foreground text-xs">
+                Living the dream, one wave at a time.
+              </p>
+            </div>
+            
+            {/* Right side - Privacy Policy */}
+            <div className="text-center sm:text-right">
+              <Link href="/privacy-policy" data-testid="link-privacy-policy">
+                <span className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                  Privacy Policy
+                </span>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

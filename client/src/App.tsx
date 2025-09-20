@@ -10,6 +10,7 @@ import Shop from "@/pages/Shop";
 import Contact from "@/pages/Contact";
 import Quotes from "@/pages/Quotes";
 import BlogPost from "@/pages/BlogPost";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/home-decor" component={Home} />
       <Route path="/fashion" component={Home} />
       <Route path="/post/:slug" component={BlogPost} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );
