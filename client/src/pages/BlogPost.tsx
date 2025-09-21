@@ -67,7 +67,9 @@ export default function BlogPost() {
       <h2>The Perfect Beach Setup</h2>
       <p>My ideal morning begins before the world awakens. I slip out of bed quietly, wrap myself in my favorite linen cover-up, and gather my morning essentials. There's something so intentional about preparing an iced coffee with care – watching the rich brew swirl with creamy foam, feeling the condensation form on the glass as the morning air meets the cool drink.</p>
       
-      <p>I pack my woven beach bag with the essentials: my softest cream blanket (the one that photographs beautifully against the sand), my leather-bound journal with pages already filled with gratitudes and dreams, that perfect ceramic travel mug I picked up at a coastal market in Big Sur, and of course, my favorite sunblock. I'm completely obsessed with SunBum 30 spray – it goes on so smoothly, smells like a vacation, and gives me that perfect protection without feeling heavy or greasy on my skin.</p>
+      <p>I pack my woven beach bag with the essentials: my softest cream blanket (the one that photographs beautifully against the sand), my leather-bound journal with pages already filled with gratitudes and dreams, and of course, my favorite sunblock. I'm completely obsessed with <a href="https://amzn.to/4gxYEsl" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-coral-600 underline font-medium">SunBum body lotion sunscreen</a> – it goes on so smoothly, smells like a vacation, and gives me that perfect protection without feeling heavy or greasy on my skin.</p>
+      
+      <p>For beverages, I've upgraded from my old ceramic travel mug to this gorgeous <a href="https://amzn.to/46voqZz" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-coral-600 underline font-medium">pink Yeti travel cup</a> that keeps my iced coffee perfectly cold for hours, even in the morning sun. It's become such an essential part of my beach ritual!</p>
       
       <h2>Where Ocean Meets Intention</h2>
       <p>There's nothing quite like settling onto the sand, beach blanket spread perfectly, iced coffee in hand, watching the sunrise paint the sky in shades of coral and gold. The ocean stretches endlessly before me, waves gently lapping at the shore, creating the most perfect soundtrack for reflection.</p>
@@ -136,7 +138,9 @@ export default function BlogPost() {
       <p>Here's my carefully curated list of products that will have you feeling like you're perpetually on island time, even when you're stuck in Monday morning meetings:</p>
       
       <h3>For Beach Days (Real or Imagined)</h3>
-      <p><strong>Sunbum Sunblock</strong> – Okay, this one you already know I'm obsessed with! But seriously, even the scent of this sunscreen makes me happy. It's that perfect coconut-y, tropical fragrance that screams "beach day" the moment you open the bottle.</p>
+      <p><strong><a href="https://amzn.to/4gxYEsl" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-coral-600 underline font-medium">Sunbum Body Lotion Sunscreen</a></strong> – Okay, this one you already know I'm obsessed with! But seriously, even the scent of this sunscreen makes me happy. It's that perfect coconut-y, tropical fragrance that screams "beach day" the moment you open the bottle. Plus, I love how the body lotion formula feels so luxurious while still giving amazing protection.</p>
+      
+      <p>For those intense beach days, I also swear by their <a href="https://amzn.to/46voqZz" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-coral-600 underline font-medium">stronger sunblock formula</a> – it's my go-to when I know I'll be in direct sun for hours.</p>
       
       <h3>Aromatherapy That Transports</h3>
       <p><strong>Beach House Collection from Carter + Jane</strong> – I'm absolutely dying to try their Beach House Roll-on Aroma and Beach House Aroma + Body products. The reviews say they're like carrying a beach vacation in your purse, and honestly, who doesn't need that kind of instant mood boost?</p>
