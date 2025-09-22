@@ -143,6 +143,11 @@ export default function SEOHead({
         />
       )}
       
+      {/* Pinterest Verification */}
+      {import.meta.env.VITE_PINTEREST_VERIFY && (
+        <meta name="p:domain_verify" content={import.meta.env.VITE_PINTEREST_VERIFY} />
+      )}
+      
       {/* Additional SEO Meta Tags */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
