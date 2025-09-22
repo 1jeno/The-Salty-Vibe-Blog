@@ -55,9 +55,8 @@ export default function Footer() {
     }
   };
 
-  const handleSocialClick = (platform: string) => {
-    console.log(`${platform} clicked`);
-    // TODO: remove mock functionality - add real social media links
+  const handleSocialClick = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -96,7 +95,7 @@ export default function Footer() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => handleSocialClick('Instagram')}
+            onClick={() => handleSocialClick('https://www.instagram.com/thesaltyvibe')}
             data-testid="button-social-instagram"
           >
             <Instagram className="h-5 w-5 text-primary" />
@@ -104,7 +103,7 @@ export default function Footer() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => handleSocialClick('Pinterest')}
+            onClick={() => handleSocialClick('https://pinterest.com/thesaltyvibe')}
             data-testid="button-social-pinterest"
           >
             <SiPinterest className="h-5 w-5 text-primary" />
@@ -112,7 +111,7 @@ export default function Footer() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => handleSocialClick('Email')}
+            onClick={() => handleSocialClick('mailto:hello@thesaltyvibe.com')}
             data-testid="button-social-email"
           >
             <Mail className="h-5 w-5 text-primary" />
