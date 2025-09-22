@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertAffiliateProductSchema } from "@shared/schema";
 import { z } from "zod";
+import { sendContactFormEmail } from "./sendgrid";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Affiliate Products API Routes
@@ -80,6 +81,56 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Newsletter signup error:', error);
       res.status(500).json({ error: "Failed to process newsletter signup" });
+    }
+  });
+
+  // Contact form endpoint
+  app.post("/api/contact", async (req, res) => {
+    try {
+      const { name, email, subject, message } = req.body;
+      
+      // Validate required fields
+      if (!name || typeof name !== 'string' || name.trim().length < 2) {
+        return res.status(400).json({ error: "Name must be at least 2 characters" });
+      }
+      
+      if (!email || typeof email !== 'string') {
+        return res.status(400).json({ error: "Valid email address is required" });
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        return res.status(400).json({ error: "Please enter a valid email address" });
+      }
+
+      if (!subject || typeof subject !== 'string' || subject.trim().length < 5) {
+        return res.status(400).json({ error: "Subject must be at least 5 characters" });
+      }
+
+      if (!message || typeof message !== 'string' || message.trim().length < 10) {
+        return res.status(400).json({ error: "Message must be at least 10 characters" });
+      }
+
+      // Send email using SendGrid
+      const emailSent = await sendContactFormEmail(
+        name.trim(),
+        email.trim(),
+        subject.trim(),
+        message.trim()
+      );
+
+      if (!emailSent) {
+        return res.status(500).json({ error: "Failed to send message. Please try again." });
+      }
+
+      res.json({ 
+        success: true, 
+        message: "Thank you for reaching out. I'll get back to you soon!"
+      });
+
+    } catch (error) {
+      console.error('Contact form error:', error);
+      res.status(500).json({ error: "There was a problem sending your message. Please try again." });
     }
   });
 

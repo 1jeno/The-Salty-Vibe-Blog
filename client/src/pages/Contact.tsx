@@ -39,22 +39,31 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      // TODO: Integrate with real contact form service
-      console.log('Contact form data:', data);
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
       
       toast({
         title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon!",
+        description: result.message || "Thank you for reaching out. I'll get back to you soon!",
       });
       
       form.reset();
     } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "There was a problem sending your message. Please try again.";
       toast({
         title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
