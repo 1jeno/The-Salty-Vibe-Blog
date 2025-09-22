@@ -112,7 +112,7 @@ export class MemStorage implements IStorage {
         description: "Keeps iced coffee perfectly cold for hours. Gorgeous pink color that photographs beautifully for Instagram.",
         category: "travel",
         price: "39.99",
-        imageUrl: "/images/Pink_travel_cup_beach_7a96c932.png",
+        imageUrl: "/images/Amazon Yeti Travel Cup.jpg",
         affiliateUrl: "https://amzn.to/46MjgcN",
         retailer: "Amazon",
         isActive: true,
