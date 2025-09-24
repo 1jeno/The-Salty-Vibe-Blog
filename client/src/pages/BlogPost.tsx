@@ -709,11 +709,11 @@ export default function BlogPost() {
       <h2>My G.M. Collin Essentials</h2>
       <p>Over the years, I've discovered several G.M. Collin products that have become absolute staples in my routine:</p>
       
-      <p><strong><a href="https://amzn.to/gm-collin-cream" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Marine Collagen Cream</a></strong> – This has been a game-changer for hydration. The marine collagen technology feels like it's actually feeding my skin the nutrients it needs to recover from daily sun exposure.</p>
+      <p><strong><a href="https://amzn.to/46y0Zic" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Marine Collagen Cream</a></strong> – This has been a game-changer for hydration. The marine collagen technology feels like it's actually feeding my skin the nutrients it needs to recover from daily sun exposure.</p>
       
-      <p><strong><a href="https://amzn.to/gm-collin-vitc" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Vitamin C Serum</a></strong> – Living in the sun means dealing with potential dark spots and uneven tone. This vitamin C serum is powerful but gentle, and I've noticed such an improvement in my skin's brightness and clarity.</p>
+      <p><strong><a href="https://amzn.to/4gE5Hzz" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Vitamin C Serum</a></strong> – Living in the sun means dealing with potential dark spots and uneven tone. This vitamin C serum is powerful but gentle, and I've noticed such an improvement in my skin's brightness and clarity.</p>
       
-      <p><strong><a href="https://amzn.to/gm-collin-spf" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Daily Sun Protection</a></strong> – Their SPF formulas are lightweight but incredibly effective. They don't feel heavy or greasy, which is essential when you're wearing sunscreen every single day.</p>
+      <p><strong><a href="https://www.gmcollin.com/collections/sun-protection" target="_blank" rel="nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Daily Sun Protection</a></strong> – Their SPF formulas are lightweight but incredibly effective. They don't feel heavy or greasy, which is essential when you're wearing sunscreen every single day.</p>
       
       <h2>The Professional Difference</h2>
       <p>What sets G.M. Collin apart is that these are truly professional-grade products. You can feel the difference in the quality and concentration of active ingredients. It's not just about looking good in the moment – these products are working to improve your skin's health over time.</p>
