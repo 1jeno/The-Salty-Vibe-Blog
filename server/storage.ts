@@ -144,6 +144,19 @@ export class MemStorage implements IStorage {
         isActive: true,
         clickCount: "0",
         createdAt: new Date(),
+      },
+      {
+        id: "juliette-has-a-gun-lust-for-sun",
+        name: "Juliette Has A Gun - Lust for Sun",
+        description: "Tropical paradise in a bottle. This luxurious fragrance captures the essence of sun-soaked vacation days with notes that transport you to your perfect beach getaway.",
+        category: "beauty",
+        price: "96.00",
+        imageUrl: "/images/Amzaon_Perfume_Beachy.jpeg",
+        affiliateUrl: "https://amzn.to/427B7bC",
+        retailer: "Amazon",
+        isActive: true,
+        clickCount: "0",
+        createdAt: new Date(),
       }
     ];
 

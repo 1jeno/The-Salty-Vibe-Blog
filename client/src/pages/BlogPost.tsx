@@ -176,6 +176,8 @@ export default function BlogPost() {
       <h3>The Ultimate Splurge</h3>
       <p><strong>Tom Ford Eau de Soleil Blanc Eau de Parfume</strong> – Tom Ford does luxury like no one else, and this sounds like pure sunshine in a bottle. It's definitely an investment, but sometimes you need that one show-stopping fragrance that makes you feel absolutely unstoppable.</p>
       
+      <p><strong><a href="https://amzn.to/427B7bC" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-coral-600 underline font-medium">Juliette Has A Gun - Lust for Sun</a></strong> – This fragrance is pure vacation magic! From the moment you spray it, you're transported to that perfect beach day where the sun is warm on your skin and you have nowhere to be but exactly where you are. It's sophisticated yet playful, exactly what you'd expect from this cult-favorite fragrance house. The name says it all – pure lust for those endless summer days.</p>
+      
       <h2>The Power of Scent Memory</h2>
       <p>What I love about this collection is how diverse it is – from everyday essentials like sunscreen to luxury parfums, there's a vacation scent for every moment and every budget. Whether you're getting ready in the morning, cleaning your space, or stepping out for the evening, you can carry that beach energy with you.</p>
       
