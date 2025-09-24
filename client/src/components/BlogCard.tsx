@@ -7,7 +7,7 @@ export interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
-  category: 'lifestyle' | 'travel' | 'food';
+  category: 'lifestyle' | 'travel' | 'food' | 'beauty';
   image: string;
   publishedAt: string;
   readTime: number;
