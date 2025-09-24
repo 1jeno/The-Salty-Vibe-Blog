@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -33,6 +33,12 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>(getCategoryFromPath(location));
   const [searchQuery, setSearchQuery] = useState('');
   const [, setLocation] = useLocation();
+
+  // Update category when location changes
+  useEffect(() => {
+    const newCategory = getCategoryFromPath(location);
+    setActiveCategory(newCategory);
+  }, [location]);
 
   const handleExplore = () => {
     console.log('Explore posts clicked');
