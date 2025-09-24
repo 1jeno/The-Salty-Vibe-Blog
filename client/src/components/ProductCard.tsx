@@ -43,7 +43,7 @@ export default function ProductCard({
                 />
               )}
               <div className="flex-1 min-w-0">
-                <h3 className="font-medium text-sm group-hover:text-primary transition-colors truncate" data-testid={`text-product-name-${product.id}`}>
+                <h3 className="font-medium text-sm group-hover:text-pink-500 transition-colors truncate" data-testid={`text-product-name-${product.id}`}>
                   {product.name}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
@@ -91,7 +91,7 @@ export default function ProductCard({
         
         <CardContent className="p-4 flex-1 flex flex-col">
           <div className="flex items-start justify-between gap-2 mb-2">
-            <h3 className="font-serif text-lg font-semibold group-hover:text-primary transition-colors" data-testid={`text-product-name-${product.id}`}>
+            <h3 className="font-serif text-lg font-semibold group-hover:text-pink-500 transition-colors" data-testid={`text-product-name-${product.id}`}>
               {product.name}
             </h3>
             {product.price && (

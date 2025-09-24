@@ -80,7 +80,7 @@ export default function AffiliateLink({
       target="_blank"
       rel="noopener noreferrer nofollow"
       onClick={handleClick}
-      className={`${baseClasses} text-primary hover:text-primary/80 font-medium ${className}`}
+      className={`${baseClasses} text-primary hover:text-pink-500 font-medium ${className}`}
       data-testid={`link-affiliate-inline-${productId}`}
     >
       {children}
