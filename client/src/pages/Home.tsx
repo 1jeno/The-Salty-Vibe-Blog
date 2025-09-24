@@ -17,6 +17,7 @@ import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic
 import pitayaBowlImage from '@assets/generated_images/pitaya bowl.png';
 import pancakesBeachsideImage from '@assets/generated_images/Pancakes Beachside.jpg';
 import perrysPorchImage from '@assets/generated_images/Perrys Porch Crispy Artichokes.jpg';
+import gmCollinImage from '@assets/generated_images/Amazon_G.M.Collin.jpeg';
 
 export default function Home() {
   const [location] = useLocation();
@@ -142,6 +143,16 @@ export default function Home() {
       publishedAt: '2024-02-01',
       readTime: 6,
       slug: 'perrys-porch-st-pete-gem'
+    },
+    {
+      id: '10',
+      title: 'G.M. Collin: The Clean Beauty Secret I\'ve Been Using for Years',
+      excerpt: 'After years of sun exposure, I found my skin savior in G.M. Collin\'s clean beauty line. From their revolutionary collagen pellicle origins in 1957 Paris to their modern sun protection formulas, here\'s why this brand has earned my complete trust.',
+      category: 'beauty',
+      image: gmCollinImage,
+      publishedAt: '2024-02-05',
+      readTime: 8,
+      slug: 'gm-collin-clean-beauty-secrets'
     }
   ];
 

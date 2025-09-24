@@ -18,6 +18,7 @@ import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic
 import pitayaBowlImage from "@assets/generated_images/pitaya bowl.png";
 import pancakesBeachsideImage from "@assets/generated_images/Pancakes Beachside.jpg";
 import perrysPorchImage from "@assets/generated_images/Perrys Porch Crispy Artichokes.jpg";
+import gmCollinImage from "@assets/generated_images/Amazon_G.M.Collin.jpeg";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -27,16 +28,6 @@ export default function BlogPost() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [params?.slug]);
-
-  // Fetch related affiliate products
-  const { data: affiliateProducts = [] } = useQuery<AffiliateProduct[]>({
-    queryKey: ["/api/affiliate-products", "lifestyle"],
-    queryFn: () =>
-      fetch("/api/affiliate-products?category=lifestyle").then((res) =>
-        res.json(),
-      ),
-    enabled: true,
-  });
 
   // TODO: remove mock functionality - fetch real post data
   const mockPosts = {
@@ -680,6 +671,68 @@ export default function BlogPost() {
       <p>Sometimes the best discoveries happen when you least expect them, and Perry's Porch is proof that St. Petersburg's culinary scene continues to amaze and delight.</p>
     `,
     },
+    "gm-collin-clean-beauty-secrets": {
+      id: "10",
+      title: "G.M. Collin: The Clean Beauty Secret I've Been Using for Years",
+      slug: "gm-collin-clean-beauty-secrets",
+      seoTitle: "G.M. Collin Clean Beauty Review - Professional Skincare for Sun Protection",
+      seoDescription:
+        "Discover G.M. Collin's revolutionary clean beauty line. From their 1957 Parisian origins using collagen pellicles to their modern sun protection formulas, learn why this professional brand is perfect for coastal living.",
+      tags: [
+        "G.M. Collin",
+        "clean beauty",
+        "skincare review",
+        "sun protection",
+        "collagen pellicles",
+        "professional skincare",
+        "coastal living skincare",
+        "beauty routine",
+      ],
+      category: "beauty",
+      image: gmCollinImage,
+      publishedAt: "2024-02-05T09:00:00-08:00",
+      modifiedAt: "2024-02-05T09:00:00-08:00",
+      readTime: 8,
+      content: `
+      <p>Living by the coast means my skin takes a beating from sun, salt, and wind almost daily. After years of trying everything from drugstore staples to luxury lines, I discovered G.M. Collin – and it completely transformed my approach to skincare. This isn't just another beauty brand; it's a company with an incredible history and the most effective clean formulas I've ever used.</p>
+      
+      <h2>The Fascinating Origin Story</h2>
+      <p>Here's what makes G.M. Collin truly special: their journey began in 1957 when a renowned Parisian dermatologist pioneered the revolutionary use of collagen pellicles on burn victims to help heal and restore their skin health. This groundbreaking work in skin regeneration became the foundation for what would eventually become G.M. Collin's approach to professional skincare.</p>
+      
+      <p>That original innovation – using collagen pellicles to help damaged skin recover and regain its vitality – is still at the heart of their formulations today. When I learned about this history, it made perfect sense why their products work so effectively for my sun-exposed skin.</p>
+      
+      <h2>Why Clean Beauty Matters to Me</h2>
+      <p>After spending so much time in the sun, I realized I needed to be more intentional about what I was putting on my skin daily. G.M. Collin's commitment to clean, professional-grade ingredients means I can trust that I'm nourishing my skin rather than just masking issues.</p>
+      
+      <p>Their formulations are free from harsh chemicals and filled with active ingredients that actually work to repair and protect. This is especially important when you're dealing with the daily stress that coastal living puts on your skin.</p>
+      
+      <h2>My G.M. Collin Essentials</h2>
+      <p>Over the years, I've discovered several G.M. Collin products that have become absolute staples in my routine:</p>
+      
+      <p><strong><a href="https://amzn.to/gm-collin-cream" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Marine Collagen Cream</a></strong> – This has been a game-changer for hydration. The marine collagen technology feels like it's actually feeding my skin the nutrients it needs to recover from daily sun exposure.</p>
+      
+      <p><strong><a href="https://amzn.to/gm-collin-vitc" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Vitamin C Serum</a></strong> – Living in the sun means dealing with potential dark spots and uneven tone. This vitamin C serum is powerful but gentle, and I've noticed such an improvement in my skin's brightness and clarity.</p>
+      
+      <p><strong><a href="https://amzn.to/gm-collin-spf" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">Daily Sun Protection</a></strong> – Their SPF formulas are lightweight but incredibly effective. They don't feel heavy or greasy, which is essential when you're wearing sunscreen every single day.</p>
+      
+      <h2>The Professional Difference</h2>
+      <p>What sets G.M. Collin apart is that these are truly professional-grade products. You can feel the difference in the quality and concentration of active ingredients. It's not just about looking good in the moment – these products are working to improve your skin's health over time.</p>
+      
+      <p>The textures are luxurious but never overwhelming, and I love that the results are subtle and natural-looking. This isn't about dramatic transformation; it's about giving your skin exactly what it needs to be healthy and resilient.</p>
+      
+      <h2>Perfect for the Coastal Lifestyle</h2>
+      <p>If you're someone who spends time outdoors, especially near water, your skin needs extra support. The combination of sun, salt air, and environmental stress requires products that can truly protect and repair.</p>
+      
+      <p>G.M. Collin's approach to clean beauty means you're getting effective protection without compromising on ingredient quality. After years of using their products, my skin feels stronger, more resilient, and better equipped to handle whatever the coastal lifestyle throws at it.</p>
+      
+      <h2>Why I'm Sharing This</h2>
+      <p>I rarely talk about specific skincare brands because what works for one person doesn't always work for another. But G.M. Collin has been such a consistent part of my routine for years that I wanted to share why it's earned my complete trust.</p>
+      
+      <p>Whether you're dealing with sun damage, looking for clean ingredient formulations, or simply want professional-quality skincare that actually delivers results, G.M. Collin offers products that work beautifully with an active, outdoor lifestyle.</p>
+      
+      <p>The fact that their innovations started with helping burn victims heal their skin says everything about their commitment to real skin health. For those of us who love spending time in the sun but want to protect and nourish our skin properly, this brand offers the perfect balance of effectiveness and care.</p>
+    `,
+    },
   };
 
   const mockPost =
@@ -687,6 +740,16 @@ export default function BlogPost() {
       (params?.slug as keyof typeof mockPosts) ??
         "my-morning-ritual-coffee-by-the-ocean"
     ] ?? mockPosts["my-morning-ritual-coffee-by-the-ocean"];
+
+  // Fetch related affiliate products based on the current post's category
+  const { data: affiliateProducts = [] } = useQuery<AffiliateProduct[]>({
+    queryKey: ["/api/affiliate-products", mockPost.category],
+    queryFn: () =>
+      fetch(`/api/affiliate-products?category=${mockPost.category}`).then((res) =>
+        res.json(),
+      ),
+    enabled: true,
+  });
 
   // Related posts data for internal linking
   const allPosts = Object.values(mockPosts).map((post) => ({
