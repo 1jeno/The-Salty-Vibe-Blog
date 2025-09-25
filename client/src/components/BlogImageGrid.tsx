@@ -21,19 +21,21 @@ export default function BlogImageGrid({ images, title }: BlogImageGridProps) {
         </h2>
       )}
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
         {images.map((image, index) => (
           <div
             key={index}
-            className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg hover-elevate"
+            className="bg-card border border-card-border shadow-lg overflow-hidden hover-elevate"
             data-testid={`grid-image-${index}`}
           >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              loading="lazy"
-            />
+            <div className="aspect-square">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         ))}
       </div>

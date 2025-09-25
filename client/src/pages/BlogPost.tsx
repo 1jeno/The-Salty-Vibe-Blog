@@ -912,19 +912,19 @@ export default function BlogPost() {
               {mockPost.title}
             </h1>
 
-            <img
-              src={mockPost.image}
-              alt={mockPost.title}
-              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
-              data-testid="img-post-hero"
-            />
-
-            {(mockPost as any).images && (mockPost as any).images.length > 0 && (
+{(mockPost as any).images && (mockPost as any).images.length > 0 ? (
               <div className="mb-8">
                 <BlogImageGrid 
                   images={(mockPost as any).images}
                 />
               </div>
+            ) : (
+              <img
+                src={mockPost.image}
+                alt={mockPost.title}
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
+                data-testid="img-post-hero"
+              />
             )}
           </header>
 
