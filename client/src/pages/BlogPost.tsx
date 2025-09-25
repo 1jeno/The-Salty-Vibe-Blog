@@ -781,7 +781,7 @@ export default function BlogPost() {
       <p>But my favorite discovery was the adults-only pool area. It's this intimate oasis where you can truly unwind, surrounded by mature palm trees and desert landscaping. The poolside service is impeccable – fresh towels, perfectly chilled water, and cocktails that taste like liquid sunshine.</p>
       
       <h2>Accommodations That Wow</h2>
-      <p>The suites at L Horizon are spacious sanctuaries that feel more like private residences than hotel rooms. Floor-to-ceiling windows frame those incredible mountain views, while the neutral color palette and natural textures create such a calming atmosphere.</p>
+      <p>The bungalows at L Horizon are spacious sanctuaries that feel more like private residences than hotel rooms. Floor-to-ceiling windows frame those incredible mountain views, while the neutral color palette and natural textures create such a calming atmosphere.</p>
       
       <p>I especially love the outdoor living spaces – many suites have private patios or terraces where you can enjoy your morning coffee while watching the desert come alive. The attention to comfort is evident in every detail, from the premium bedding to the thoughtfully stocked minibar.</p>
       
