@@ -745,7 +745,7 @@ export default function BlogPost() {
         "luxury travel",
       ],
       category: "travel",
-      image: "/images/L_Horizon_luxury_desert_resort_eaec2fa3.png",
+      image: "/images/Blog Post 2025-09-24 LHorizon 2.jpg",
       images: [
         {
           src: "/images/Blog Post 2025-09-24 LHorizon 1.jpg",
