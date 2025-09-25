@@ -42,7 +42,7 @@ export default function BlogImageCarousel({ images, title }: BlogImageCarouselPr
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          className="w-full h-full object-cover transition-opacity duration-500"
+          className="w-full h-full object-contain transition-opacity duration-500"
           data-testid={`carousel-image-${currentIndex}`}
         />
         
