@@ -10,7 +10,7 @@ import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
-import BlogImageCarousel from "@/components/BlogImageCarousel";
+import BlogImageGrid from "@/components/BlogImageGrid";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -912,20 +912,19 @@ export default function BlogPost() {
               {mockPost.title}
             </h1>
 
-{(mockPost as any).images && (mockPost as any).images.length > 0 ? (
+            <img
+              src={mockPost.image}
+              alt={mockPost.title}
+              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
+              data-testid="img-post-hero"
+            />
+
+            {(mockPost as any).images && (mockPost as any).images.length > 0 && (
               <div className="mb-8">
-                <BlogImageCarousel 
+                <BlogImageGrid 
                   images={(mockPost as any).images}
-                  title={mockPost.title}
                 />
               </div>
-            ) : (
-              <img
-                src={mockPost.image}
-                alt={mockPost.title}
-                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
-                data-testid="img-post-hero"
-              />
             )}
           </header>
 

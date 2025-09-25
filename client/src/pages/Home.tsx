@@ -83,7 +83,7 @@ export default function Home() {
       title: 'L Horizon Resort: Desert Luxury That Redefines Palm Desert',
       excerpt: 'Discover why this mid-century modern masterpiece is changing the game for luxury desert travel, from infinity pools to mountain views.',
       category: 'travel',
-      image: '/images/L_Horizon_luxury_desert_resort_eaec2fa3.png',
+      image: '/images/Blog Post 2025-09-24 LHorizon 2.jpg',
       publishedAt: '2024-02-10',
       readTime: 10,
       slug: 'l-horizon-palm-desert-luxury'
