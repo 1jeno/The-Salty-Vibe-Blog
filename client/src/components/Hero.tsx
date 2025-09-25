@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/beach-shack-surfboards.jpg';
+const heroImage = '/images/beach-shack-surfboards.jpg';
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);

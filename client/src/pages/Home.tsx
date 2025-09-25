@@ -9,15 +9,6 @@ import PhotoCarousel from '@/components/PhotoCarousel';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
-import morningCoffeeImage from '@assets/generated_images/morning-ritual-iced-coffee.jpg';
-import tropicalVacationImage from '@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png';
-import beachWardrobeImage from '@assets/generated_images/beach-wardrobe-white-dress.jpg';
-import swimsuit2026Image from '@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png';
-import beachSunsetPicnicImage from '@assets/generated_images/Beach Sunset Picnic.png';
-import pitayaBowlImage from '@assets/generated_images/pitaya bowl.png';
-import pancakesBeachsideImage from '@assets/generated_images/Pancakes Beachside.jpg';
-import perrysPorchImage from '@assets/generated_images/Perrys Porch Crispy Artichokes.jpg';
-import gmCollinImage from '@assets/generated_images/Amazon_G.M.Collin.jpeg';
 
 export default function Home() {
   const [location] = useLocation();
@@ -62,7 +53,7 @@ export default function Home() {
       title: 'My Morning Ritual: Coffee by the Ocean',
       excerpt: 'There\'s something magical about starting the day with iced coffee while watching the sunrise over the ocean. Here\'s how I\'ve created the perfect morning ritual that sets the tone for a beautiful day.',
       category: 'lifestyle',
-      image: morningCoffeeImage,
+      image: '/images/morning-ritual-iced-coffee.jpg',
       publishedAt: '2024-01-20',
       readTime: 5,
       slug: 'my-morning-ritual-coffee-by-the-ocean'
@@ -72,7 +63,7 @@ export default function Home() {
       title: 'Vacation in a Bottle: Tropical Scents That Transport You',
       excerpt: 'From Sunbum sunscreen to Bond No. 9 perfumes, here\'s my carefully curated list of products that smell like paradise and will have you feeling like you\'re perpetually on island time.',
       category: 'lifestyle',
-      image: tropicalVacationImage,
+      image: '/images/Vintage_perfume_bottle_ocean_beach_f43881cb.png',
       publishedAt: '2024-01-25',
       readTime: 6,
       slug: 'vacation-in-a-bottle-tropical-scents'
@@ -102,7 +93,7 @@ export default function Home() {
       title: 'Rose Gold Everything: Brunch Recipe',
       excerpt: 'This pink-hued smoothie bowl is as delicious as it is photogenic. Perfect for those aesthetic brunch moments you\'ll want to share.',
       category: 'food',
-      image: pitayaBowlImage,
+      image: '/images/pitaya bowl.png',
       publishedAt: '2024-01-15',
       readTime: 4,
       slug: 'rose-gold-brunch-recipe'
@@ -112,7 +103,7 @@ export default function Home() {
       title: 'Sunset Beach Picnic Ideas',
       excerpt: 'Create magical moments with these dreamy beach picnic setups perfect for golden hour photography and romantic evenings by the sea.',
       category: 'lifestyle',
-      image: beachSunsetPicnicImage,
+      image: '/images/Beach Sunset Picnic.png',
       publishedAt: '2024-01-12',
       readTime: 7,
       slug: 'sunset-beach-picnic-ideas'
@@ -122,7 +113,7 @@ export default function Home() {
       title: 'Hidden Gems: Coastal Cafes Worth the Drive',
       excerpt: 'Discover the most charming seaside cafes where the coffee is perfect and the views are even better. Your next road trip destination awaits.',
       category: 'food',
-      image: pancakesBeachsideImage,
+      image: '/images/Pancakes Beachside.jpg',
       publishedAt: '2024-01-10',
       readTime: 8,
       slug: 'coastal-cafes-hidden-gems'
@@ -132,7 +123,7 @@ export default function Home() {
       title: 'Building Your Perfect Beach Capsule Wardrobe',
       excerpt: 'Effortless style meets comfort in this curated collection of coastal-inspired pieces that will take you from sunrise yoga to sunset dinners.',
       category: 'lifestyle',
-      image: beachWardrobeImage,
+      image: '/images/beach-wardrobe-white-dress.jpg',
       publishedAt: '2024-01-08',
       readTime: 6,
       slug: 'beach-capsule-wardrobe'
@@ -142,7 +133,7 @@ export default function Home() {
       title: 'Finding Your Perfect Swimsuit for 2026',
       excerpt: 'From sustainable fabrics to flattering cuts, here\'s your complete guide to choosing the perfect swimsuit that makes you feel confident and beautiful this season.',
       category: 'lifestyle',
-      image: swimsuit2026Image,
+      image: '/images/2026_swimsuit_collection_beach_styling_324a8899.png',
       publishedAt: '2024-01-30',
       readTime: 8,
       slug: 'perfect-swimsuit-2026'
@@ -152,7 +143,7 @@ export default function Home() {
       title: 'Perry\'s Porch: A Downtown St. Pete Gem',
       excerpt: 'I discovered this incredible spot in downtown St. Petersburg where the crispy artichokes are life-changing and the bartenders craft magic in a glass. This hidden gem is about to become your new favorite.',
       category: 'food',
-      image: perrysPorchImage,
+      image: '/images/Perrys Porch Crispy Artichokes.jpg',
       publishedAt: '2024-02-01',
       readTime: 6,
       slug: 'perrys-porch-st-pete-gem'
@@ -162,7 +153,7 @@ export default function Home() {
       title: 'G.M. Collin: The Clean Beauty Secret I\'ve Been Using for Years',
       excerpt: 'After years of sun exposure, I found my skin savior in G.M. Collin\'s clean beauty line. From their revolutionary collagen pellicle origins in 1957 Paris to their modern sun protection formulas, here\'s why this brand has earned my complete trust.',
       category: 'beauty',
-      image: gmCollinImage,
+      image: '/images/Amazon_G.M.Collin.jpeg',
       publishedAt: '2024-02-05',
       readTime: 8,
       slug: 'gm-collin-clean-beauty-secrets'

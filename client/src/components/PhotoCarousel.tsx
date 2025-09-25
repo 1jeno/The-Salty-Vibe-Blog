@@ -1,13 +1,5 @@
 // No longer using carousel functionality, just displaying photos in a grid
 
-// Import carousel images
-import lifeLens1 from '@assets/generated_images/Life through my lens 1.jpg';
-import lifeLens2 from '@assets/generated_images/Life through my lens 2.jpg';
-import lifeLens3 from '@assets/generated_images/Life through my lens 3.jpg';
-import lifeLens4 from '@assets/generated_images/Life through my lens 4.jpg';
-import lifeLens5 from '@assets/generated_images/Life through my lens 5.jpg';
-import lifeLens6 from '@assets/generated_images/Life through my lens 6.jpg';
-
 interface CarouselImage {
   src: string;
   alt: string;
@@ -15,27 +7,27 @@ interface CarouselImage {
 
 const carouselImages: CarouselImage[] = [
   {
-    src: lifeLens1,
+    src: '/images/Life through my lens 1.jpg',
     alt: 'Life through my lens moment 1'
   },
   {
-    src: lifeLens2,
+    src: '/images/Life through my lens 2.jpg',
     alt: 'Life through my lens moment 2'
   },
   {
-    src: lifeLens3,
+    src: '/images/Life through my lens 3.jpg',
     alt: 'Life through my lens moment 3'
   },
   {
-    src: lifeLens4,
+    src: '/images/Life through my lens 4.jpg',
     alt: 'Life through my lens moment 4'
   },
   {
-    src: lifeLens5,
+    src: '/images/Life through my lens 5.jpg',
     alt: 'Life through my lens moment 5'
   },
   {
-    src: lifeLens6,
+    src: '/images/Life through my lens 6.jpg',
     alt: 'Life through my lens moment 6'
   }
 ];

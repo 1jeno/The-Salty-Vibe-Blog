@@ -10,16 +10,6 @@ import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
-import morningCoffeeImage from "@assets/generated_images/morning-ritual-iced-coffee.jpg";
-import tropicalVacationImage from "@assets/generated_images/Vintage_perfume_bottle_ocean_beach_f43881cb.png";
-import beachWardrobeImage from "@assets/generated_images/beach-wardrobe-white-dress.jpg";
-import swimsuit2026Image from "@assets/generated_images/2026_swimsuit_collection_beach_styling_324a8899.png";
-import beachSunsetPicnicImage from "@assets/generated_images/Beach Sunset Picnic.png";
-import pitayaBowlImage from "@assets/generated_images/pitaya bowl.png";
-import pancakesBeachsideImage from "@assets/generated_images/Pancakes Beachside.jpg";
-import perrysPorchImage from "@assets/generated_images/Perrys Porch Crispy Artichokes.jpg";
-import gmCollinImage from "@assets/generated_images/Amazon_G.M.Collin.jpeg";
-import lHorizonImage from "@assets/generated_images/L_Horizon_luxury_desert_resort_eaec2fa3.png";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -49,7 +39,7 @@ export default function BlogPost() {
         "ocean vibes",
       ],
       category: "lifestyle",
-      image: morningCoffeeImage,
+      image: "/images/morning-ritual-iced-coffee.jpg",
       publishedAt: "2024-01-20T08:00:00-08:00",
       modifiedAt: "2024-01-20T08:00:00-08:00",
       readTime: 5,
@@ -119,7 +109,7 @@ export default function BlogPost() {
         "tropical beauty",
       ],
       category: "lifestyle",
-      image: tropicalVacationImage,
+      image: "/images/Vintage_perfume_bottle_ocean_beach_f43881cb.png",
       publishedAt: "2024-01-25T10:00:00-08:00",
       modifiedAt: "2024-01-25T10:00:00-08:00",
       readTime: 6,
@@ -195,7 +185,7 @@ export default function BlogPost() {
         "beach essentials",
       ],
       category: "lifestyle",
-      image: beachWardrobeImage,
+      image: "/images/beach-wardrobe-white-dress.jpg",
       publishedAt: "2024-01-08T09:00:00-08:00",
       modifiedAt: "2024-01-08T09:00:00-08:00",
       readTime: 6,
@@ -253,7 +243,7 @@ export default function BlogPost() {
         "style guide",
       ],
       category: "lifestyle",
-      image: swimsuit2026Image,
+      image: "/images/2026_swimsuit_collection_beach_styling_324a8899.png",
       publishedAt: "2024-01-30T11:00:00-08:00",
       modifiedAt: "2024-01-30T11:00:00-08:00",
       readTime: 8,
@@ -381,7 +371,7 @@ export default function BlogPost() {
         "aesthetic food",
       ],
       category: "food",
-      image: pitayaBowlImage,
+      image: "/images/pitaya bowl.png",
       publishedAt: "2024-01-15T09:00:00-08:00",
       modifiedAt: "2024-01-15T09:00:00-08:00",
       readTime: 4,
@@ -461,7 +451,7 @@ export default function BlogPost() {
         "coastal travel",
       ],
       category: "food",
-      image: pancakesBeachsideImage,
+      image: "/images/Pancakes Beachside.jpg",
       publishedAt: "2024-01-10T08:00:00-08:00",
       modifiedAt: "2024-01-10T08:00:00-08:00",
       readTime: 8,
@@ -547,7 +537,7 @@ export default function BlogPost() {
         "coastal dining",
       ],
       category: "lifestyle",
-      image: beachSunsetPicnicImage,
+      image: "/images/Beach Sunset Picnic.png",
       publishedAt: "2024-01-12T16:00:00-08:00",
       modifiedAt: "2024-01-12T16:00:00-08:00",
       readTime: 7,
@@ -635,7 +625,7 @@ export default function BlogPost() {
         "hidden gems",
       ],
       category: "food",
-      image: perrysPorchImage,
+      image: "/images/Perrys Porch Crispy Artichokes.jpg",
       publishedAt: "2024-02-01T18:00:00-05:00",
       modifiedAt: "2024-02-01T18:00:00-05:00",
       readTime: 6,
@@ -690,7 +680,7 @@ export default function BlogPost() {
         "beauty routine",
       ],
       category: "beauty",
-      image: gmCollinImage,
+      image: "/images/Amazon_G.M.Collin.jpeg",
       publishedAt: "2024-02-05T09:00:00-08:00",
       modifiedAt: "2024-02-05T09:00:00-08:00",
       readTime: 8,
@@ -754,7 +744,7 @@ export default function BlogPost() {
         "luxury travel",
       ],
       category: "travel",
-      image: lHorizonImage,
+      image: "/images/L_Horizon_luxury_desert_resort_eaec2fa3.png",
       publishedAt: "2024-02-10T08:00:00-08:00",
       modifiedAt: "2024-02-10T08:00:00-08:00",
       readTime: 10,
