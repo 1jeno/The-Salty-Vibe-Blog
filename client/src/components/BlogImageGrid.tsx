@@ -21,7 +21,7 @@ export default function BlogImageGrid({ images, title }: BlogImageGridProps) {
         </h2>
       )}
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-7xl mx-auto">
         {images.map((image, index) => (
           <div
             key={index}
