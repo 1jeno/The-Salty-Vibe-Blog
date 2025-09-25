@@ -10,6 +10,7 @@ import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
+import BlogImageCarousel from "@/components/BlogImageCarousel";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
@@ -745,6 +746,24 @@ export default function BlogPost() {
       ],
       category: "travel",
       image: "/images/L_Horizon_luxury_desert_resort_eaec2fa3.png",
+      images: [
+        {
+          src: "/images/Blog Post 2025-09-24 LHorizon 1.jpg",
+          alt: "L Horizon Resort infinity pool with mountain views"
+        },
+        {
+          src: "/images/Blog Post 2025-09-24 LHorizon 2.jpg", 
+          alt: "L Horizon Resort mid-century modern architecture and outdoor lounging"
+        },
+        {
+          src: "/images/Blog Post 2025-09-24 LHorizon 3.jpg",
+          alt: "L Horizon Resort luxury pool deck and desert landscape"
+        },
+        {
+          src: "/images/Blog Post 2025-09-24 LHorizon 4.jpg",
+          alt: "L Horizon Resort exterior architecture and palm trees"
+        }
+      ],
       publishedAt: "2024-02-10T08:00:00-08:00",
       modifiedAt: "2024-02-10T08:00:00-08:00",
       readTime: 10,
@@ -893,12 +912,21 @@ export default function BlogPost() {
               {mockPost.title}
             </h1>
 
-            <img
-              src={mockPost.image}
-              alt={mockPost.title}
-              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
-              data-testid="img-post-hero"
-            />
+{(mockPost as any).images && (mockPost as any).images.length > 0 ? (
+              <div className="mb-8">
+                <BlogImageCarousel 
+                  images={(mockPost as any).images}
+                  title={mockPost.title}
+                />
+              </div>
+            ) : (
+              <img
+                src={mockPost.image}
+                alt={mockPost.title}
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
+                data-testid="img-post-hero"
+              />
+            )}
           </header>
 
           <div
