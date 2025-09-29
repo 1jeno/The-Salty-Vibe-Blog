@@ -149,7 +149,7 @@ export default function Home() {
       slug: 'perfect-swimsuit-2026'
     },
     {
-      id: '9',
+      id: '10',
       title: 'Perry\'s Porch: A Downtown St. Pete Gem',
       excerpt: 'I discovered this incredible spot in downtown St. Petersburg where the crispy artichokes are life-changing and the bartenders craft magic in a glass. This hidden gem is about to become your new favorite.',
       category: 'food',
@@ -159,7 +159,7 @@ export default function Home() {
       slug: 'perrys-porch-st-pete-gem'
     },
     {
-      id: '10',
+      id: '11',
       title: 'G.M. Collin: The Clean Beauty Secret I\'ve Been Using for Years',
       excerpt: 'After years of sun exposure, I found my skin savior in G.M. Collin\'s clean beauty line. From their revolutionary collagen pellicle origins in 1957 Paris to their modern sun protection formulas, here\'s why this brand has earned my complete trust.',
       category: 'beauty',
