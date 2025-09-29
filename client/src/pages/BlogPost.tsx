@@ -1095,7 +1095,7 @@ export default function BlogPost() {
                 Enjoyed this post? Share it with friends who love coastal living
                 too!
               </p>
-              <Button onClick={handleShare} data-testid="button-share-bottom">
+              <Button onClick={handleShare} className="mx-auto" data-testid="button-share-bottom">
                 <Share2 className="h-4 w-4 mr-2 text-primary" />
                 Share This Post
               </Button>
