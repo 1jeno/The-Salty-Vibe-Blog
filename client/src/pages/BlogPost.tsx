@@ -852,7 +852,7 @@ export default function BlogPost() {
       <h2>The Setting: Pristine Paradise</h2>
       <p>Secrets Maroma Beach is tucked away on one of the most pristine beaches in the Riviera Maya – a perfect setting for adult adventure, relaxation, and romance. When seaweed isn't present, this beach ranks among the most spectacular I've ever experienced, with powdery white sand and crystal-clear turquoise waters.</p>
       
-      <p>My partner and I have been returning to Maroma since 2017, drawn back year after year by the property's natural beauty and what was once an intimate, boutique atmosphere.</p>
+      <p>My boyfriend and I have been returning to Maroma since 2017, drawn back year after year by the property's natural beauty and what was once an intimate, boutique atmosphere.</p>
       
       <h2>What Still Shines</h2>
       <p>Despite recent changes, several aspects of Secrets Maroma Beach continue to impress:</p>
@@ -899,7 +899,7 @@ export default function BlogPost() {
       
       <p>The natural beauty of Maroma Beach remains unchanged – it's still one of Mexico's most stunning coastal destinations. However, the resort experience now caters to a different type of traveler than it once did.</p>
       
-      <p><em>This review reflects our personal experiences through 2025 and is intended to help fellow travelers make informed decisions about whether this resort aligns with their vacation preferences.</em></p>
+      <p><em>This review reflects my personal experiences through 2025 and is intended to help fellow travelers make informed decisions about whether this resort aligns with their vacation preferences.</em></p>
     `,
     },
   };
