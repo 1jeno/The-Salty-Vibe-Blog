@@ -1026,7 +1026,7 @@ export default function BlogPost() {
                 className="ml-auto"
                 data-testid="button-share"
               >
-                <Share2 className="h-4 w-4" />
+                <Share2 className="h-4 w-4 text-primary" />
               </Button>
             </div>
 
@@ -1096,7 +1096,7 @@ export default function BlogPost() {
                 too!
               </p>
               <Button onClick={handleShare} data-testid="button-share-bottom">
-                <Share2 className="h-4 w-4 mr-2" />
+                <Share2 className="h-4 w-4 mr-2 text-primary" />
                 Share This Post
               </Button>
             </div>
