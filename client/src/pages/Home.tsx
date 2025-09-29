@@ -89,6 +89,16 @@ export default function Home() {
       slug: 'l-horizon-palm-desert-luxury'
     },
     {
+      id: '5',
+      title: 'Secrets Maroma Beach Riviera Cancun: An Honest Review',
+      excerpt: 'After seven years of visits, I\'m sharing my honest perspective on this AAA Five Diamond resort. From pristine beaches to recent changes under Hyatt ownership.',
+      category: 'travel',
+      image: '/images/Blog Post 2025-09-28 Secrets Maroma Beach Sunset.jpg',
+      publishedAt: '2025-09-28',
+      readTime: 8,
+      slug: 'secrets-maroma-beach-riviera-cancun'
+    },
+    {
       id: '4',
       title: 'Rose Gold Everything: Brunch Recipe',
       excerpt: 'This pink-hued smoothie bowl is as delicious as it is photogenic. Perfect for those aesthetic brunch moments you\'ll want to share.',
@@ -99,7 +109,7 @@ export default function Home() {
       slug: 'rose-gold-brunch-recipe'
     },
     {
-      id: '5',
+      id: '6',
       title: 'Sunset Beach Picnic Ideas',
       excerpt: 'Create magical moments with these dreamy beach picnic setups perfect for golden hour photography and romantic evenings by the sea.',
       category: 'lifestyle',
@@ -109,7 +119,7 @@ export default function Home() {
       slug: 'sunset-beach-picnic-ideas'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Hidden Gems: Coastal Cafes Worth the Drive',
       excerpt: 'Discover the most charming seaside cafes where the coffee is perfect and the views are even better. Your next road trip destination awaits.',
       category: 'food',
@@ -119,7 +129,7 @@ export default function Home() {
       slug: 'coastal-cafes-hidden-gems'
     },
     {
-      id: '7',
+      id: '8',
       title: 'Building Your Perfect Beach Capsule Wardrobe',
       excerpt: 'Effortless style meets comfort in this curated collection of coastal-inspired pieces that will take you from sunrise yoga to sunset dinners.',
       category: 'lifestyle',
@@ -129,7 +139,7 @@ export default function Home() {
       slug: 'beach-capsule-wardrobe'
     },
     {
-      id: '8',
+      id: '9',
       title: 'Finding Your Perfect Swimsuit for 2026',
       excerpt: 'From sustainable fabrics to flattering cuts, here\'s your complete guide to choosing the perfect swimsuit that makes you feel confident and beautiful this season.',
       category: 'lifestyle',
