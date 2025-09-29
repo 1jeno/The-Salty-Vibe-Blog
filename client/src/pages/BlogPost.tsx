@@ -1090,15 +1090,17 @@ export default function BlogPost() {
           />
 
           <div className="mt-12 pt-8 border-t border-border">
-            <div className="flex flex-col items-center">
-              <p className="text-muted-foreground mb-4 text-center">
+            <div className="text-center">
+              <p className="text-muted-foreground mb-4">
                 Enjoyed this post? Share it with friends who love coastal living
                 too!
               </p>
-              <Button onClick={handleShare} data-testid="button-share-bottom">
-                <Share2 className="h-4 w-4 mr-2 text-primary" />
-                Share This Post
-              </Button>
+              <div className="flex justify-center">
+                <Button onClick={handleShare} className="gap-2" data-testid="button-share-bottom">
+                  <Share2 className="h-4 w-4 text-primary" />
+                  Share This Post
+                </Button>
+              </div>
             </div>
           </div>
         </article>
