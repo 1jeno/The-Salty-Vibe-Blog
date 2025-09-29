@@ -811,6 +811,97 @@ export default function BlogPost() {
       <p>This resort has completely changed how I think about desert travel. It's proof that luxury doesn't have to be over-the-top – sometimes the most memorable experiences come from places that understand the art of understated elegance.</p>
     `,
     },
+    "secrets-maroma-beach-riviera-cancun": {
+      id: "5",
+      title: "Secrets Maroma Beach Riviera Cancun: An Honest Review",
+      slug: "secrets-maroma-beach-riviera-cancun",
+      seoTitle: "Secrets Maroma Beach Review: AAA Five Diamond All-Inclusive Resort",
+      seoDescription: "An honest review of Secrets Maroma Beach Riviera Cancun. Discover what's changed since Hyatt's acquisition, from pristine beaches to dining experiences at this AAA Five Diamond resort.",
+      tags: [
+        "secrets maroma beach",
+        "riviera maya",
+        "cancun travel",
+        "all inclusive resort",
+        "mexico vacation",
+        "beach resort review",
+        "hyatt",
+        "luxury travel"
+      ],
+      category: "travel",
+      image: "/images/Blog Post 2025-09-28 Secrets Maroma Beach Sunset.jpg",
+      publishedAt: "2025-09-28T10:00:00-06:00",
+      modifiedAt: "2025-09-28T10:00:00-06:00",
+      readTime: 8,
+      images: [
+        {
+          src: "/images/Blog Post 2025-09-28 Secrets Maroma Beach Fish Tacos.jpg",
+          alt: "Fresh fish tacos at Secrets Maroma Beach Preferred Club"
+        },
+        {
+          src: "/images/Blog Post 2025-09-28 Secrets Maroma Beach Sunset.jpg", 
+          alt: "Stunning sunset view from Secrets Maroma Beach"
+        },
+        {
+          src: "/images/Blog Post 2025-09-28 Secrets with coconuts.jpg",
+          alt: "Tropical coconut drinks at Secrets Maroma Beach"
+        }
+      ],
+      content: `
+      <p>After seven years of visiting Secrets Maroma Beach Riviera Cancun, I'm sharing my honest perspective on this AAA Five Diamond all-inclusive resort. From the pristine beaches to recent changes under new ownership, here's everything you need to know about this Riviera Maya destination.</p>
+      
+      <h2>The Setting: Pristine Paradise</h2>
+      <p>Secrets Maroma Beach is tucked away on one of the most pristine beaches in the Riviera Maya – a perfect setting for adult adventure, relaxation, and romance. When seaweed isn't present, this beach ranks among the most spectacular I've ever experienced, with powdery white sand and crystal-clear turquoise waters.</p>
+      
+      <p>My partner and I have been returning to Maroma since 2017, drawn back year after year by the property's natural beauty and what was once an intimate, boutique atmosphere.</p>
+      
+      <h2>What Still Shines</h2>
+      <p>Despite recent changes, several aspects of Secrets Maroma Beach continue to impress:</p>
+      
+      <h3>Exceptional Cleanliness & Grounds</h3>
+      <p>The hotel maintains impeccable cleanliness standards, and the property itself remains stunning. The grounds are meticulously maintained, creating beautiful spaces for relaxation and photography.</p>
+      
+      <h3>Coffee That Captivates</h3>
+      <p>The morning coffee here is absolutely exceptional – perfectly smooth with a natural sweetness and hint of cinnamon that requires minimal cream or sugar. It's become one of my favorite parts of each morning at the resort.</p>
+      
+      <h3>Outstanding Preferred Club Dining</h3>
+      <p>The fish tacos and salmon dishes served at the Preferred Club are extraordinarily fresh and flavorful – impressive even to this vegetarian's palate. The quality and preparation at this level remain top-notch.</p>
+      
+      <h3>Top-Tier Service</h3>
+      <p>The service standards continue to be exceptional, with staff members who are attentive, professional, and genuinely committed to guest satisfaction.</p>
+      
+      <h2>The Transformation Under Hyatt</h2>
+      <p>Since Hyatt's acquisition of Apple Leisure Group, Secrets Maroma Beach has undergone significant changes that have altered its character:</p>
+      
+      <h3>From Boutique to Commercial</h3>
+      <p>What was once an upscale boutique hotel experience has transformed into something that feels more commercialized. The intimate, exclusive atmosphere that originally drew us here has been replaced by a busier, more mainstream resort feel.</p>
+      
+      <h3>Capacity and Crowding Issues</h3>
+      <p>The resort now feels consistently overcrowded. The main pool area struggles to accommodate all guests comfortably, and the influx of timeshare presentation groups has impacted the overall ambiance. This overflow effect extends to World Cafe, the main breakfast restaurant, where large groups frequently disrupt the dining experience.</p>
+      
+      <h3>Day Pass Policy Changes</h3>
+      <p>Perhaps most significantly, the resort now sells day passes to non-guests – a practice that was unthinkable during the pre-Hyatt era. This change has fundamentally altered the exclusive feel that was once a defining characteristic.</p>
+      
+      <h2>Who This Resort Suits Now</h2>
+      <p>While Secrets Maroma Beach may have lost some of its original charm, it could still appeal to travelers who:</p>
+      
+      <ul>
+        <li>Prefer a high-energy, social atmosphere</li>
+        <li>Enjoy meeting new people and don't mind crowds</li>
+        <li>Are comfortable with timeshare presentations and marketing activities</li>
+        <li>Want a fast-paced vacation experience</li>
+        <li>Appreciate extensive amenities and activities</li>
+      </ul>
+      
+      <h2>Final Thoughts</h2>
+      <p>After our sixth visit in July 2025, we've made the difficult decision not to return. The changes since Hyatt's takeover have fundamentally altered what made Secrets Maroma Beach special to us – that sense of discovering a hidden gem with intimate luxury and exclusivity.</p>
+      
+      <p>This doesn't mean the resort lacks merit; it's simply evolved into something different from what we originally fell in love with. For travelers seeking a bustling, activity-filled all-inclusive experience, the current iteration may be exactly what they're looking for.</p>
+      
+      <p>The natural beauty of Maroma Beach remains unchanged – it's still one of Mexico's most stunning coastal destinations. However, the resort experience now caters to a different type of traveler than it once did.</p>
+      
+      <p><em>This review reflects our personal experiences through 2025 and is intended to help fellow travelers make informed decisions about whether this resort aligns with their vacation preferences.</em></p>
+    `,
+    },
   };
 
   const mockPost =
