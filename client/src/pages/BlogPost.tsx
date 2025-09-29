@@ -11,6 +11,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
 import BlogImageGrid from "@/components/BlogImageGrid";
+import ExpediaWidget from "@/components/ExpediaWidget";
+import AccommodationsSection from "@/components/AccommodationsSection";
 import { useToast } from "@/hooks/use-toast";
 import type { AffiliateProduct } from "@shared/schema";
 
@@ -834,6 +836,19 @@ export default function BlogPost() {
       publishedAt: "2025-09-28T10:00:00-06:00",
       modifiedAt: "2025-09-28T10:00:00-06:00",
       readTime: 8,
+      accommodations: [
+        {
+          name: "Secrets Maroma Beach Riviera Cancun",
+          description: "AAA Five Diamond all-inclusive adults-only resort with pristine beach and exceptional service",
+          bookingUrl: "https://www.anrdoezrs.net/click-101551130-11552045?url=https%3A%2F%2Fwww.expedia.com%2FPlaya-Del-Carmen-Hotels-Secrets-Maroma-Beach-Riviera-Cancun-Adults-Only-All-Inclusive.h1862827.Hotel-Information%3Fchkin%3D2025-10-31%26chkout%3D2025-11-02%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1759172209681%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D601751%26destination%3DPlaya%2Bdel%2BCarmen%252C%2BQuintana%2BRoo%252C%2BMexico%26destType%3DMARKET%26neighborhoodId%3D6050867%26selected%3D1862827%26latLong%3D20.629571%252C-87.073173%26sort%3DRECOMMENDED%26top_dp%3D1403%26top_cur%3DUSD%26userIntent%3D%26selectedRoomType%3D201917033%26selectedRatePlan%3D393109113%26searchId%3D147c3bec-1250-420c-9bb6-a9837f9aad4c",
+          highlights: [
+            "Pristine white sand beach (when seaweed isn't present)",
+            "Exceptional Preferred Club dining with fresh seafood",
+            "Impeccable cleanliness and beautiful grounds",
+            "Outstanding coffee service"
+          ]
+        }
+      ],
       images: [
         {
           src: "/images/Blog Post 2025-09-28 Secrets Maroma Beach Fish Tacos.jpg",
@@ -1059,6 +1074,14 @@ export default function BlogPost() {
             data-testid="content-post-body"
           />
 
+          {/* Accommodations Section for Travel Posts */}
+          {(mockPost as any).accommodations && (mockPost as any).accommodations.length > 0 && (
+            <AccommodationsSection 
+              accommodations={(mockPost as any).accommodations}
+              destination={mockPost.category === 'travel' ? 'the Riviera Maya' : undefined}
+            />
+          )}
+
           {/* Affiliate Products Section */}
           {affiliateProducts.length > 0 && (
             <div className="mt-12 pt-8 border-t border-border">
@@ -1102,6 +1125,11 @@ export default function BlogPost() {
                 </Button>
               </div>
             </div>
+          </div>
+
+          {/* Expedia Widget */}
+          <div className="mt-8">
+            <ExpediaWidget />
           </div>
         </article>
       </main>
