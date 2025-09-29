@@ -1,5 +1,5 @@
 import { Heart, Instagram, Mail } from 'lucide-react';
-import { SiPinterest } from 'react-icons/si';
+import { SiPinterest, SiX } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
@@ -107,6 +107,14 @@ export default function Footer() {
             data-testid="button-social-pinterest"
           >
             <SiPinterest className="h-5 w-5 text-primary" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => handleSocialClick('https://x.com/thesaltyvibe')}
+            data-testid="button-social-x"
+          >
+            <SiX className="h-5 w-5 text-primary" />
           </Button>
           <Button
             variant="ghost"

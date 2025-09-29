@@ -11,10 +11,12 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SEOHead from "@/components/SEOHead";
 import RelatedPosts from "@/components/RelatedPosts";
 import BlogImageGrid from "@/components/BlogImageGrid";
+import { useToast } from "@/hooks/use-toast";
 import type { AffiliateProduct } from "@shared/schema";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/post/:slug");
+  const { toast } = useToast();
 
   // Scroll to top when blog post loads or changes
   useEffect(() => {
@@ -938,9 +940,41 @@ export default function BlogPost() {
     console.log("Navigate back");
   };
 
-  const handleShare = () => {
-    console.log("Share post");
-    // TODO: remove mock functionality - implement real sharing
+  const handleShare = async () => {
+    const currentUrl = window.location.href;
+    const shareData = {
+      title: mockPost.title,
+      text: mockPost.seoDescription || `Check out this post: ${mockPost.title}`,
+      url: currentUrl,
+    };
+
+    try {
+      // Check if Web Share API is supported (mainly on mobile)
+      if (navigator.share) {
+        await navigator.share(shareData);
+        return;
+      }
+
+      // Fallback: Copy URL to clipboard
+      await navigator.clipboard.writeText(currentUrl);
+      toast({
+        title: "Link copied!",
+        description: "Post URL has been copied to your clipboard",
+      });
+    } catch (error) {
+      // Final fallback: Select text in a temporary input
+      const textArea = document.createElement('textarea');
+      textArea.value = currentUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      toast({
+        title: "Link copied!",
+        description: "Post URL has been copied to your clipboard",
+      });
+    }
   };
 
   if (!match) {
