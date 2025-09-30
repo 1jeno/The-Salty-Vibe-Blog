@@ -111,7 +111,7 @@ export default function Footer() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => handleSocialClick('https://x.com/thesaltyvibe')}
+            onClick={() => handleSocialClick('https://x.com/getsaltywithme')}
             data-testid="button-social-x"
           >
             <SiX className="h-5 w-5 text-primary" />

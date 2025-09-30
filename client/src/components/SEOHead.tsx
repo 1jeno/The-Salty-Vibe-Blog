@@ -81,8 +81,9 @@ export default function SEOHead({
       },
     "description": "Coastal living, travel adventures, and lifestyle inspiration with a feminine touch",
     "sameAs": [
-      "https://instagram.com/thesaltyvibe", // Update with your actual social links
-      "https://pinterest.com/thesaltyvibe"
+      "https://www.instagram.com/thesaltyvibe",
+      "https://pinterest.com/thesaltyvibe",
+      "https://x.com/getsaltywithme"
     ]
   };
 
@@ -107,7 +108,7 @@ export default function SEOHead({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
-      <meta name="twitter:creator" content="@thesaltyvibe" /> {/* Update with your Twitter handle */}
+      <meta name="twitter:creator" content="@getsaltywithme" />
       
       {/* Article-specific meta tags */}
       {type === 'article' && publishedTime && (

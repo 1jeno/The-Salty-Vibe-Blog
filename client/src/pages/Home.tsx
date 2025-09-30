@@ -195,7 +195,13 @@ export default function Home() {
   };
 
   const pageDescription = activeCategory === 'all' 
-    ? 'Discover coastal living, travel adventures, and delicious food reviews with a feminine touch. Join The Salty Vibe community for lifestyle inspiration, tropical scents, morning rituals, and beach vibes.'
+    ? 'Discover coastal living inspiration, luxury resort reviews, beach travel guides, and lifestyle tips. Join The Salty Vibe for honest hotel reviews, tropical scents, beach essentials, and wanderlust adventures with affiliate recommendations you can trust.'
+    : activeCategory === 'travel'
+    ? 'Browse luxury resort reviews, beach destination guides, and honest hotel recommendations. Get insider tips for coastal getaways, all-inclusive resorts, and tropical vacation planning from The Salty Vibe.'
+    : activeCategory === 'lifestyle'
+    ? 'Explore coastal lifestyle tips, beach beauty essentials, morning rituals, and product reviews. Discover tropical scents, beach vibes, and intentional living inspiration from The Salty Vibe.'
+    : activeCategory === 'food'
+    ? 'Discover delicious coastal cuisine, brunch recipes, beach picnic ideas, and seaside cafe recommendations from The Salty Vibe food adventures.'
     : `Browse ${activeCategory} posts - coastal living tips, travel guides, and lifestyle inspiration from The Salty Vibe blog.`;
 
   return (
@@ -208,7 +214,16 @@ export default function Home() {
         description={pageDescription}
         url={activeCategory === 'all' ? '/' : `/${activeCategory}`}
         type="website"
-        tags={['coastal living', 'lifestyle blog', 'travel', 'food', 'beach vibes', 'morning rituals', 'tropical scents', 'sunbum', 'vacation']}
+        tags={activeCategory === 'all' 
+          ? ['coastal living', 'luxury resort reviews', 'beach travel', 'hotel reviews', 'lifestyle blog', 'tropical scents', 'beach essentials', 'vacation planning', 'all-inclusive resorts', 'beach destinations']
+          : activeCategory === 'travel'
+          ? ['luxury resorts', 'beach hotels', 'travel reviews', 'vacation planning', 'all-inclusive', 'coastal destinations', 'hotel recommendations', 'beach getaways']
+          : activeCategory === 'lifestyle'
+          ? ['coastal lifestyle', 'beach beauty', 'tropical scents', 'morning rituals', 'product reviews', 'beach vibes', 'intentional living']
+          : activeCategory === 'food'
+          ? ['coastal cuisine', 'brunch recipes', 'beach picnics', 'seaside cafes', 'food reviews']
+          : ['coastal living', 'lifestyle blog', 'travel', 'food', 'beach vibes']
+        }
       />
       <Header onSearch={setSearchQuery} />
       <Hero />
