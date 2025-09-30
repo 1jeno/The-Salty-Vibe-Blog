@@ -733,23 +733,37 @@ export default function BlogPost() {
       id: "11",
       title: "L Horizon Resort: Desert Luxury That Redefines Palm Desert",
       slug: "l-horizon-palm-desert-luxury",
-      seoTitle: "L Horizon Resort Palm Desert - Luxury Desert Hotel Review & Guide",
+      seoTitle: "L Horizon Resort Palm Desert Review - Mid-Century Modern Luxury Hotel",
       seoDescription:
-        "Discover L Horizon Resort, Palm Desert's hidden luxury gem. Mid-century modern design meets desert sophistication with world-class amenities, stunning pools, and mountain views perfect for your California desert escape.",
+        "Complete L Horizon Resort Palm Desert review. Discover this mid-century modern luxury hotel with infinity pools, mountain views, spa, and exceptional dining. Book your California desert escape at this boutique resort near Palm Springs.",
       tags: [
         "L Horizon Resort",
         "Palm Desert hotels",
         "luxury desert resort",
         "California desert",
-        "mid-century modern",
-        "desert spa",
-        "pool resort",
-        "Coachella Valley",
-        "desert getaway",
+        "mid-century modern hotel",
+        "Palm Springs hotels",
+        "desert spa resort",
+        "infinity pool resort",
+        "Coachella Valley hotels",
+        "boutique desert hotel",
         "luxury travel",
       ],
       category: "travel",
       image: "/images/Blog Post 2025-09-24 LHorizon 2.jpg",
+      accommodations: [
+        {
+          name: "L Horizon Resort & Spa",
+          description: "Mid-century modern luxury boutique resort with infinity pools, spa, and stunning mountain views in Palm Desert",
+          bookingUrl: "https://www.jdoqocy.com/click-101551130-11552045?url=https%3A%2F%2Fwww.expedia.com%2FPalm-Springs-Hotels-LHorizon-Resort-Spa.h36617.Hotel-Information%3Fchkin%3D2025-10-31%26chkout%3D2025-11-02%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1759205599287%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D180676%26destination%3DPalm%2BSprings%252C%2BCalifornia%252C%2BUnited%2BStates%2Bof%2BAmerica%26destType%3DMARKET%26neighborhoodId%3D553248635976470048%26selected%3D36617%26latLong%3D33.82308%252C-116.54549%26sort%3DRECOMMENDED%26top_dp%3D1380%26top_cur%3DUSD%26userIntent%3D%26selectedRoomType%3D316490555%26selectedRatePlan%3D386130129%26searchId%3Ddc48c025-e226-4f72-9e20-f1971d9454c6",
+          highlights: [
+            "Stunning infinity pool with desert horizon views",
+            "Adults-only pool area for ultimate relaxation",
+            "Spacious bungalows with mountain views",
+            "Award-winning spa with desert botanicals"
+          ]
+        }
+      ],
       images: [
         {
           src: "/images/Blog Post 2025-09-24 LHorizon 1.jpg",
@@ -772,10 +786,10 @@ export default function BlogPost() {
       modifiedAt: "2024-02-10T08:00:00-08:00",
       readTime: 10,
       content: `
-      <p>When I discovered L Horizon Resort & Spa in Palm Desert, I knew I had found something truly special. This isn't just another desert resort – it's a carefully curated experience that perfectly balances mid-century modern sophistication with the natural beauty of the California desert.</p>
+      <p>When I discovered <a href="https://www.jdoqocy.com/click-101551130-11552045?url=https%3A%2F%2Fwww.expedia.com%2FPalm-Springs-Hotels-LHorizon-Resort-Spa.h36617.Hotel-Information%3Fchkin%3D2025-10-31%26chkout%3D2025-11-02%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1759205599287%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D180676%26destination%3DPalm%2BSprings%252C%2BCalifornia%252C%2BUnited%2BStates%2Bof%2BAmerica%26destType%3DMARKET%26neighborhoodId%3D553248635976470048%26selected%3D36617%26latLong%3D33.82308%252C-116.54549%26sort%3DRECOMMENDED%26top_dp%3D1380%26top_cur%3DUSD%26userIntent%3D%26selectedRoomType%3D316490555%26selectedRatePlan%3D386130129%26searchId%3Ddc48c025-e226-4f72-9e20-f1971d9454c6" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">L Horizon Resort & Spa</a> in Palm Desert, I knew I had found something truly special. This isn't just another desert resort – it's a carefully curated experience that perfectly balances mid-century modern sophistication with the natural beauty of the California desert.</p>
       
       <h2>A Mid-Century Modern Masterpiece</h2>
-      <p>From the moment you arrive, L Horizon's architectural excellence is evident. The clean lines, geometric forms, and seamless indoor-outdoor flow embody everything I love about mid-century design. Set against the dramatic backdrop of the San Jacinto Mountains, the resort feels like a living piece of art.</p>
+      <p>From the moment you arrive, <a href="https://www.jdoqocy.com/click-101551130-11552045?url=https%3A%2F%2Fwww.expedia.com%2FPalm-Springs-Hotels-LHorizon-Resort-Spa.h36617.Hotel-Information%3Fchkin%3D2025-10-31%26chkout%3D2025-11-02%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1759205599287%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D180676%26destination%3DPalm%2BSprings%252C%2BCalifornia%252C%2BUnited%2BStates%2Bof%2BAmerica%26destType%3DMARKET%26neighborhoodId%3D553248635976470048%26selected%3D36617%26latLong%3D33.82308%252C-116.54549%26sort%3DRECOMMENDED%26top_dp%3D1380%26top_cur%3DUSD%26userIntent%3D%26selectedRoomType%3D316490555%26selectedRatePlan%3D386130129%26searchId%3Ddc48c025-e226-4f72-9e20-f1971d9454c6" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">L Horizon's</a> architectural excellence is evident. The clean lines, geometric forms, and seamless indoor-outdoor flow embody everything I love about mid-century design. Set against the dramatic backdrop of the San Jacinto Mountains, the resort feels like a living piece of art.</p>
       
       <p>The attention to detail is remarkable – from the custom furnishings to the carefully selected color palette that reflects the desert landscape. Every space feels intentionally designed to create that perfect California desert vibe that's both relaxing and energizing.</p>
       
@@ -808,7 +822,7 @@ export default function BlogPost() {
       <p>Pro tip: The lighting is magical just before sunset when the desert takes on those warm, golden tones that make everything look like it belongs in a luxury magazine.</p>
       
       <h2>Why L Horizon Stands Out</h2>
-      <p>In a region filled with luxury resorts, L Horizon distinguishes itself through thoughtful design, exceptional service, and an authentic connection to its desert setting. It's not trying to be anything other than exactly what it is – a sophisticated retreat that celebrates the unique beauty of the California desert.</p>
+      <p>In a region filled with luxury resorts, <a href="https://www.jdoqocy.com/click-101551130-11552045?url=https%3A%2F%2Fwww.expedia.com%2FPalm-Springs-Hotels-LHorizon-Resort-Spa.h36617.Hotel-Information%3Fchkin%3D2025-10-31%26chkout%3D2025-11-02%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1759205599287%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D180676%26destination%3DPalm%2BSprings%252C%2BCalifornia%252C%2BUnited%2BStates%2Bof%2BAmerica%26destType%3DMARKET%26neighborhoodId%3D553248635976470048%26selected%3D36617%26latLong%3D33.82308%252C-116.54549%26sort%3DRECOMMENDED%26top_dp%3D1380%26top_cur%3DUSD%26userIntent%3D%26selectedRoomType%3D316490555%26selectedRatePlan%3D386130129%26searchId%3Ddc48c025-e226-4f72-9e20-f1971d9454c6" target="_blank" rel="sponsored nofollow noopener" class="text-coral-500 hover:text-pink-500 underline font-medium">L Horizon</a> distinguishes itself through thoughtful design, exceptional service, and an authentic connection to its desert setting. It's not trying to be anything other than exactly what it is – a sophisticated retreat that celebrates the unique beauty of the California desert.</p>
       
       <p>Whether you're planning a romantic getaway, a girls' trip, or simply need to escape and recharge, L Horizon offers that perfect combination of luxury and tranquility that makes every moment feel special.</p>
       
