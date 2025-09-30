@@ -750,6 +750,7 @@ export default function BlogPost() {
         "luxury travel",
       ],
       category: "travel",
+      destination: "Palm Desert",
       image: "/images/Blog Post 2025-09-24 LHorizon 2.jpg",
       accommodations: [
         {
@@ -846,6 +847,7 @@ export default function BlogPost() {
         "luxury travel"
       ],
       category: "travel",
+      destination: "the Riviera Maya",
       image: "/images/Blog Post 2025-09-28 Secrets Maroma Beach Sunset.jpg",
       publishedAt: "2025-09-28T10:00:00-06:00",
       modifiedAt: "2025-09-28T10:00:00-06:00",
@@ -1092,7 +1094,7 @@ export default function BlogPost() {
           {(mockPost as any).accommodations && (mockPost as any).accommodations.length > 0 && (
             <AccommodationsSection 
               accommodations={(mockPost as any).accommodations}
-              destination={mockPost.category === 'travel' ? 'the Riviera Maya' : undefined}
+              destination={(mockPost as any).destination}
             />
           )}
 
