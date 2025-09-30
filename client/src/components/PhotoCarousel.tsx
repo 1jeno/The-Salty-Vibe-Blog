@@ -1,4 +1,6 @@
 // No longer using carousel functionality, just displaying photos in a grid
+import { Button } from '@/components/ui/button';
+import { Instagram } from 'lucide-react';
 
 interface CarouselImage {
   src: string;
@@ -41,9 +43,24 @@ export default function PhotoCarousel() {
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
             Life Through My Lens
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-6">
             Capturing the moments that make coastal living so magical - from morning rituals to sunset adventures.
           </p>
+          <Button 
+            asChild
+            variant="default"
+            className="gap-2"
+            data-testid="button-instagram-follow"
+          >
+            <a 
+              href="https://www.instagram.com/thesaltyvibe" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Instagram className="h-4 w-4" />
+              Follow on Instagram
+            </a>
+          </Button>
         </div>
 
         {/* Photo grid - displays all photos in a single row */}
