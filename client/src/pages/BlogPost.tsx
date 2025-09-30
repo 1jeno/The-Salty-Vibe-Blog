@@ -1062,11 +1062,19 @@ export default function BlogPost() {
             </div>
 
             <h1
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-3"
               data-testid="text-post-title"
             >
               {mockPost.title}
             </h1>
+
+            <p className="text-muted-foreground text-sm mb-6" data-testid="text-post-date">
+              {new Date(mockPost.publishedAt).toLocaleDateString('en-US', { 
+                month: 'long', 
+                day: 'numeric', 
+                year: 'numeric' 
+              })}
+            </p>
 
 {(mockPost as any).images && (mockPost as any).images.length > 0 ? (
               <div className="mb-8">
