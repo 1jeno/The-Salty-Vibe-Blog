@@ -41,6 +41,11 @@ export default function Header({ onSearch }: HeaderProps) {
     { key: 'wellness', label: 'Wellness' },
   ];
 
+  const travelSubcategories = [
+    { key: 'travel', label: 'All Travel Posts' },
+    { key: 'travel-resources', label: 'Travel Resources' },
+  ];
+
   const [, setLocation] = useLocation();
 
   const handleLifestyleClick = (subcategory: string) => {
@@ -49,6 +54,10 @@ export default function Header({ onSearch }: HeaderProps) {
     } else {
       setLocation(`/${subcategory}`);
     }
+  };
+
+  const handleTravelClick = (subcategory: string) => {
+    setLocation(`/${subcategory}`);
   };
 
   return (
@@ -103,8 +112,34 @@ export default function Header({ onSearch }: HeaderProps) {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            {/* Travel Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="flex items-center gap-1 text-sm font-medium transition-all duration-200 px-3 py-1 border border-transparent text-muted-foreground hover:text-primary hover:border-pink-500"
+                  data-testid="button-travel-dropdown"
+                >
+                  Travel
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background border border-border rounded-none" style={{ boxShadow: 'none', backdropFilter: 'none' }}>
+                {travelSubcategories.map((subcategory) => (
+                  <DropdownMenuItem
+                    key={subcategory.key}
+                    onClick={() => handleTravelClick(subcategory.key)}
+                    className="cursor-pointer text-muted-foreground hover:text-pink-500 focus:text-pink-500 active:text-pink-500 hover:bg-transparent focus:bg-transparent active:bg-transparent"
+                    data-testid={`button-travel-${subcategory.key}`}
+                  >
+                    {subcategory.label}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {/* Other Navigation Items */}
-            {navigation.slice(1).map((item) => (
+            {navigation.slice(2).map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -187,6 +222,26 @@ export default function Header({ onSearch }: HeaderProps) {
                       }}
                       className="block text-sm text-muted-foreground hover:text-pink-500 active:text-pink-500 transition-colors"
                       data-testid={`button-mobile-lifestyle-${subcategory.key}`}
+                    >
+                      {subcategory.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile Travel Dropdown */}
+              <div className="px-3 py-2">
+                <span className="block text-sm font-medium text-muted-foreground mb-2">Travel</span>
+                <div className="pl-3 space-y-1">
+                  {travelSubcategories.map((subcategory) => (
+                    <button
+                      key={subcategory.key}
+                      onClick={() => {
+                        handleTravelClick(subcategory.key);
+                        setIsMenuOpen(false);
+                      }}
+                      className="block text-sm text-muted-foreground hover:text-pink-500 active:text-pink-500 transition-colors"
+                      data-testid={`button-mobile-travel-${subcategory.key}`}
                     >
                       {subcategory.label}
                     </button>

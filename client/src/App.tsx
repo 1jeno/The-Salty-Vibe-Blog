@@ -12,6 +12,7 @@ import Quotes from "@/pages/Quotes";
 import BlogPost from "@/pages/BlogPost";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import MorningEssentials from "@/pages/MorningEssentials";
+import TravelResources from "@/pages/TravelResources";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/wellness" component={Quotes} />
       <Route path="/lifestyle" component={Home} />
       <Route path="/travel" component={Home} />
+      <Route path="/travel-resources" component={TravelResources} />
       <Route path="/food" component={Home} />
       <Route path="/beauty" component={Home} />
       <Route path="/home-decor" component={Home} />
