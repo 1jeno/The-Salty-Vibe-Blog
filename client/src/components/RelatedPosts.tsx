@@ -54,7 +54,7 @@ export default function RelatedPosts({
               <div className="aspect-video relative overflow-hidden rounded-t-lg">
                 <img
                   src={post.image}
-                  alt={post.title}
+                  alt={`${post.title} - ${post.category} blog post`}
                   className="object-cover w-full h-full"
                   loading="lazy"
                 />

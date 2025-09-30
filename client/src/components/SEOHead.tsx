@@ -38,6 +38,25 @@ export default function SEOHead({
     ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
     : defaultImage;
 
+  // Enhanced Author/Person Schema
+  const authorSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": author,
+    "url": `${siteUrl}/about`,
+    "description": "Coastal living enthusiast, travel blogger, and lifestyle curator with 8+ years of experience exploring destinations worldwide",
+    "sameAs": [
+      "https://www.instagram.com/thesaltyvibe",
+      "https://pinterest.com/thesaltyvibe",
+      "https://x.com/getsaltywithme"
+    ],
+    "jobTitle": "Travel & Lifestyle Blogger",
+    "worksFor": {
+      "@type": "Organization",
+      "name": siteName
+    }
+  };
+
   // Structured Data for Articles
   const articleStructuredData = type === 'article' ? {
     "@context": "https://schema.org",
@@ -50,7 +69,13 @@ export default function SEOHead({
     "author": {
       "@type": "Person",
       "name": author,
-      "url": siteUrl
+      "url": `${siteUrl}/about`,
+      "description": "Coastal living enthusiast and travel blogger with 8+ years of experience",
+      "sameAs": [
+        "https://www.instagram.com/thesaltyvibe",
+        "https://pinterest.com/thesaltyvibe",
+        "https://x.com/getsaltywithme"
+      ]
     },
     "publisher": {
       "@type": "Organization",
@@ -66,7 +91,35 @@ export default function SEOHead({
     },
     ...(category && { "articleSection": category }),
     ...(readTime && { "timeRequired": `PT${readTime}M` }),
-    ...(tags.length > 0 && { "keywords": tags.join(', ') })
+    ...(tags.length > 0 && { "keywords": tags.join(', ') }),
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true
+  } : null;
+
+  // Breadcrumb Schema for Articles
+  const breadcrumbSchema = type === 'article' && category ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": siteUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": category.charAt(0).toUpperCase() + category.slice(1),
+        "item": `${siteUrl}/?category=${category}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": title,
+        "item": fullUrl
+      }
+    ]
   } : null;
 
   // Organization Structured Data
@@ -128,9 +181,19 @@ export default function SEOHead({
       <script type="application/ld+json">
         {JSON.stringify(organizationStructuredData)}
       </script>
+      {type === 'article' && (
+        <script type="application/ld+json">
+          {JSON.stringify(authorSchema)}
+        </script>
+      )}
       {articleStructuredData && (
         <script type="application/ld+json">
           {JSON.stringify(articleStructuredData)}
+        </script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       )}
       

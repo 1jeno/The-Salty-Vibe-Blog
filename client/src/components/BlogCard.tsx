@@ -36,7 +36,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
         <div className="overflow-hidden cursor-pointer" onClick={handleReadMore}>
           <img 
             src={post.image} 
-            alt={post.title}
+            alt={`${post.title} - ${post.category} blog post featuring ${post.excerpt.slice(0, 60)}...`}
             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
             data-testid={`img-blog-${post.id}`}
           />
