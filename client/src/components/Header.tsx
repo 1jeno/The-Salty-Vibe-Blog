@@ -39,6 +39,7 @@ export default function Header({ onSearch }: HeaderProps) {
     { key: 'home-decor', label: 'Home Decor' },
     { key: 'fashion', label: 'Fashion' },
     { key: 'wellness', label: 'Wellness' },
+    { key: 'quotes', label: 'Quotes' },
   ];
 
   const travelSubcategories = [
@@ -51,6 +52,8 @@ export default function Header({ onSearch }: HeaderProps) {
   const handleLifestyleClick = (subcategory: string) => {
     if (subcategory === 'wellness') {
       setLocation('/wellness');
+    } else if (subcategory === 'quotes') {
+      setLocation('/quotes');
     } else {
       setLocation(`/${subcategory}`);
     }
