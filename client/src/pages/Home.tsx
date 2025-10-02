@@ -167,6 +167,16 @@ export default function Home() {
       publishedAt: '2024-02-05',
       readTime: 8,
       slug: 'gm-collin-clean-beauty-secrets'
+    },
+    {
+      id: '12',
+      title: '5 Things I Never Travel Without',
+      excerpt: 'From preventing illness on planes to staying energized across time zones, these wellness essentials have kept me healthy and thriving through countless trips. Here are the game-changing products that have earned permanent spots in my carry-on.',
+      category: 'travel',
+      image: '/images/travel_essentials_fl_338eb442.jpg',
+      publishedAt: '2025-10-02',
+      readTime: 7,
+      slug: 'five-things-i-never-travel-without'
     }
   ];
 
