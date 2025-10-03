@@ -10,6 +10,7 @@ import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
 import travelEssentialsImage from "@assets/generated_images/blog post 2025_10_01_Travel Est.jpg";
+import santoriniImage from "@assets/generated_images/Blog Post Santorini 2024.jpg";
 
 export default function Home() {
   const [location] = useLocation();
@@ -74,7 +75,7 @@ export default function Home() {
       title: 'Weekend in Santorini: A Complete Guide',
       excerpt: 'From the blue-domed churches to the most Instagram-worthy sunset spots, here\'s everything you need for the perfect Santorini getaway.',
       category: 'travel',
-      image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=400&h=300&fit=crop',
+      image: santoriniImage,
       publishedAt: '2024-01-18',
       readTime: 12,
       slug: 'weekend-santorini-guide'

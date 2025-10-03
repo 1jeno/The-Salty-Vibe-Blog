@@ -16,6 +16,7 @@ import AccommodationsSection from "@/components/AccommodationsSection";
 import { useToast } from "@/hooks/use-toast";
 import type { AffiliateProduct } from "@shared/schema";
 import travelEssentialsImage from "@assets/generated_images/blog post 2025_10_01_Travel Est.jpg";
+import santoriniImage from "@assets/generated_images/Blog Post Santorini 2024.jpg";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/post/:slug");
@@ -315,7 +316,7 @@ export default function BlogPost() {
         "vacation planning",
       ],
       category: "travel",
-      image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop",
+      image: santoriniImage,
       publishedAt: "2024-01-18T10:00:00-08:00",
       modifiedAt: "2024-01-18T10:00:00-08:00",
       readTime: 12,
