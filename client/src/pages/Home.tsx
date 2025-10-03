@@ -9,6 +9,7 @@ import PhotoCarousel from '@/components/PhotoCarousel';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { BlogPost } from '@/components/BlogCard';
+import travelEssentialsImage from "@assets/generated_images/blog post 2025_10_01_Travel Est.jpg";
 
 export default function Home() {
   const [location] = useLocation();
@@ -173,7 +174,7 @@ export default function Home() {
       title: '5 Things I Never Travel Without',
       excerpt: 'From preventing illness on planes to staying energized across time zones, these wellness essentials have kept me healthy and thriving through countless trips. Here are the game-changing products that have earned permanent spots in my carry-on.',
       category: 'travel',
-      image: '/images/travel_essentials_fl_338eb442.jpg',
+      image: travelEssentialsImage,
       publishedAt: '2025-10-02',
       readTime: 7,
       slug: 'five-things-i-never-travel-without'
