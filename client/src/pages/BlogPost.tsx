@@ -15,6 +15,7 @@ import ExpediaWidget from "@/components/ExpediaWidget";
 import AccommodationsSection from "@/components/AccommodationsSection";
 import { useToast } from "@/hooks/use-toast";
 import type { AffiliateProduct } from "@shared/schema";
+import travelEssentialsImage from "@assets/generated_images/blog post 2025_10_01_Travel Est.jpg";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/post/:slug");
@@ -955,7 +956,7 @@ export default function BlogPost() {
         "wellness travel",
       ],
       category: "travel",
-      image: "/images/travel_essentials_fl_338eb442.jpg",
+      image: travelEssentialsImage,
       publishedAt: "2025-10-02T08:00:00-08:00",
       modifiedAt: "2025-10-02T08:00:00-08:00",
       readTime: 7,
